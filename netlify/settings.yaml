@@ -1,0 +1,212 @@
+banners:
+  - ends: '1559444414197'
+    markdown: >-
+      **Stoplight named Gartner Cool Vendor!** <u class='ml-3'>[Read the full
+      report](https://stoplight.io/gartner-cool-vendor/?hsCtaTracking=0590be9f-2900-4c27-aebf-57deda9ef459%7C744f9933-0b30-4d59-a17b-c5ab03102537)</u>
+    starts: 1558463654467
+info:
+  address:
+    addressLocality: Austin
+    addressRegion: TX
+    alternateName: Stoplight
+    description: >-
+      Stoplight, providing engineering teams with the best way to document,
+      test, and build web APIs.
+    email: hello@stoplight.io
+    name: Stoplight.io
+    postalCode: '78704'
+    streetAddress: 1100 S 1st St
+  email: sales@stoplight.io
+header:
+  items:
+    - links:
+        - href: /design/
+          icon:
+            - fas
+            - paint-brush
+          subtitle: Use our visual designer to manage OpenAPI (Swagger) 10x faster.
+          title: Design
+          titleColor: blue
+        - href: /documentation/
+          icon:
+            - fas
+            - book
+          subtitle: 'Increase customer adoption with beautiful, functional documentation.'
+          title: Documentation
+          titleColor: green
+        - href: /testing/
+          icon:
+            - fas
+            - flask
+          subtitle: 'Leverage OpenAPI to test, automate, and debug web APIs.'
+          title: Testing
+          titleColor: orange
+        - href: /mocking/
+          icon:
+            - fas
+            - server
+          subtitle: >-
+            Parallelize development with one click mock servers, powered by
+            OpenAPI.
+          title: Mocking
+          titleColor: grey-darkest
+      title: Products
+      width: 400
+    - links:
+        - href: 'http://docs.stoplight.io/'
+          icon:
+            - fas
+            - book
+          subtitle: Learn how to use Stoplight
+          title: Help Center
+          titleColor: blue
+        - href: 'https://community.stoplight.io/'
+          icon:
+            - fas
+            - users
+          subtitle: Join the Stoplight community
+          title: Forum
+          titleColor: green
+        - href: /blog/
+          icon:
+            - fas
+            - rss
+          subtitle: Stay up to date on Stoplight
+          title: Blog
+          titleColor: orange
+        - href: /api-design-guide/basics/
+          icon:
+            - fas
+            - book-open
+          subtitle: Learn API Design Best Practices
+          title: API Design Guide
+          titleColor: yellow
+        - href: /api-documentation-guide/basics/
+          icon:
+            - fas
+            - bookmark
+          subtitle: Learn API Documentation Best Practices
+          title: API Documentation Guide
+          titleColor: green
+        - href: /mock-api-guide/basics/
+          icon:
+            - fas
+            - bolt
+          subtitle: Create mock API servers
+          title: API Mocking Guide
+          titleColor: grey-darkest
+        - href: /webinars/api-design-with-stoplight/
+          icon:
+            - fas
+            - video
+          subtitle: Learn how to design with Stoplight
+          title: Webinars
+          titleColor: purple
+      title: Resources
+      width: 400
+    - links:
+        - href: /about/
+          icon:
+            - fas
+            - users
+          title: About Us
+        - href: /case-studies/
+          icon:
+            - fas
+            - graduation-cap
+          title: Case Studies
+      title: Company
+      width: 250
+    - href: /pricing/
+      title: Pricing
+    - href: /demo/
+      isButton: true
+      title: Request Demo
+    - hideMobile: true
+      href: 'https://next.stoplight.io'
+      icon:
+        - fas
+        - arrow-right
+      isButton: true
+      title: Sign In
+      altTitle: Sign Up FREE
+      altBg: green
+actionBar:
+  buttons:
+    - color: purple
+      href: /demo
+      outlined: true
+      title: Request a Demo
+    - color: purple
+      href: 'https://next.stoplight.io'
+      title: Create a Free Account
+  enabled: false
+  text: Getting started is easy. Be up and running in minutes.
+footer:
+  columns:
+    - links:
+        - href: /design/
+          title: Design
+        - href: /documentation/
+          title: Documentation
+        - href: /testing/
+          title: Testing
+        - href: /mocking/
+          title: Mocking
+      title: Products
+    - links:
+        - href: 'https://docs.stoplight.io'
+          title: Help Center
+        - href: 'https://community.stoplight.io'
+          title: 'Forum '
+        - href: /blog/
+          title: Blog
+        - href: 'https://press.stoplight.io'
+          title: Press
+      title: Resources
+    - links:
+        - href: /about/
+          title: About Us
+        - href: /case-studies/
+          title: Case Studies
+        - href: /contact-us/
+          title: Contact Us
+        - href: 'https://app.stoplight.io/login'
+          title: Classic Login
+      title: Company
+  legal:
+    - href: /privacy/
+      title: Privacy
+    - href: /terms/
+      title: Terms of Use
+    - href: /policy/
+      title: Policy
+  social:
+    - href: 'https://twitter.com/stoplightio'
+      icon:
+        - fab
+        - twitter
+    - href: 'https://www.linkedin.com/company/stoplight'
+      icon:
+        - fab
+        - linkedin
+    - href: 'https://www.github.com/stoplightio'
+      icon:
+        - fab
+        - github
+meta:
+  description: The Complete API Toolkit for Teams and Enterprise | Stoplight
+  favicon: /favicons/favicon.ico
+  image: /images/home-hero.png
+  robots: 'index, follow'
+  title: Stoplight
+  twitter:
+    description: The Complete API Toolkit for Teams and Enterprise | Stoplight
+    image: /images/home-hero.png
+    title: Stoplight
+    username: '@stoplightio'
+  url: 'https://stoplight.io'
+integrations:
+  googleTagManager: GTM-58LWL5P
+  hubspot: 4892910
+  intercom: g7eo4oae

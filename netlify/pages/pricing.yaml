@@ -1,0 +1,131 @@
+path: /pricing
+color: blue
+hero:
+  skew: '-7deg'
+  subtitle: >-
+    All plans include the entire Stoplight platform: API Modeling, Testing,
+    Mocking, and Documentation
+  title: 'Simple, Flexible Pricing'
+plans:
+  - button:
+      color: green
+      href: 'https://next.stoplight.io/join'
+      title: Start Free Trial
+    description: For open source and individual use.
+    features:
+      - Unlimited public projects
+    price: Free
+    title: Personal
+  - button:
+      color: green
+      href: 'https://next.stoplight.io/join'
+      title: Start Free Trial
+    description: For small teams and startups.
+    features:
+      - Up to 10 users
+      - Collaboration and discussions
+      - Access and role management
+      - Unlimited private projects
+    price: $24
+    title: Team
+    unit: / user / month
+  - button:
+      color: green
+      href: /contact-us
+      title: Contact us
+    description: For enterprises with demanding requirements.
+    features:
+      - Unlimited users
+      - Collaboration and discussions
+      - Access and role management
+      - Unlimited projects
+      - Hosted or on-premise
+      - Single sign-on
+      - Style Guide Enforcement Policy
+      - Dedicated support
+    price: Contact Us
+    title: Enterprise
+docPlans:
+  buttonText: Create Your Free Documentation Hub
+  buttonUrl: 'https://next.stoplight.io/join'
+  description: >-
+    Combine OpenAPI with Markdown to create robust documentation for internal
+    and external stakeholders. One click publish to host with Stoplight or
+    download the static assets to host anywhere.
+  features:
+    - plans:
+        - Basic
+        - Essential
+        - Standard
+        - Pro
+      title: 'OpenAPI, Markdown, Request Maker'
+    - plans:
+        - Basic
+        - Essential
+        - Standard
+        - Pro
+      title: Unlimited Visits
+    - plans:
+        - Basic
+        - Essential
+        - Standard
+        - Pro
+      title: Publish to docs.stoplight.io
+    - plans:
+        - Essential
+        - Standard
+        - Pro
+      title: Publish to your domain
+    - plans:
+        - Essential
+        - Standard
+        - Pro
+      title: Theming
+    - plans:
+        - Essential
+        - Standard
+        - Pro
+      title: Build history & instant rollbacks
+    - plans:
+        - Standard
+        - Pro
+      title: Custom CSS
+    - plans:
+        - Standard
+        - Pro
+      title: White label
+    - plans:
+        - Standard
+        - Pro
+      title: Basic auth & Auth0 integrations
+    - plans:
+        - Pro
+      title: Download static HTML/CSS
+    - plans:
+        - Pro
+      title: SAML single sign-on
+    - plans:
+        - Pro
+      title: HTTP request OAuth token manager
+  plans:
+    - price: Free
+      title: Basic
+    - domains: '1'
+      price: $69 / mo
+      title: Essential
+    - domains: '10'
+      price: $159 / mo
+      title: Standard
+    - domains: Unlimited
+      price: $349 / mo
+      title: Pro
+  title: Documentation Add-On
+meta:
+  description: >-
+    Read up and learn about Stoplight’s flexible and simple pricing structures,
+    from personal to enterprise use, right here.
+  favicon: /images/mark_light_bg.png
+  title: Our Pricing Plans | Stoplight
+  twitter:
+    title: Our Pricing Plans | Stoplight
+    username: '@stoplightio'

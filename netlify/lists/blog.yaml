@@ -1,0 +1,34 @@
+path: /blog
+tag: blog
+title: Stoplight API Corner
+subtitle: 'Musings on API design, testing, documentation, trends, and related technology.'
+color: purple
+tabs:
+  - href: /blog
+    title: Latest
+  - href: /blog/featured
+    title: Featured
+  - href: /blog/general
+    title: General
+  - href: /blog/api-design
+    title: API Design
+  - href: /blog/api-documentation
+    title: API Documentation
+  - href: /blog/api-testing
+    title: API Testing
+  - href: /blog/changelog
+    title: Changelog
+actionBar:
+  enabled: true
+meta:
+  description: >-
+    Find out all you need to know about API design, testing, mocking, and
+    documentation from the official Stoplight Blog, written by some of the best
+    minds in the business.
+  favicon: /images/mark_light_bg.png
+  title: Latest Stoplight Blog Posts | Stoplight API Corner
+  twitter:
+    title: Latest Stoplight Blog Posts | Stoplight API Corner
+    username: '@stoplightio'
+pagination:
+  enabled: true

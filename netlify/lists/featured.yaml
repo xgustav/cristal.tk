@@ -1,0 +1,36 @@
+path: /blog/featured
+tag: blog-featured
+title: Featured
+color: purple
+tabs:
+  - href: /blog
+    title: Latest
+  - href: /blog/featured
+    title: Featured
+  - href: /blog/general
+    title: General
+  - href: /blog/api-design
+    title: API Design
+  - href: /blog/api-documentation
+    title: 'API Documentation '
+  - href: /blog/api-testing
+    title: API Testing
+  - href: /blog/changelog
+    title: Changelog
+actionBar:
+  buttons:
+    - href: 'https://stoplight.io/demo/'
+      outlined: true
+      title: Request a Demo
+    - href: 'https://next.stoplight.io/'
+      title: Create a Free Account
+  enabled: true
+meta:
+  favicon: /images/mark_light_bg.png
+  robots: 'index, follow'
+  title: Featured | Stoplight API Corner
+  twitter:
+    title: Featured | Stoplight API Corner
+    username: '@stoplightio'
+pagination:
+  enabled: true

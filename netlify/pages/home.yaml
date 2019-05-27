@@ -1,0 +1,131 @@
+hero:
+  bgColor: black
+  cards:
+    - bgColor: blue
+      href: /design
+      icon:
+        name: paint-brush
+        style: solid
+      subtitle: Use our visual designer to manage OpenAPI (Swagger) 10x faster
+      title: Design
+    - bgColor: green
+      href: /documentation
+      icon:
+        name: book
+        style: solid
+      subtitle: 'Increase customer adoption with beautiful, functional documentation'
+      title: Documentation
+    - bgColor: orange
+      href: /testing
+      icon:
+        name: flask
+        style: solid
+      subtitle: 'Leverage OpenAPI to test, automate, and debug web APIs'
+      title: Testing
+    - bgColor: grey-darkest
+      href: /mocking
+      icon:
+        name: server
+        style: solid
+      subtitle: 'Parallelize development with one click mock servers, powered by Prism'
+      title: Mocking
+  cta:
+    href: 'https://next.stoplight.io/'
+    name: Get Started Now
+  particles: true
+  skew: rounded
+  subtitle: >-
+    Stoplight leverages your OpenAPI documents to drive the entire API
+    development process
+  title: 'Best in class API Design, Docs, Mocking, and Testing'
+collage:
+  cta:
+    color: green
+    href: /case-studies
+    name: Read the Case Studies
+  images:
+    - alt: EA
+      src: /images/ea.png
+    - alt: Arkea
+      src: /images/arkea-logo-transparent-2x.png
+    - alt: Chargify
+      src: /images/chargify-new-logo.png
+    - alt: Deutsche Bank
+      src: /images/deutsche_bank.png
+    - alt: quicken
+      src: /images/customers/quicken.png
+    - alt: Sendgrid
+      src: /images/logo-sendgrid.png
+    - alt: Shopgate
+      src: /images/shopgate.png
+    - alt: TiVo
+      src: /images/tivo.png
+    - alt: Zendesk
+      src: /images/logo_zendesk.png
+  title: Thousands of companies use Stoplight to streamline
+imageCallout:
+  cta:
+    href: 'https://next.stoplight.io/'
+    name: Get Started Now
+  description: >-
+    Create OpenAPI Specifications (formerly known as Swagger) 10x faster with no
+    specialized knowledge required. Combine OpenAPI documents with Markdown to
+    create beautiful documentation for internal and external stakeholders.
+    Instantly turn any OpenAPI document into a mock server. Leverage contract
+    testing to ensure that your Single Source of Truth - OpenAPI Specification -
+    accurately describe your APIs.
+  image: /images/home-hero.png
+  title: The Complete OpenAPI Specification Toolkit
+testimonials:
+  actionBar:
+    buttons:
+      - color: purple
+        href: /demo
+        outlined: true
+        title: Request a Demo
+      - color: purple
+        href: 'https://next.stoplight.io'
+        title: Create a Free Account
+    enabled: true
+    text: Getting started is easy. Be up and running in minutes.
+  testimonials:
+    - author: Kin Lane
+      image: /images/testimonials/kin_lane.jpeg
+      quote: >-
+        I feel like Stoplight has the potential to shift the landscape pretty
+        significantly, something I haven't seen any API service provider do in a
+        while.
+      role: API Evangelist
+    - author: 'Carlos Lozano '
+      image: /images/carlos_testimonial.jpeg
+      quote: >-
+        When it comes to specification markup and documentation, the order of
+        magnitude has gone from days to hours.
+      role: 'Senior Enterprise Architect, GFT Group'
+    - author: John Vajda
+      image: /images/testimonials/john_vajda.jpeg
+      quote: >-
+        Stoplight has been a serious game changer for JumpCloud’s API
+        development! We love all the rich design, documentation and testing
+        features, which has enabled us to design awesome APIs for our customers.
+      role: 'Product Manager, JumpCloud'
+    - author: Gil Barbara
+      image: /images/testimonials/gil.jpeg
+      quote: >-
+        Stoplight provides a centralized, testable and reliable source for our
+        APIs.
+      role: 'Frontend Engineer, AMARO'
+meta:
+  description: >-
+    Using Stoplight you can create OpenAPI Specifications, documentation, mock
+    servers much faster than other API tools with no specialized knowledge
+    required in one centralized platform
+  favicon: /images/mark_light_bg.png
+  title: The Complete API Toolkit for Teams and Enterprise | Stoplight
+  twitter:
+    description: >-
+      Using Stoplight you can create OpenAPI Specifications, documentation, mock
+      servers much faster than other API tools with no specialized knowledge
+      required in one centralized platform
+    image: /images/mark_light_bg.png
+    title: The Complete API Toolkit for Teams and Enterprise | Stoplight
