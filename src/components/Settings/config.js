@@ -39,7 +39,7 @@ export default {
           ]
         },
         {
-          label: 'Stoplight Info',
+          label: 'Company Info',
           name: 'info',
           widget: 'object',
           fields: [
