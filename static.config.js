@@ -348,13 +348,13 @@ export default {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, item: { '@id': 'https://stoplight.io/', name: 'Home' } },
-                { '@type': 'ListItem', position: 2, item: { '@id': 'https://stoplight.io/blog/', name: 'Blog' } },
+                { '@type': 'ListItem', position: 1, item: { '@id': `${SITE_ROOT}`, name: 'Home' } },
+                { '@type': 'ListItem', position: 2, item: { '@id': `${SITE_ROOT}/blog/`, name: 'Blog' } },
                 {
                   '@type': 'ListItem',
                   position: 3,
                   item: {
-                    '@id': `https://stoplight.io/${props.path}`,
+                    '@id': `${SITE_ROOT}/${props.path}`,
                     name: props.title,
                   },
                 },
@@ -365,7 +365,7 @@ export default {
               '@type': 'NewsArticle',
               mainEntityOfPage: {
                 '@type': 'WebPage',
-                '@id': `https://stoplight.io/blog/${props.path}`,
+                '@id': `${SITE_ROOT}/blog/${props.path}`,
               },
               headline: props.title,
               image: [props.image],
