@@ -54,7 +54,7 @@
     "markdown-it-anchor": "5.0.x",
     "markdown-it-toc-done-right": "2.0.x",
     "markdown-it-video": "0.6.x",
-    "node-sass": "4.10.x",
+    "node-sass": "4.12.x",
     "postcss": "7.0.x",
     "postcss-flexbugs-fixes": "4.1.x",
     "postcss-loader": "3.0.x",
@@ -62,7 +62,7 @@
     "react-hot-loader": "^4.3.12",
     "sass-loader": "7.1.x",
     "serve": "10.1.x",
-    "sharp": "0.22.x",
+    "sharp": "0.22.1",
     "style-loader": "0.23.x",
     "ts-loader": "5.3.x",
     "typescript": "3.1.x"
