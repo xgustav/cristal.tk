@@ -1,4 +1,4 @@
-import button from 'src/components/Button/config';
+import button from 'src/components/Button/config'
 
 export default {
   name: 'actionBar',
@@ -11,18 +11,18 @@ export default {
       label: 'Enabled?',
       widget: 'boolean',
       default: false,
-      hint: 'Default: false',
+      hint: 'Default: false'
     },
     {
       name: 'text',
       label: 'Text',
-      widget: 'string',
+      widget: 'string'
     },
     {
       name: 'buttons',
       label: 'Buttons',
       widget: 'list',
-      fields: button.fields,
-    },
-  ],
-};
+      fields: button.fields
+    }
+  ]
+}

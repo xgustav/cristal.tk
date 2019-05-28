@@ -1,4 +1,4 @@
-import container from 'src/components/Container/config';
+import container from 'src/components/Container/config'
 
 export default {
   label: 'Businesses',
@@ -12,29 +12,29 @@ export default {
         {
           label: 'Image',
           name: 'image',
-          widget: 'image',
+          widget: 'image'
         },
         {
           label: 'Quote',
           name: 'quote',
-          widget: 'text',
+          widget: 'text'
         },
         {
           label: 'Company',
           name: 'company',
-          widget: 'string',
+          widget: 'string'
         },
         {
           label: 'Author',
           name: 'author',
-          widget: 'string',
+          widget: 'string'
         },
         {
           label: 'Role',
           name: 'role',
-          widget: 'string',
-        },
-      ],
-    },
-  ],
-};
+          widget: 'string'
+        }
+      ]
+    }
+  ]
+}

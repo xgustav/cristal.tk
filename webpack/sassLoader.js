@@ -1,4 +1,4 @@
-import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import ExtractTextPlugin from 'extract-text-webpack-plugin'
 
 export default stage => {
   let loaders = [
@@ -7,32 +7,32 @@ export default stage => {
       options: {
         importLoaders: 1,
         minimize: stage === 'prod',
-        sourceMap: false,
-      },
+        sourceMap: false
+      }
     },
     {
       loader: require.resolve('sass-loader'),
-      options: { includePaths: ['src/'] },
-    },
-  ];
+      options: { includePaths: ['src/'] }
+    }
+  ]
 
   if (stage === 'dev') {
-    loaders.unshift({ loader: require.resolve('style-loader') });
+    loaders.unshift({ loader: require.resolve('style-loader') })
   } else if (stage === 'prod') {
     loaders = ExtractTextPlugin.extract({
       fallback: {
         loader: require.resolve('style-loader'),
         options: {
           sourceMap: false,
-          hmr: false,
-        },
+          hmr: false
+        }
       },
-      use: loaders,
-    });
+      use: loaders
+    })
   }
 
   return {
     test: /\.s(a|c)ss$/,
-    use: loaders,
-  };
-};
+    use: loaders
+  }
+}

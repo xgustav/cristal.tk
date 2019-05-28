@@ -8,39 +8,39 @@ export default {
     {
       label: 'Favicon',
       name: 'favicon',
-      widget: 'image',
+      widget: 'image'
     },
     {
       name: 'title',
       label: 'Site Name',
-      widget: 'string',
+      widget: 'string'
     },
     {
       label: 'description',
       name: 'description',
-      widget: 'string',
+      widget: 'string'
     },
     {
       label: 'URL',
       name: 'url',
-      widget: 'string',
+      widget: 'string'
     },
     {
       label: 'Image',
       name: 'image',
-      widget: 'image',
+      widget: 'image'
     },
     {
       label: 'Robots',
       name: 'robots',
       widget: 'string',
-      default: 'index, follow',
+      default: 'index, follow'
     },
     {
       label: 'Canonical',
       name: 'canonical',
       widget: 'string',
-      required: false,
+      required: false
     },
     {
       label: 'Twitter',
@@ -51,24 +51,24 @@ export default {
         {
           label: 'Title',
           name: 'title',
-          widget: 'string',
+          widget: 'string'
         },
         {
           label: 'Description',
           name: 'description',
-          widget: 'string',
+          widget: 'string'
         },
         {
           label: 'Image',
           name: 'image',
-          widget: 'image',
+          widget: 'image'
         },
         {
           label: 'Username',
           name: 'username',
-          widget: 'string',
-        },
-      ],
-    },
-  ],
-};
+          widget: 'string'
+        }
+      ]
+    }
+  ]
+}

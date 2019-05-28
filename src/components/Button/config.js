@@ -1,4 +1,4 @@
-import { colors } from 'src/utils';
+import { colors } from 'src/utils'
 
 export default {
   name: 'button',
@@ -8,17 +8,17 @@ export default {
     {
       name: 'outlined',
       label: 'Outlined?',
-      widget: 'boolean',
+      widget: 'boolean'
     },
     {
       name: 'title',
       label: 'Title',
-      widget: 'string',
+      widget: 'string'
     },
     {
       name: 'href',
       label: 'Link',
-      widget: 'string',
+      widget: 'string'
     },
     {
       label: 'Color',
@@ -26,7 +26,7 @@ export default {
       widget: 'select',
       options: colors,
       default: 'purple',
-      hint: 'Default: purple',
-    },
-  ],
-};
+      hint: 'Default: purple'
+    }
+  ]
+}

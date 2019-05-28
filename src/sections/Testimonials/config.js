@@ -1,5 +1,5 @@
-import actionBar from 'src/components/ActionBar/config';
-import container from 'src/components/Container/config';
+import actionBar from 'src/components/ActionBar/config'
+import container from 'src/components/Container/config'
 
 export default {
   name: 'testimonials',
@@ -17,30 +17,30 @@ export default {
         {
           name: 'image',
           label: 'image',
-          widget: 'image',
+          widget: 'image'
         },
         {
           name: 'quote',
           label: 'quote',
-          widget: 'string',
+          widget: 'string'
         },
         {
           name: 'author',
           label: 'author',
-          widget: 'string',
+          widget: 'string'
         },
         {
           name: 'company',
           label: 'company',
-          widget: 'string',
+          widget: 'string'
         },
         {
           name: 'role',
           label: 'role',
-          widget: 'string',
-        },
-      ],
+          widget: 'string'
+        }
+      ]
     },
-    actionBar,
-  ],
-};
+    actionBar
+  ]
+}

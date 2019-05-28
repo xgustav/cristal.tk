@@ -6,12 +6,12 @@ export default {
     {
       label: 'perPage',
       name: 'perPage',
-      widget: 'number',
+      widget: 'number'
     },
     {
       label: 'enabled',
       name: 'enabled',
-      widget: 'boolean',
-    },
-  ],
-};
+      widget: 'boolean'
+    }
+  ]
+}

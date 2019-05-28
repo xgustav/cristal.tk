@@ -1,11 +1,11 @@
-import metaTags from 'src/components/MetaTags/config';
+import metaTags from 'src/components/MetaTags/config'
 
-import actionBar from 'src/components/ActionBar/config';
-import hero from 'src/components/Hero/config';
+import actionBar from 'src/components/ActionBar/config'
+import hero from 'src/components/Hero/config'
 
-import businesses from 'src/sections/Businesses/config';
-import collage from 'src/sections/Collage/config';
-import press from 'src/sections/PressSection/config';
+import businesses from 'src/sections/Businesses/config'
+import collage from 'src/sections/Collage/config'
+import press from 'src/sections/PressSection/config'
 
 export default {
   label: 'About',
@@ -15,7 +15,7 @@ export default {
     {
       label: 'path',
       name: 'path',
-      widget: 'string',
+      widget: 'string'
     },
     hero,
     {
@@ -26,24 +26,24 @@ export default {
         {
           label: 'Image',
           name: 'image',
-          widget: 'image',
+          widget: 'image'
         },
         {
           label: 'Name',
           name: 'name',
-          widget: 'string',
+          widget: 'string'
         },
         {
           label: 'Role',
           name: 'role',
-          widget: 'string',
-        },
-      ],
+          widget: 'string'
+        }
+      ]
     },
     businesses,
     press,
     collage,
     actionBar,
-    metaTags,
-  ],
-};
+    metaTags
+  ]
+}

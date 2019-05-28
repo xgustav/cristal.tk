@@ -6,17 +6,17 @@ export default {
     {
       name: 'quote',
       label: 'Quote',
-      widget: 'string',
+      widget: 'string'
     },
     {
       name: 'author',
       label: 'Author',
-      widget: 'string',
+      widget: 'string'
     },
     {
       name: 'role',
       label: 'Role',
-      widget: 'string',
-    },
-  ],
-};
+      widget: 'string'
+    }
+  ]
+}

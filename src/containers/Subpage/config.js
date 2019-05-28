@@ -1,9 +1,9 @@
-import info from 'src/components/Info/config';
-import metaTags from 'src/components/MetaTags/config';
-import actionBar from 'src/components/ActionBar/config';
-import quote from 'src/components/Quote/config';
+import info from 'src/components/Info/config'
+import metaTags from 'src/components/MetaTags/config'
+import actionBar from 'src/components/ActionBar/config'
+import quote from 'src/components/Quote/config'
 
-import { addFields, colors } from 'src/utils';
+import { addFields, colors } from 'src/utils'
 
 export const SubpageConfig = {
   label: 'Subpages',
@@ -19,28 +19,28 @@ export const SubpageConfig = {
     {
       label: 'URL path',
       name: 'path',
-      widget: 'string',
+      widget: 'string'
     },
     {
       label: 'Tags',
       name: 'tags',
       widget: 'list',
       required: false,
-      field: { label: 'tag', name: 'tag', widget: 'string', required: false },
+      field: { label: 'tag', name: 'tag', widget: 'string', required: false }
     },
     {
       label: 'Related Tags',
       name: 'relatedTags',
       widget: 'list',
       required: false,
-      field: { label: 'tag', name: 'tag', widget: 'string', required: false },
+      field: { label: 'tag', name: 'tag', widget: 'string', required: false }
     },
     {
       label: 'Publish Date',
       name: 'publishedDate',
       widget: 'date',
       dateFormat: 'MMM DD, YYYY',
-      required: false,
+      required: false
     },
     {
       label: 'Author',
@@ -49,32 +49,32 @@ export const SubpageConfig = {
       collection: 'authors',
       searchFields: ['name'],
       valueField: 'name',
-      required: false,
+      required: false
     },
     {
       label: 'Title',
       name: 'title',
       widget: 'string',
-      required: false,
+      required: false
     },
     {
       label: 'SubTitle',
       name: 'subtitle',
       widget: 'string',
-      required: false,
+      required: false
     },
     {
       label: 'Short Description',
       hint: 'A short description of this page that will only be displayed on list item cards and "Related Articles"',
       name: 'listSubtitle',
       widget: 'string',
-      required: false,
+      required: false
     },
     {
       label: 'Image',
       name: 'image',
       widget: 'file',
-      required: false,
+      required: false
     },
     {
       label: 'Color',
@@ -82,7 +82,7 @@ export const SubpageConfig = {
       widget: 'select',
       options: colors,
       default: 'black',
-      required: false,
+      required: false
     },
     {
       name: 'tabs',
@@ -92,32 +92,32 @@ export const SubpageConfig = {
         {
           name: 'title',
           widget: 'string',
-          required: false,
+          required: false
         },
         {
           name: 'href',
           widget: 'string',
-          required: false,
-        },
-      ],
+          required: false
+        }
+      ]
     },
     {
       label: 'Include table of contents? (default: true)',
       name: 'includeToc',
       widget: 'boolean',
       required: false,
-      default: true,
+      default: true
     },
     {
       label: 'Content',
       name: 'body',
       widget: 'markdown',
-      required: false,
+      required: false
     },
     actionBar,
-    metaTags,
-  ],
-};
+    metaTags
+  ]
+}
 
 export const CaseStudyConfig = {
   ...SubpageConfig,
@@ -130,8 +130,8 @@ export const CaseStudyConfig = {
       label: 'Sidebar',
       name: 'sidebar',
       widget: 'object',
-      fields: [info, quote],
-    },
+      fields: [info, quote]
+    }
   ]).map(field => {
     // Don't allow ToC for case studies page
     if (field && field.name === 'includeToc') {
@@ -140,13 +140,13 @@ export const CaseStudyConfig = {
         name: 'includeToc',
         widget: 'hidden',
         required: false,
-        default: false,
-      };
+        default: false
+      }
     }
 
-    return field;
-  }),
-};
+    return field
+  })
+}
 
 export const BlogPostConfig = {
   ...SubpageConfig,
@@ -164,9 +164,9 @@ export const BlogPostConfig = {
           label: 'Enabled?',
           name: 'enabled',
           widget: 'boolean',
-          required: false,
-        },
-      ],
-    },
-  ]),
-};
+          required: false
+        }
+      ]
+    }
+  ])
+}

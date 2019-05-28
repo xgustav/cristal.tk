@@ -7,12 +7,12 @@ export default {
     {
       name: 'title',
       widget: 'string',
-      required: false,
+      required: false
     },
     {
       name: 'description',
       widget: 'text',
-      required: false,
-    },
-  ],
-};
+      required: false
+    }
+  ]
+}

@@ -1,8 +1,8 @@
-import path from 'path';
-import tailwindcss from 'tailwindcss';
-import autoprefixer from 'autoprefixer';
-import postcssFlexbugsFixes from 'postcss-flexbugs-fixes';
-import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import path from 'path'
+import tailwindcss from 'tailwindcss'
+import autoprefixer from 'autoprefixer'
+import postcssFlexbugsFixes from 'postcss-flexbugs-fixes'
+import ExtractTextPlugin from 'extract-text-webpack-plugin'
 
 export default stage => {
   let loaders = [
@@ -11,8 +11,8 @@ export default stage => {
       options: {
         minimize: stage !== 'dev',
         sourceMap: stage === 'dev',
-        importLoaders: 1,
-      },
+        importLoaders: 1
+      }
     },
     {
       loader: require.resolve('postcss-loader'),
@@ -28,33 +28,33 @@ export default stage => {
               '>1%',
               'last 4 versions',
               'Firefox ESR',
-              'not ie < 9', // React doesn't support IE8 anyway
+              'not ie < 9' // React doesn't support IE8 anyway
             ],
-            flexbox: 'no-2009',
+            flexbox: 'no-2009'
           }),
-          tailwindcss(path.resolve(__dirname, '../tailwind.config.js')),
-        ],
-      },
-    },
-  ];
+          tailwindcss(path.resolve(__dirname, '../tailwind.config.js'))
+        ]
+      }
+    }
+  ]
 
   if (stage === 'dev') {
-    loaders = [require.resolve('style-loader')].concat(loaders);
+    loaders = [require.resolve('style-loader')].concat(loaders)
   } else if (stage === 'prod') {
     loaders = ExtractTextPlugin.extract({
       fallback: {
         loader: require.resolve('style-loader'),
         options: {
           sourceMap: false,
-          hmr: false,
-        },
+          hmr: false
+        }
       },
-      use: loaders,
-    });
+      use: loaders
+    })
   }
 
   return {
     test: /\.css$/,
-    use: loaders,
-  };
-};
+    use: loaders
+  }
+}

@@ -1,4 +1,4 @@
-import container from 'src/components/Container/config';
+import container from 'src/components/Container/config'
 
 export default {
   label: 'Press Section',
@@ -14,29 +14,29 @@ export default {
         {
           label: 'Image',
           name: 'image',
-          widget: 'image',
+          widget: 'image'
         },
         {
           label: 'Month, Year',
           name: 'date',
-          widget: 'string',
+          widget: 'string'
         },
         {
           label: 'Description',
           name: 'description',
-          widget: 'text',
+          widget: 'text'
         },
         {
           label: 'Publication',
           name: 'publication',
-          widget: 'string',
+          widget: 'string'
         },
         {
           label: 'Link',
           name: 'href',
-          widget: 'string',
-        },
-      ],
-    },
-  ],
-};
+          widget: 'string'
+        }
+      ]
+    }
+  ]
+}

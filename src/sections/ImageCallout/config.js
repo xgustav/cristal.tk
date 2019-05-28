@@ -1,4 +1,4 @@
-import cta from 'src/components/CallToAction/config';
+import cta from 'src/components/CallToAction/config'
 
 export default {
   name: 'imageCallout',
@@ -10,20 +10,20 @@ export default {
       name: 'title',
       label: 'Title',
       widget: 'string',
-      required: false,
+      required: false
     },
     {
       name: 'image',
       label: 'Image',
       widget: 'image',
-      required: false,
+      required: false
     },
     cta,
     {
       name: 'description',
       label: 'Description',
       widget: 'markdown',
-      required: false,
-    },
-  ],
-};
+      required: false
+    }
+  ]
+}

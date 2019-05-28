@@ -1,12 +1,12 @@
-import metaTags from 'src/components/MetaTags/config';
+import metaTags from 'src/components/MetaTags/config'
 
-import actionBar from 'src/components/ActionBar/config';
-import hubspot from 'src/components/HubSpotForm/config';
+import actionBar from 'src/components/ActionBar/config'
+import hubspot from 'src/components/HubSpotForm/config'
 
-import collage from 'src/sections/Collage/config';
-import testimonials from 'src/sections/Testimonials/config';
+import collage from 'src/sections/Collage/config'
+import testimonials from 'src/sections/Testimonials/config'
 
-import { colors } from 'src/utils';
+import { colors } from 'src/utils'
 
 export default {
   label: 'Forms',
@@ -21,23 +21,23 @@ export default {
     {
       name: 'path',
       label: 'URL Path',
-      widget: 'string',
+      widget: 'string'
     },
     {
       name: 'title',
       label: 'title',
-      widget: 'string',
+      widget: 'string'
     },
     {
       label: 'Title Image',
       name: 'titleImage',
       widget: 'image',
-      required: false,
+      required: false
     },
     {
       name: 'subtitle',
       label: 'subtitle',
-      widget: 'string',
+      widget: 'string'
     },
 
     {
@@ -45,7 +45,7 @@ export default {
       name: 'color',
       widget: 'select',
       options: colors,
-      default: 'black',
+      default: 'black'
     },
     hubspot,
     {
@@ -56,13 +56,13 @@ export default {
       fields: [
         {
           name: 'title',
-          widget: 'markdown',
+          widget: 'markdown'
         },
         {
           name: 'description',
-          widget: 'markdown',
-        },
-      ],
+          widget: 'markdown'
+        }
+      ]
     },
     collage,
     testimonials,
@@ -72,15 +72,15 @@ export default {
       name: 'tags',
       widget: 'list',
       required: false,
-      field: { label: 'tag', name: 'tag', widget: 'string', required: false },
+      field: { label: 'tag', name: 'tag', widget: 'string', required: false }
     },
     {
       label: 'Related Tags',
       name: 'relatedTags',
       widget: 'list',
       required: false,
-      field: { label: 'tag', name: 'tag', widget: 'string', required: false },
+      field: { label: 'tag', name: 'tag', widget: 'string', required: false }
     },
-    metaTags,
-  ],
-};
+    metaTags
+  ]
+}

@@ -1,11 +1,11 @@
-import tailWind from '../../tailwind.config';
+import tailWind from '../../tailwind.config'
 
 export const addFields = (array, index = 0, fields) => {
-  const clone = array.slice(0);
+  const clone = array.slice(0)
 
-  clone.splice(index, 0, ...fields);
+  clone.splice(index, 0, ...fields)
 
-  return clone;
-};
+  return clone
+}
 
-export const colors = Object.keys(tailWind.colors);
+export const colors = Object.keys(tailWind.colors)

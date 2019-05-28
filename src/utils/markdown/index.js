@@ -1,8 +1,8 @@
-import MarkdownIt from 'markdown-it';
-const MarkdownItAnchors = require('markdown-it-anchor');
-const MarkdownItToC = require('markdown-it-toc-done-right');
+import MarkdownIt from 'markdown-it'
 
-import Highlight from './highlight';
+import Highlight from './highlight'
+const MarkdownItAnchors = require('markdown-it-anchor')
+const MarkdownItToC = require('markdown-it-toc-done-right')
 
 const BaseMarkdown = new MarkdownIt({
   html: true,
@@ -12,22 +12,22 @@ const BaseMarkdown = new MarkdownIt({
   highlight: (str, lang) => {
     try {
       const grammar =
-        lang !== undefined ? Highlight.languages[lang] || Highlight.languages.markup : Highlight.languages.markup;
-      return Highlight.highlight(str, grammar, lang);
+        lang !== undefined ? Highlight.languages[lang] || Highlight.languages.markup : Highlight.languages.markup
+      return Highlight.highlight(str, grammar, lang)
     } catch (e) {
-      console.log('Error highlighting code:', str, lang, e);
-      return str;
+      console.log('Error highlighting code:', str, lang, e)
+      return str
     }
-  },
-}).use(require('markdown-it-video'));
+  }
+}).use(require('markdown-it-video'))
 
-function Renderer(src, { includeToc } = {}) {
+function Renderer (src, { includeToc } = {}) {
   if (typeof src !== 'string') {
-    return null;
+    return null
   }
 
   try {
-    let renderer = BaseMarkdown;
+    let renderer = BaseMarkdown
 
     if (includeToc) {
       renderer = renderer.use(MarkdownItToC).use(MarkdownItAnchors, {
@@ -35,33 +35,33 @@ function Renderer(src, { includeToc } = {}) {
         permalink: true,
         permalinkClass: 'anchor',
         permalinkSymbol: '🔗',
-        permalinkBefore: true,
-      });
+        permalinkBefore: true
+      })
     }
 
-    return BaseMarkdown.render(includeToc ? '${toc}\n' + src : src);
+    return BaseMarkdown.render(includeToc ? '${toc}\n' + src : src)
   } catch (e) {
-    console.log('Error rendering markdown:', e.message, src);
+    console.log('Error rendering markdown:', e.message, src)
   }
 
-  return null;
+  return null
 }
 
 export const convertMarkdownToHTML = (data, options) => {
   if (typeof data === 'string') {
-    return Renderer(data, options);
+    return Renderer(data, options)
   }
 
   for (const key in data) {
     if (data.hasOwnProperty(key)) {
       if (typeof data[key] === 'object') {
-        data[key] = convertMarkdownToHTML(data[key], options);
+        data[key] = convertMarkdownToHTML(data[key], options)
       } else if (['description', 'markdown'].includes(key)) {
         // Don't include ToC for description or markdown properties
-        data[key] = Renderer(data[key], { includeToc: false });
+        data[key] = Renderer(data[key], { includeToc: false })
       }
     }
   }
 
-  return data;
-};
+  return data
+}

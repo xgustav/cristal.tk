@@ -1,4 +1,4 @@
-import button from 'src/components/Button/config';
+import button from 'src/components/Button/config'
 
 export default {
   label: 'Pricing Plans',
@@ -8,17 +8,17 @@ export default {
     {
       name: 'title',
       label: 'Title',
-      widget: 'string',
+      widget: 'string'
     },
     {
       name: 'description',
       label: 'Description',
-      widget: 'markdown',
+      widget: 'markdown'
     },
     {
       name: 'price',
       label: 'Price',
-      widget: 'string',
+      widget: 'string'
     },
     {
       label: 'Features',
@@ -28,16 +28,16 @@ export default {
         {
           label: 'Title',
           name: 'title',
-          widget: 'string',
-        },
-      ],
+          widget: 'string'
+        }
+      ]
     },
     button,
     {
       label: 'Price Unit',
       name: 'unit',
       widget: 'string',
-      required: false,
-    },
-  ],
-};
+      required: false
+    }
+  ]
+}

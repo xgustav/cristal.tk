@@ -1,8 +1,8 @@
-import metaTags from 'src/components/MetaTags/config';
-import actionBar from 'src/components/ActionBar/config';
-import pagination from 'src/components/Pagination/config';
+import metaTags from 'src/components/MetaTags/config'
+import actionBar from 'src/components/ActionBar/config'
+import pagination from 'src/components/Pagination/config'
 
-import { addFields, colors } from 'src/utils';
+import { addFields, colors } from 'src/utils'
 
 export const ListsConfig = {
   label: 'Lists',
@@ -17,21 +17,21 @@ export const ListsConfig = {
     {
       label: 'URL Path',
       name: 'path',
-      widget: 'string',
+      widget: 'string'
     },
     {
       label: 'Tag',
       name: 'tag',
-      widget: 'string',
+      widget: 'string'
     },
     {
       name: 'title',
-      widget: 'string',
+      widget: 'string'
     },
     {
       name: 'subtitle',
       widget: 'string',
-      required: false,
+      required: false
     },
     {
       label: 'Color',
@@ -39,7 +39,7 @@ export const ListsConfig = {
       widget: 'select',
       options: colors,
       default: 'black',
-      required: false,
+      required: false
     },
     {
       name: 'tabs',
@@ -49,20 +49,20 @@ export const ListsConfig = {
         {
           name: 'title',
           widget: 'string',
-          required: false,
+          required: false
         },
         {
           name: 'href',
           widget: 'string',
-          required: false,
-        },
-      ],
+          required: false
+        }
+      ]
     },
     actionBar,
     metaTags,
-    pagination,
-  ],
-};
+    pagination
+  ]
+}
 
 export const AuthorConfig = {
   ...ListsConfig,
@@ -75,12 +75,12 @@ export const AuthorConfig = {
       label: 'Author Title',
       name: 'pageName',
       widget: 'string',
-      required: false,
+      required: false
     },
     {
       label: 'Image',
       name: 'image',
-      widget: 'file',
-    },
-  ]),
-};
+      widget: 'file'
+    }
+  ])
+}

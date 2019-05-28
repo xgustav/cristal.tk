@@ -1,13 +1,13 @@
-import SettingsConfig from 'src/components/Settings/config';
+import SettingsConfig from 'src/components/Settings/config'
 
-import AboutConfig from 'src/containers/About/config';
-import HomeConfig from 'src/containers/Home/config';
-import PricingConfig from 'src/containers/Pricing/config';
+import AboutConfig from 'src/containers/About/config'
+import HomeConfig from 'src/containers/Home/config'
+import PricingConfig from 'src/containers/Pricing/config'
 
-import FormConfig from 'src/containers/Form/config';
-import LandingConfig from 'src/containers/Landing/config';
-import { ListsConfig, AuthorConfig } from 'src/containers/Lists/config';
-import { SubpageConfig, BlogPostConfig, CaseStudyConfig } from 'src/containers/Subpage/config';
+import FormConfig from 'src/containers/Form/config'
+import LandingConfig from 'src/containers/Landing/config'
+import { ListsConfig, AuthorConfig } from 'src/containers/Lists/config'
+import { SubpageConfig, BlogPostConfig, CaseStudyConfig } from 'src/containers/Subpage/config'
 
 export const config = {
   backend: {
@@ -19,13 +19,13 @@ export const config = {
       update: 'Update {{collection}} “{{slug}}”',
       delete: 'Delete {{collection}} “{{slug}}”',
       uploadMedia: 'Upload “{{path}}”',
-      deleteMedia: 'Delete “{{path}}”',
-    },
+      deleteMedia: 'Delete “{{path}}”'
+    }
   },
   publish_mode: 'editorial_workflow',
   media_folder: 'public/images',
   public_folder: '/images',
-  display_url: 'https://stoplight.io',
+  display_url: 'https://cristal.tk',
   site_domain: 'cms.netlify.com',
   collections: [
     SettingsConfig,
@@ -34,7 +34,7 @@ export const config = {
       label_singular: 'Page',
       name: 'pages',
       delete: false,
-      files: [AboutConfig, HomeConfig, PricingConfig],
+      files: [AboutConfig, HomeConfig, PricingConfig]
     },
     FormConfig,
     LandingConfig,
@@ -42,6 +42,6 @@ export const config = {
     SubpageConfig,
     AuthorConfig,
     CaseStudyConfig,
-    BlogPostConfig,
-  ],
-};
+    BlogPostConfig
+  ]
+}

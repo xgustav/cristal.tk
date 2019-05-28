@@ -1,34 +1,34 @@
-import React from 'react';
-import Routes from 'react-static-routes';
-import { Router } from 'react-static';
+import React from 'react'
+import Routes from 'react-static-routes'
+import { Router } from 'react-static'
 
-import Analytics from 'src/components/Analytics';
-import Header from 'src/components/Header';
-import Footer from 'src/components/Footer';
+import Analytics from 'src/components/Analytics'
+import Header from 'src/components/Header'
+import Footer from 'src/components/Footer'
 
-import 'src/styles/app.css';
-import 'src/styles/app.scss';
+import 'src/styles/app.css'
+import 'src/styles/app.scss'
 
 const AppContent = () => {
-    return [
-        <Header key="1" />,
-        <div className="relative" key="2">
-            <Routes />
-        </div>,
-        <Footer key="3" />,
-    ];
-};
+  return [
+    <Header key='1' />,
+    <div className='relative' key='2'>
+      <Routes />
+    </div>,
+    <Footer key='3' />
+  ]
+}
 
 class App extends React.Component {
-  render() {
+  render () {
     return (
       <Router>
         <Analytics>
           <AppContent />
         </Analytics>
       </Router>
-    );
+    )
   }
 }
 
-export default App;
+export default App

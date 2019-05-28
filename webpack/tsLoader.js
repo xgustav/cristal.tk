@@ -6,8 +6,8 @@ export default stage => ({
       loader: 'ts-loader',
       options: {
         onlyCompileBundledFiles: true,
-        transpileOnly: true,
-      },
-    },
-  ],
-});
+        transpileOnly: true
+      }
+    }
+  ]
+})

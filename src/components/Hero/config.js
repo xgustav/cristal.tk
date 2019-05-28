@@ -1,4 +1,4 @@
-import cta from 'src/components/CallToAction/config';
+import cta from 'src/components/CallToAction/config'
 
 export default {
   name: 'hero',
@@ -9,20 +9,20 @@ export default {
       name: 'title',
       label: 'Title',
       widget: 'string',
-      default: 'title',
+      default: 'title'
     },
     {
       name: 'subtitle',
       label: 'Subtitle',
       widget: 'string',
-      default: 'subtitle',
+      default: 'subtitle'
     },
     {
       name: 'pageName',
       label: 'Page Name',
       widget: 'string',
       required: false,
-      hint: 'Small, muted text above the title.',
+      hint: 'Small, muted text above the title.'
     },
     {
       name: 'aligned',
@@ -31,7 +31,7 @@ export default {
       options: ['center', 'left', 'right'],
       default: 'center',
       required: false,
-      hint: 'Default: center',
+      hint: 'Default: center'
     },
     cta,
     {
@@ -39,7 +39,7 @@ export default {
       label: 'Background Color',
       widget: 'string',
       default: 'black',
-      hint: 'Default: black',
+      hint: 'Default: black'
     },
     {
       name: 'skew',
@@ -50,14 +50,14 @@ export default {
         { label: 'steeper slant left', value: '-7deg' },
         { label: 'slant right', value: '3deg' },
         { label: 'steeper slant right', value: '7deg' },
-        { label: 'rounded', value: 'rounded' },
+        { label: 'rounded', value: 'rounded' }
       ],
-      required: false,
+      required: false
     },
     {
       name: 'particles',
       label: 'Show particles?',
-      widget: 'boolean',
+      widget: 'boolean'
     },
     {
       name: 'buttons',
@@ -70,22 +70,22 @@ export default {
           label: 'Title',
           widget: 'string',
           default: 'title',
-          required: false,
+          required: false
         },
         {
           name: 'href',
           label: 'Link',
           widget: 'string',
-          required: false,
+          required: false
         },
         {
           name: 'icon',
           label: 'Icon',
           widget: 'string',
           required: false,
-          hint: 'Must be a fontawesome icon like check-circle',
-        },
-      ],
+          hint: 'Must be a fontawesome icon like check-circle'
+        }
+      ]
     },
     {
       name: 'cards',
@@ -97,23 +97,23 @@ export default {
           name: 'title',
           label: 'Title',
           widget: 'string',
-          default: 'Title',
+          default: 'Title'
         },
         {
           name: 'subtitle',
           label: 'Subtitle',
           widget: 'string',
-          default: 'subtitle',
+          default: 'subtitle'
         },
         {
           name: 'href',
           label: 'Link',
-          widget: 'string',
+          widget: 'string'
         },
         {
           name: 'bgColor',
           label: 'Background Color',
-          widget: 'string',
+          widget: 'string'
         },
         {
           name: 'icon',
@@ -124,16 +124,16 @@ export default {
             {
               name: 'style',
               label: 'Style',
-              widget: 'string',
+              widget: 'string'
             },
             {
               name: 'name',
               label: 'Name',
-              widget: 'string',
-            },
-          ],
-        },
-      ],
+              widget: 'string'
+            }
+          ]
+        }
+      ]
     },
     {
       name: 'image',
@@ -142,13 +142,13 @@ export default {
       fields: [
         {
           name: 'src',
-          widget: 'image',
+          widget: 'image'
         },
         {
           name: 'alt',
-          widget: 'string',
-        },
-      ],
-    },
-  ],
-};
+          widget: 'string'
+        }
+      ]
+    }
+  ]
+}

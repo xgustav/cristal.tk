@@ -12,7 +12,7 @@ export default {
         {
           name: 'title',
           label: 'Title',
-          widget: 'string',
+          widget: 'string'
         },
         {
           name: 'links',
@@ -23,24 +23,24 @@ export default {
             {
               name: 'title',
               label: 'Title',
-              widget: 'string',
+              widget: 'string'
             },
             {
               name: 'href',
               label: 'Link',
               widget: 'string',
-              required: false,
+              required: false
             },
             {
               name: 'onClick',
               label: 'Action',
               widget: 'select',
               required: false,
-              options: [{ label: 'Open Intercom', value: 'intercom' }],
-            },
-          ],
-        },
-      ],
+              options: [{ label: 'Open Intercom', value: 'intercom' }]
+            }
+          ]
+        }
+      ]
     },
     {
       name: 'legal',
@@ -51,14 +51,14 @@ export default {
         {
           name: 'title',
           label: 'Title',
-          widget: 'string',
+          widget: 'string'
         },
         {
           name: 'href',
           label: 'Link',
-          widget: 'string',
-        },
-      ],
+          widget: 'string'
+        }
+      ]
     },
     {
       name: 'social',
@@ -69,21 +69,21 @@ export default {
         {
           name: 'title',
           label: 'Title',
-          widget: 'string',
+          widget: 'string'
         },
         {
           name: 'icon',
           label: 'Icon',
           widget: 'fontawesome-brand',
-          type: 'array',
+          type: 'array'
         },
         {
           name: 'href',
           label: 'Link',
           widget: 'string',
-          required: false,
-        },
-      ],
-    },
-  ],
-};
+          required: false
+        }
+      ]
+    }
+  ]
+}

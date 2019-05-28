@@ -1,5 +1,5 @@
-import actionBar from 'src/components/ActionBar/config';
-import container from 'src/components/Container/config';
+import actionBar from 'src/components/ActionBar/config'
+import container from 'src/components/Container/config'
 
 export default {
   name: 'featureSection',
@@ -16,36 +16,36 @@ export default {
         {
           name: 'title',
           label: 'Title',
-          widget: 'string',
+          widget: 'string'
         },
         {
           name: 'shortName',
           label: 'Short name',
-          widget: 'string',
+          widget: 'string'
         },
         {
           name: 'titleURL',
           label: 'Title URL',
           widget: 'string',
-          required: false,
+          required: false
         },
         {
           name: 'image',
           label: 'Image',
-          widget: 'image',
+          widget: 'image'
         },
         {
           name: 'description',
           label: 'Description',
-          widget: 'markdown',
+          widget: 'markdown'
         },
         {
           name: 'href',
           label: 'Link',
-          widget: 'string',
-        },
-      ],
+          widget: 'string'
+        }
+      ]
     },
-    actionBar,
-  ],
-};
+    actionBar
+  ]
+}

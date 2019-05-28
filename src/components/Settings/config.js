@@ -1,7 +1,7 @@
-import header from 'src/components/Header/config';
-import actionBar from 'src/components/ActionBar/config';
-import footer from 'src/components/Footer/config';
-import metaTags from 'src/components/MetaTags/config';
+import header from 'src/components/Header/config'
+import actionBar from 'src/components/ActionBar/config'
+import footer from 'src/components/Footer/config'
+import metaTags from 'src/components/MetaTags/config'
 
 export default {
   label: 'Site Settings',
@@ -18,24 +18,25 @@ export default {
           label: 'Banners',
           name: 'banners',
           widget: 'list',
+          required: false,
           fields: [
             {
               hint: 'When should the banner start showing?',
               name: 'starts',
               widget: 'datetime',
-              format: 'x',
+              format: 'x'
             },
             {
               hint: 'When should the banner stop showing?',
               name: 'ends',
               widget: 'datetime',
-              format: 'x',
+              format: 'x'
             },
             {
               name: 'markdown',
-              widget: 'markdown',
-            },
-          ],
+              widget: 'markdown'
+            }
+          ]
         },
         {
           label: 'Stoplight Info',
@@ -45,7 +46,7 @@ export default {
             {
               name: 'email',
               label: 'email',
-              widget: 'string',
+              widget: 'string'
             },
             {
               name: 'address',
@@ -55,46 +56,46 @@ export default {
                 {
                   name: 'addressLocality',
                   label: 'city',
-                  widget: 'string',
+                  widget: 'string'
                 },
                 {
                   name: 'addressRegion',
                   label: 'state',
-                  widget: 'string',
+                  widget: 'string'
                 },
                 {
                   name: 'postalCode',
                   label: 'zip',
-                  widget: 'string',
+                  widget: 'string'
                 },
                 {
                   name: 'streetAddress',
                   label: 'street address',
-                  widget: 'string',
+                  widget: 'string'
                 },
                 {
                   name: 'email',
                   label: 'email',
-                  widget: 'string',
+                  widget: 'string'
                 },
                 {
                   name: 'alternateName',
                   label: 'Alternate Name',
-                  widget: 'string',
+                  widget: 'string'
                 },
                 {
                   name: 'name',
                   label: 'name',
-                  widget: 'string',
+                  widget: 'string'
                 },
                 {
                   name: 'description',
                   label: 'description',
-                  widget: 'string',
-                },
-              ],
-            },
-          ],
+                  widget: 'string'
+                }
+              ]
+            }
+          ]
         },
         header,
         actionBar,
@@ -109,23 +110,23 @@ export default {
               name: 'googleTagManager',
               label: 'Google Tag Manager',
               widget: 'string',
-              required: false,
+              required: false
             },
             {
               name: 'hubspot',
               label: 'HubSpot ID',
               widget: 'string',
-              required: false,
+              required: false
             },
             {
               name: 'intercom',
               label: 'Intercom App ID',
               widget: 'string',
-              required: false,
-            },
-          ],
-        },
-      ],
-    },
-  ],
-};
+              required: false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

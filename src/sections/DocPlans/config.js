@@ -6,22 +6,22 @@ export default {
     {
       label: 'Title',
       name: 'title',
-      widget: 'string',
+      widget: 'string'
     },
     {
       label: 'Description',
       name: 'description',
-      widget: 'markdown',
+      widget: 'markdown'
     },
     {
       label: 'Button Text',
       name: 'buttonText',
-      widget: 'text',
+      widget: 'text'
     },
     {
       label: 'Button URL',
       name: 'buttonUrl',
-      widget: 'text',
+      widget: 'text'
     },
     {
       label: 'Features',
@@ -31,7 +31,7 @@ export default {
         {
           label: 'Title',
           name: 'title',
-          widget: 'string',
+          widget: 'string'
         },
         {
           label: 'Plans',
@@ -41,11 +41,11 @@ export default {
             {
               label: 'Title',
               name: 'title',
-              widget: 'string',
-            },
-          ],
-        },
-      ],
+              widget: 'string'
+            }
+          ]
+        }
+      ]
     },
     {
       label: 'Plans',
@@ -55,19 +55,19 @@ export default {
         {
           label: 'Title',
           name: 'title',
-          widget: 'string',
+          widget: 'string'
         },
         {
           label: 'Price',
           name: 'price',
-          widget: 'string',
+          widget: 'string'
         },
         {
           label: '# of Domains',
           name: 'domains',
-          widget: 'string',
-        },
-      ],
-    },
-  ],
-};
+          widget: 'string'
+        }
+      ]
+    }
+  ]
+}

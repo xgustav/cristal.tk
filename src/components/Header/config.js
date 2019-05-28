@@ -1,4 +1,4 @@
-import { colors } from 'src/utils';
+import { colors } from 'src/utils'
 
 export default {
   name: 'header',
@@ -13,45 +13,45 @@ export default {
         {
           name: 'title',
           label: 'Title',
-          widget: 'string',
+          widget: 'string'
         },
         {
           name: 'width',
           label: 'Width',
           widget: 'number',
-          default: 400,
+          default: 400
         },
         {
           name: 'href',
           label: 'Link',
           widget: 'string',
-          required: false,
+          required: false
         },
         {
           name: 'isButton',
           label: 'Is it a button?',
           widget: 'boolean',
-          required: false,
+          required: false
         },
         {
           name: 'hideMobile',
           label: 'Hide this link in the mobile menu?',
           widget: 'boolean',
-          required: false,
+          required: false
         },
         {
           name: 'icon',
           label: 'Icon (button only)',
           widget: 'fontawesome-solid',
           type: 'array',
-          required: false,
+          required: false
         },
         {
           name: 'onClick',
           label: 'Action',
           widget: 'select',
           required: false,
-          options: [{ label: 'Open Intercom', value: 'intercom' }],
+          options: [{ label: 'Open Intercom', value: 'intercom' }]
         },
         {
           name: 'links',
@@ -62,48 +62,48 @@ export default {
             {
               name: 'title',
               label: 'Title',
-              widget: 'string',
+              widget: 'string'
             },
             {
               name: 'subtitle',
               label: 'Subtitle',
               widget: 'string',
-              required: false,
+              required: false
             },
             {
               name: 'href',
               label: 'Link',
               widget: 'string',
-              required: false,
+              required: false
             },
             {
               name: 'onClick',
               label: 'Action',
               widget: 'select',
               required: false,
-              options: [{ label: 'Open Intercom', value: 'intercom' }],
+              options: [{ label: 'Open Intercom', value: 'intercom' }]
             },
             {
               name: 'titleColor',
               label: 'Color',
               widget: 'string',
-              required: false,
+              required: false
             },
             {
               name: 'icon',
               label: 'Icon',
               widget: 'fontawesome-solid',
               type: 'array',
-              required: false,
-            },
-          ],
+              required: false
+            }
+          ]
         },
         {
           name: 'altTitle',
           label: 'Alternate Title',
           widget: 'string',
           hint: 'Title shown after scrolling the page. (Example: Sign In -> Sign Up FREE)',
-          required: false,
+          required: false
         },
         {
           name: 'altBg',
@@ -112,9 +112,9 @@ export default {
           widget: 'select',
           options: colors,
           default: 'green',
-          required: false,
-        },
-      ],
-    },
-  ],
-};
+          required: false
+        }
+      ]
+    }
+  ]
+}

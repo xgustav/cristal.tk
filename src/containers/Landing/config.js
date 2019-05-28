@@ -1,13 +1,13 @@
-import metaTags from 'src/components/MetaTags/config';
+import metaTags from 'src/components/MetaTags/config'
 
-import hero from 'src/components/Hero/config';
-import hubspot from 'src/components/HubSpotForm/config';
+import hero from 'src/components/Hero/config'
+import hubspot from 'src/components/HubSpotForm/config'
 
-import collage from 'src/sections/Collage/config';
-import imageCallout from 'src/sections/ImageCallout/config';
-import featureSection from 'src/sections/FeatureSection/config';
+import collage from 'src/sections/Collage/config'
+import imageCallout from 'src/sections/ImageCallout/config'
+import featureSection from 'src/sections/FeatureSection/config'
 
-import { colors } from 'src/utils';
+import { colors } from 'src/utils'
 
 export default {
   label: 'Landing Pages',
@@ -22,40 +22,40 @@ export default {
     {
       label: 'URL path',
       name: 'path',
-      widget: 'string',
+      widget: 'string'
     },
     {
       label: 'Title',
       name: 'title',
       widget: 'string',
-      hint: 'Only used for Admin reference',
+      hint: 'Only used for Admin reference'
     },
     {
       label: 'Color',
       name: 'color',
       widget: 'select',
       options: colors,
-      default: 'black',
+      default: 'black'
     },
     {
       label: 'Tags',
       name: 'tags',
       widget: 'list',
       required: false,
-      field: { label: 'tag', name: 'tag', widget: 'string', required: false },
+      field: { label: 'tag', name: 'tag', widget: 'string', required: false }
     },
     {
       label: 'Related Tags',
       name: 'relatedTags',
       widget: 'list',
       required: false,
-      field: { label: 'tag', name: 'tag', widget: 'string', required: false },
+      field: { label: 'tag', name: 'tag', widget: 'string', required: false }
     },
     hero,
     collage,
     imageCallout,
     featureSection,
     hubspot,
-    metaTags,
-  ],
-};
+    metaTags
+  ]
+}
