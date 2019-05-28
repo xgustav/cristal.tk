@@ -88,55 +88,54 @@ export class Header extends React.Component<IHeader, IHeaderState> {
     }
 
     return (
-      <React.Fragment>
-        <Head key="meta">
-          <title>{meta && meta.title}</title>
-        </Head>
+        <React.Fragment>
+            <Head key="meta">
+                <title>{meta && meta.title}</title>
+            </Head>
 
-        <div className="absolute pin">
-          {banner &&
-            banner.markdown && (
-              <div className="relative z-50 border-b-4 border-lighten-200 bg-darken-200 text-white Banner">
-                <div className="h-16 flex flex-no-wrap items-center px-4">
-                  <div className="flex-1 text-center" dangerouslySetInnerHTML={{ __html: banner.markdown }} />
-                  <div
-                    className="cursor-pointer flex hover:bg-lighten-100 items-center justify-center justify-end p-2 rounded text-lighten-300 hover:text-white"
-                    onClick={() => this.setState({ showBanner: false })}
-                  >
-                    <FontAwesomeIcon icon="times" />
-                  </div>
-                </div>
-              </div>
-            )}
+            <div className="absolute pin">
+                {banner &&
+                 banner.markdown && (
+                     <div className="relative z-50 border-b-4 border-lighten-200 bg-darken-200 text-white Banner">
+                         <div className="h-16 flex flex-no-wrap items-center px-4">
+                             <div className="flex-1 text-center" dangerouslySetInnerHTML={{ __html: banner.markdown }} />
+                             <div
+                                 className="cursor-pointer flex hover:bg-lighten-100 items-center justify-center justify-end p-2 rounded text-lighten-300 hover:text-white"
+                                 onClick={() => this.setState({ showBanner: false })}
+                             >
+                                 <FontAwesomeIcon icon="times" />
+                             </div>
+                         </div>
+                     </div>
+                 )}
 
-          <header
-            key="header"
-            className={cn('z-50 sticky pin-t pin-l pin-r', {
-              [`shadow-sm bg-${color || 'black'}`]: unpinned,
-            })}
-          >
-            <div className="container relative">
-              <nav className={cn(headerHeightClass, 'flex items-center')}>
-                <Link to="/" className="text-white hover:opacity-75 hover:text-white text-2xl font-bold">
-                  Stoplight
-                </Link>
+                <header
+                    key="header"
+                    className={cn('z-50 sticky pin-t pin-l pin-r', {
+                        [`shadow-sm bg-${color || 'black'}`]: unpinned,
+                    })}
+                >
+                    <div className="container relative">
+                        <Headroom
+                            downTolerance={0}
+                            pinStart={40}
+                            disableInlineStyles={true}
+                            onUnpin={this.onUnpin}
+                            onUnfix={this.onUnfix}>
+                            <nav className={cn(headerHeightClass, 'flex items-center')}>
+                                <Link to="/" className="text-white hover:opacity-75 hover:text-white text-2xl font-bold">
+                                    Stoplight
+                                </Link>
 
-                <Desktop items={headerItems} unpinned={unpinned} />
+                                <Desktop items={headerItems} unpinned={unpinned} />
 
-                <Mobile items={headerItems} />
-              </nav>
+                                <Mobile items={headerItems} />
+                            </nav>
+                        </Headroom>
+                    </div>
+                </header>
             </div>
-
-            <Headroom
-              downTolerance={0}
-              pinStart={40}
-              disableInlineStyles={true}
-              onUnpin={this.onUnpin}
-              onUnfix={this.onUnfix}
-            />
-          </header>
-        </div>
-      </React.Fragment>
+        </React.Fragment>
     );
   }
 }
