@@ -35,9 +35,9 @@ hero:
   particles: true
   skew: rounded
   subtitle: >-
-    Em minutos você cria uma moeda social, configura um banco communitário e
-    comença a fortalecer uma nova economia no local onde você mora.
-  title: Desenvolva a **Economia Local** de **Sua Comunidade**
+    Em minutos você cria uma **moeda social**, configura um **banco
+    communitário** e comença a fortalecer uma **nova economia** no local onde você mora.
+  title: Desenvolva a Economia Local de Sua Comunidade
 collage:
   cta:
     color: green
