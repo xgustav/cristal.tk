@@ -24,7 +24,7 @@
     "@fortawesome/free-regular-svg-icons": "5.5.x",
     "@fortawesome/free-solid-svg-icons": "5.5.x",
     "@fortawesome/react-fontawesome": "0.1.x",
-    "classnames": "2.2.x",
+    "clsx": "^1.0.4",
     "disqus-react": "^1.0.5",
     "lodash.get": "^4.4.2",
     "netlify-cms": "2.3.x",

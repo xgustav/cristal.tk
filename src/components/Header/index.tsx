@@ -1,4 +1,4 @@
-import cn from 'classnames';
+import cn from 'clsx';
 import * as React from 'react';
 import Headroom from 'react-headroom';
 import { Head, withRouteData, withSiteData } from 'react-static';

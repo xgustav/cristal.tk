@@ -1,4 +1,4 @@
-import cn from 'classnames';
+import cn from 'clsx';
 import { DiscussionEmbed } from 'disqus-react';
 import * as React from 'react';
 import { withRouteData } from 'react-static';
