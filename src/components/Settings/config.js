@@ -49,6 +49,11 @@ export default {
               widget: 'string'
             },
             {
+              name: 'hirelog',
+              label: 'hire log',
+              widget: 'string'
+            },
+            {
               name: 'address',
               label: 'address',
               widget: 'object',

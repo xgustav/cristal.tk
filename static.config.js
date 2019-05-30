@@ -568,7 +568,7 @@ export default {
             type='text/javascript'
             dangerouslySetInnerHTML={{
               __html: `
-            console.log("Interested in working for Stoplight? Check out our jobs listing: https://angel.co/stoplight/jobs");
+            console.log("${info.hirelog}");
             window.__SL = ${JSON.stringify(__SL)};
             `
             }}
