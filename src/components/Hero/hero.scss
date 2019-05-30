@@ -95,14 +95,14 @@
     {
 
     }
-    .home_title, .home_title p
+    .home_title, .home_title > p
     {
         font-size: 60px;
         font-weight: 600;
         color: #FFFFFF;
         line-height: 1.2;
     }
-    .home_text, .home_text p
+    .home_text, .home_text > p
     {
         max-width: 750px;
         font-size: 14px;
@@ -113,7 +113,7 @@
         margin-top: 9px;
     }
 
-    .home_text2, .home_text2 p
+    .home_text2, .home_text2 > p
     {
         max-width: 750px;
         font-size: 20px;
