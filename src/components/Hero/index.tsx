@@ -33,16 +33,6 @@ export const Hero: React.FunctionComponent<IHero> = ({
     author,
     bgColor = 'black',
 }) => {
-    // Filter out any empty button objects
-    const heroButtons = buttons.filter(button => {
-        return button.href || button.title || button.icon;
-    });
-
-    // Filter out any empty button objects
-    const heroTabs = tabs.filter(tab => {
-        return tab.href;
-    });
-
     return (
         <React.Fragment>
             <div className={cn("home")}>
