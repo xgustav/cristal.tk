@@ -33,7 +33,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
 }) => {
     return (
         <React.Fragment>
-            <div className={cn("home")}>
+            <div className={cn("home", styles)}>
 	        <div className={cn("home_background")}></div>
 	        <div className={cn("background_image", "background_city")} style={{backgroundImage: "url(images/city.png)"}}></div>
 	        <div className={cn("cloud cloud_1")}><Image src={Clouds.cloud} alt=""/></div>
