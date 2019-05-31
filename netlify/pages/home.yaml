@@ -75,8 +75,9 @@ collage:
     Cristal Network é uma iniciativa comunitária, apoiada por
     diversas pessoas e ogranizaçôes, entre elas:
 imageCallout:
+  title: Nossa Rede e sua rede
   cta:
-    href: 'https://next.stoplight.io/'
+    href: 'https://next.cristal.tk/'
     name: Quem somos ?
   description: >-
     Cristal Network é uma plataforma online, criada para empoderar bancos
@@ -88,59 +89,4 @@ imageCallout:
     espalhadas pelo mundo. Por meio de tecnologia buscamos fortalecer e
     conectar este movimento, ajudando comunidades a cuidarem de sua própria
     economia local.
-
   image: /images/home-hero.png
-  title: The Complete OpenAPI Specification Toolkit
-testimonials:
-  actionBar:
-    buttons:
-      - color: purple
-        href: /demo
-        outlined: true
-        title: Request a Demo
-      - color: purple
-        href: 'https://next.stoplight.io'
-        title: Create a Free Account
-    enabled: true
-    text: Getting started is easy. Be up and running in minutes.
-  testimonials:
-    - author: Kin Lane
-      image: /images/testimonials/kin_lane.jpeg
-      quote: >-
-        I feel like Stoplight has the potential to shift the landscape pretty
-        significantly, something I haven't seen any API service provider do in a
-        while.
-      role: API Evangelist
-    - author: 'Carlos Lozano '
-      image: /images/carlos_testimonial.jpeg
-      quote: >-
-        When it comes to specification markup and documentation, the order of
-        magnitude has gone from days to hours.
-      role: 'Senior Enterprise Architect, GFT Group'
-    - author: John Vajda
-      image: /images/testimonials/john_vajda.jpeg
-      quote: >-
-        Stoplight has been a serious game changer for JumpCloud’s API
-        development! We love all the rich design, documentation and testing
-        features, which has enabled us to design awesome APIs for our customers.
-      role: 'Product Manager, JumpCloud'
-    - author: Gil Barbara
-      image: /images/testimonials/gil.jpeg
-      quote: >-
-        Stoplight provides a centralized, testable and reliable source for our
-        APIs.
-      role: 'Frontend Engineer, AMARO'
-meta:
-  description: >-
-    Using Stoplight you can create OpenAPI Specifications, documentation, mock
-    servers much faster than other API tools with no specialized knowledge
-    required in one centralized platform
-  favicon: /images/mark_light_bg.png
-  title: The Complete API Toolkit for Teams and Enterprise | Stoplight
-  twitter:
-    description: >-
-      Using Stoplight you can create OpenAPI Specifications, documentation, mock
-      servers much faster than other API tools with no specialized knowledge
-      required in one centralized platform
-    image: /images/mark_light_bg.png
-    title: The Complete API Toolkit for Teams and Enterprise | Stoplight

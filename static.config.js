@@ -18,7 +18,7 @@ const DEFAULT_PAGINATION_PAGE_SIZE = 10
 
 let SITE_ROOT = ''
 if (IS_PRODUCTION) {
-  SITE_ROOT = 'https://stoplight.io'
+  SITE_ROOT = 'https://cristal.tk'
 }
 
 chokidar.watch(NETLIFY_PATH).on('all', () => reloadRoutes())
@@ -257,38 +257,49 @@ export default {
   getSiteData: () => getFile(`${NETLIFY_PATH}/settings.yaml`),
 
   getRoutes: async () => {
-    let [
-      home,
-      pricing,
-      about,
-      forms = [],
+      let [
+          home,
+          pricing,
+          about,
+          meta,
 
-      lists = [],
-      authors = [],
+          forms = [],
 
-      landings = [],
-      caseStudies = [],
-      blogPosts = [],
-      other = []
-    ] = await Promise.all([
-      getFile(`${NETLIFY_PATH}/pages/home.yaml`),
-      getFile(`${NETLIFY_PATH}/pages/pricing.yaml`),
-      getFile(`${NETLIFY_PATH}/pages/about.yaml`),
-      getFiles(`${NETLIFY_PATH}/forms`),
+          lists = [],
+          authors = [],
 
-      getFiles(`${NETLIFY_PATH}/lists`),
-      getFiles(`${NETLIFY_PATH}/authors`),
+          landings = [],
+          caseStudies = [],
+          blogPosts = [],
+          other = []
+      ] = await Promise.all([
+          getFile(`${NETLIFY_PATH}/pages/home.yaml`),
+          getFile(`${NETLIFY_PATH}/pages/pricing.yaml`),
+          getFile(`${NETLIFY_PATH}/pages/about.yaml`),
+          getFile(`${NETLIFY_PATH}/pages/meta.yaml`),
+          getFiles(`${NETLIFY_PATH}/forms`),
 
-      getFiles(`${NETLIFY_PATH}/landings`),
-      getFiles(`${NETLIFY_PATH}/case-studies`, ['.md']),
-      getFiles(`${NETLIFY_PATH}/blog-posts`, ['.md'], { includeToc: true }),
-      getFiles(`${NETLIFY_PATH}/subpages`, ['.md'], { includeToc: true })
+          getFiles(`${NETLIFY_PATH}/lists`),
+          getFiles(`${NETLIFY_PATH}/authors`),
+
+          getFiles(`${NETLIFY_PATH}/landings`),
+          getFiles(`${NETLIFY_PATH}/case-studies`, ['.md']),
+          getFiles(`${NETLIFY_PATH}/blog-posts`, ['.md'], { includeToc: true }),
+          getFiles(`${NETLIFY_PATH}/subpages`, ['.md'], { includeToc: true })
     ])
 
       home = {
           ...home,
-          authors
+          authors,
+          meta
       }
+
+      about = {
+          ...about,
+          team: authors,
+          meta
+      }
+
     const routes = [
       {
         path: '/',
@@ -378,7 +389,7 @@ export default {
               author: { '@type': 'Person', name: props.author ? props.author.name : null },
               publisher: {
                 '@type': 'Organization',
-                name: 'Stoplight',
+                name: 'Cristal Network',
                 logo: {
                   '@type': 'ImageObject',
                   url:

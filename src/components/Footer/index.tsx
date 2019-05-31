@@ -71,7 +71,7 @@ export const Footer: React.FunctionComponent<{ footer: IFooter }> = ({ footer })
 
         <div className="flex flex-wrap justify-between py-8 w-3/5 sm:w-full">
           <Link className="block text-grey pr-4" to="/">
-            &copy; {new Date().getFullYear()} Stoplight
+            &copy; {new Date().getFullYear()} Cristal Network
           </Link>
 
           {legal && (

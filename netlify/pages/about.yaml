@@ -2,165 +2,37 @@ path: /about
 hero:
   particles: true
   subtitle: >-
-    Headquartered in Austin, Texas, our team hails from all over the United
-    States and Europe, united by their passion for APIs. From skeeball champions
-    to rock climbers, tough mudders to restaurateurs, each and every member
-    brings their own unique perspectives and experiences to the table. Thinking
-    out of the box is our purpose, the weirder the better, and challenging the
-    status quo is our culture
-  title: About Us
-team:
-  - image: /images/bachi-collin-1-.jpg
-    name: Collin Bachi
-    role: Devops Engineer
-  - image: /images/barnett_headshot.png
-    name: Taylor Barnett
-    role: Community Engineer
-  - image: /images/cassera_headshot.png
-    name: Nicholas Cassera
-    role: Software Engineer
-  - image: /images/chianese_headshot.png
-    name: Vincenzo Chianese
-    role: Software Engineer
-  - image: /images/faust_headshot.png
-    name: Scott Faust
-    role: Growth & Ops
-  - image: /images/hilton_headshot.png
-    name: William Hilton
-    role: Software Engineer
-  - image: /images/chelsea-hohmann-headshot.jpg
-    name: Chelsea Hohmann
-    role: Software Engineer
-  - image: /images/jakub-jankowski-headshot.jpg
-    name: Jakub Jankowski
-    role: Software Engineer
-  - image: /images/lott_headshot.png
-    name: Chris Lott
-    role: Software Engineer
-  - image: /images/carol-maciaszek-headshot.png
-    name: Karol Maciaszek
-    role: Software Engineer
-  - image: /images/macleod_headshot.png
-    name: Marc MacLeod
-    role: Founder & CEO
-  - image: /images/mcdonald_headshot.png
-    name: Ross Mcdonald
-    role: Sales Engineer
-  - image: /images/chris-miaskowski-headshot.jpg
-    name: Chris Miaskowski
-    role: Software Engineer
-  - image: /images/team/vazha-omanashvili.png
-    name: Vazha Omanashvili
-    role: Software Engineer
-  - image: /images/pytleski_headshot.png
-    name: Thomas Pytleski
-    role: Software Engineer
-  - image: /images/tonia-roberts-headshot.jpg
-    name: Tonia Roberts
-    role: Enterprise Account Executive
-  - image: /images/rock_headshot.png
-    name: Brian Rock
-    role: Director of Engineering
-  - image: /images/jakub-rozek-headshot.jpg
-    name: Jakub Rozek
-    role: Software Engineer
-  - image: /images/phil-sturgeon-headshot2.png
-    name: Phil Sturgeon
-    role: Software Architect
-  - image: /images/kristen-surratt-headshot.jpg
-    name: Kristen Surratt
-    role: Customer Advocate
-  - image: /images/tharp_headshot.png
-    name: Duane Tharp
-    role: Sales & Partnerships
-  - image: /images/wallach_headshot.png
-    name: Robert Wallach
-    role: Content & Support
-  - image: /images/mateusz_wit_headshot.png
-    name: Mateusz Wit
-    role: Software Engineer
+    Con un equipo distribuido y multidiciplanario Cristal Network logra
+    crear soluciones de alta tecnologia que pegan perfectamente a las
+    necesidades de las comunidades en las cuales sus miembros vienen creando
+    micro-revoluciones hace varios años.
+  title: Acerca de Nosotros
 businesses:
   quotes:
-    - author: Evin Callahan
-      company: Hudya
+    - author: The Nice guy
+      company: The EVil Company
       image:
-        alt: Hudya
-        src: /images/hudya_logo.png
+        alt: EvilCorp
+        src: /images/evil_logo.png
       quote: >-
         Having all the tools to model, test, and document our API in one place,
         and integrating it nicely along the entire CI/CD workflow process has
         been extremely helpful for us.
       role: Cloud Architect
-    - author: Josh Flyer
-      company: AppointmentPlus
-      image:
-        alt: AppointmentPlus
-        src: /images/appointment_plus_logo.png
-      quote: >-
-        We really enjoy the modeling feature, helping us define our API before
-        even writing code. Also, the way the modeling feature inherits models
-        from other Projects. Hubs integrates with OAS files, both partials or
-        the entire schema, which is rad.
-      role: Lead Developer
-    - author: Carlos Lozano
-      company: GFT Group
-      image:
-        alt: GFT Group
-        src: /images/gft_group_logo.jpg
-      quote: >-
-        Stoplight is getting better all the time. Big leap from [Stoplight]
-        Classic.
-      role: Senior Enterprise Architect
-  title: Businesses Are Loving Stoplight
+  title: Los actores sociales aman a Cristal Network
 pressSection:
   articles:
     - date: 'October, 2018'
-      description: 'To Help Developers Get A Grip On APIs, Stoplight Raises $3.25M'
+      description: 'To Help Developers Get A Grip On APIs, Cristal Raises $3.25M'
       href: >-
         https://news.crunchbase.com/news/to-help-developers-get-a-grip-on-apis-stoplight-raises-3-25m
       image: /images/logo_crunchbase.png
       publication: crunchbase news
-    - date: 'October, 2018'
-      description: >-
-        Software startup raises more than $3M in round led by former Austin
-        Ventures bigwig
-      href: >-
-        https://www.bizjournals.com/austin/news/2018/10/03/software-startup-raises-more-than-3m-in-round-led.html
-      image: /images/logo_austin_bj.png
-      publication: Austin Business Journal
-    - date: 'October, 2018'
-      description: >-
-        Stoplight Lands $3.25M of Seed Funding to Lead Evolution of Enterprise
-        API Lifecycle Management
-      href: >-
-        https://venturebeat.com/2018/10/03/stoplight-lands-3-25m-of-seed-funding-to-lead-evolution-of-enterprise-api-lifecycle-management
-      image: /images/logo_venturebeat.png
-      publication: VentureBeat
-    - date: 'OCTOBER, 2018'
-      description: Austin startup Stoplight raises more than $3 million
-      href: >-
-        https://www.statesman.com/news/20181003/austin-startup-stoplight-raises-more-than-3-million
-      image: /images/logo_statesman.png
-      publication: Austin-American Statesman
   cta:
     color: grey-darkest
-    href: 'https://press.stoplight.io/company'
+    href: 'https://press.cristal.tk/company'
     name: More Press & Assets
   title: In The Press
-collage:
-  images:
-    - alt: Bill Wood Ventures
-      src: /images/bill-wood-logo_trans.png
-    - alt: NextGen Venture Partners
-      src: /images/logo_next_gen_ventures.png
-    - alt: Next Coast Ventures
-      src: /images/logo_nextcoast.png
-    - alt: Techstars
-      src: /images/logo_techstars.png
-    - alt: Capital Factory
-      src: /images/logo_capitalfactory.png
-    - alt: Social Starts
-      src: /images/logo_socialstarts.png
 actionBar:
   buttons:
     - color: accent
@@ -168,12 +40,3 @@ actionBar:
       title: Learn More
   enabled: true
   text: Want to join the team? We're hiring!
-meta:
-  description: >-
-    Find out all you need to know about Stoplight and it's talented and creative
-    team; united in their passion for creating best in class API tooling.
-  favicon: /images/mark_light_bg.png
-  title: Learn About Us | Stoplight
-  twitter:
-    title: Learn About Us | Stoplight
-    username: '@stoplightio'
