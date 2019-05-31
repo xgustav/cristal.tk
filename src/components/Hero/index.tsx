@@ -10,8 +10,6 @@ import * as Clouds from './images/'
 
 import styles from './hero.scss'
 
-console.log('clouds', Clouds, styles)
-
 export interface IHeroBreadCrumb {
     title: string;
     path?: string;
