@@ -285,6 +285,10 @@ export default {
       getFiles(`${NETLIFY_PATH}/subpages`, ['.md'], { includeToc: true })
     ])
 
+      home = {
+          ...home,
+          authors
+      }
     const routes = [
       {
         path: '/',

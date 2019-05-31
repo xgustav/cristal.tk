@@ -6,27 +6,31 @@ import { Hero, IHero } from 'src/components/Hero';
 import { Collage, ICollage } from 'src/sections/Collage';
 import { IImageCallout, ImageCallout } from 'src/sections/ImageCallout';
 import { ITestimonials, Testimonials } from 'src/sections/Testimonials';
+import { IAuthors, Authors } from 'src/sections/Authors';
 
 export interface IHome {
-  color: string;
-  hero: IHero;
-  imageCallout: IImageCallout;
-  collage: ICollage;
-  testimonials: ITestimonials;
+    color: string;
+    hero: IHero;
+    imageCallout: IImageCallout;
+    collage: ICollage;
+    testimonials: ITestimonials;
+    authors: [IAuthors];
 }
 
-export const Home: React.FunctionComponent<IHome> = ({ color, hero, imageCallout, collage, testimonials }) => {
-  return (
-    <React.Fragment>
-      <Hero bgColor={color} {...hero} />
+export const Home: React.FunctionComponent<IHome> = ({ color, hero, imageCallout, collage, authors, testimonials }) => {
+    return (
+        <React.Fragment>
+            <Authors authors={authors} />
 
-      <ImageCallout {...imageCallout} />
+            <Hero bgColor={color} {...hero} />
 
-      <Collage id="customers" {...collage} />
+            <ImageCallout {...imageCallout} />
 
-      <Testimonials {...testimonials} />
-    </React.Fragment>
-  );
+            <Collage id="customers" {...collage} />
+
+            <Testimonials {...testimonials} />
+        </React.Fragment>
+    );
 };
 
 export default withRouteData(Home);
