@@ -40,7 +40,7 @@ export const Footer: React.FunctionComponent<{ footer: IFooter }> = ({ footer })
       <nav className="container mx-auto flex flex-col items-center">
         <div className="py-4">
           <Link to="/">
-            <Image className="h-16 hover:opacity-75" src="/images/robot-dude.svg" alt="Logo" />
+            <Image className="h-16 hover:opacity-75" src="/images/cristal-bw.svg" alt="Logo" />
           </Link>
         </div>
 
