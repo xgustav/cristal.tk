@@ -20,15 +20,13 @@ export interface IHome {
 export const Home: React.FunctionComponent<IHome> = ({ color, hero, imageCallout, collage, authors, testimonials }) => {
     return (
         <React.Fragment>
-            <Authors authors={authors} />
-
             <Hero bgColor={color} {...hero} />
 
             <ImageCallout {...imageCallout} />
 
             <Collage id="customers" {...collage} />
 
-            <Testimonials {...testimonials} />
+            <Authors authors={authors} />
         </React.Fragment>
     );
 };

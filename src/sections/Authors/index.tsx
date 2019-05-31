@@ -8,7 +8,7 @@ import { Section } from 'src/components/Section';
 
 export interface IAuthor {
     image: string;
-    author: string;
+    name: string;
     description: string;
     from: string;
     company: string;
@@ -22,7 +22,7 @@ export interface IAuthors {
     actionBar: IActionBar;
 }
 
-export const Author: React.FunctionComponent<IAuthor> = ({ image, author, description, company, role }) => {
+export const Author: React.FunctionComponent<IAuthor> = ({ image, name, description, company, role }) => {
     return (
         <div className="w-1/2 sm:w-full flex px-14 pb-20 sm:px-0 sm:px-10">
             <div className="author-card max-w-lg w-full lg:flex shadow-lg mx-auto items-stretch bg-white relative">
@@ -53,13 +53,13 @@ export const Author: React.FunctionComponent<IAuthor> = ({ image, author, descri
                 )}
 
                 <div className="p-8 flex flex-col justify-center leading-normal">
-                    <p className="text-grey-darker leading-loose flex-1"                         dangerouslySetInnerHTML={{ __html: description }} />
-
                     <p className="font-bold mt-4">
-                        {author}
+                        {name}
                         {company && `, ${company}`}
                         {role && `, ${role}`}
                     </p>
+
+                    <p className="text-grey-darker leading-loose flex-1"                         dangerouslySetInnerHTML={{ __html: description }} />
                 </div>
             </div>
         </div>
@@ -72,7 +72,6 @@ export const Authors: React.FunctionComponent<IAuthors> = ({
     authors,
     actionBar,
 }) => {
-    console.error('authors in component', authors)
     if (!authors || !authors.length) {
         return null;
     }
