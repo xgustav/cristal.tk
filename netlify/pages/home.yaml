@@ -57,14 +57,18 @@ collage:
 imageCallout:
   cta:
     href: 'https://next.stoplight.io/'
-    name: Get Started Now
+    name: Quem somos ?
   description: >-
-    Create OpenAPI Specifications (formerly known as Swagger) 10x faster with no
-    specialized knowledge required. Combine OpenAPI documents with Markdown to
-    create beautiful documentation for internal and external stakeholders.
-    Instantly turn any OpenAPI document into a mock server. Leverage contract
-    testing to ensure that your Single Source of Truth - OpenAPI Specification -
-    accurately describe your APIs.
+    Cristal Network é uma plataforma online, criada para empoderar bancos
+    comunitários, de desenvolvimento local. Baseada em Blockchain garante um
+    novo patamar de segurança e confiabilidade aos bancos locais. Ampliando
+    ainda mais o impacto social gerado por estas organizações.
+  description2: >-
+    Atualmente existem milhares de bancos comunitários e moedas locais
+    espalhadas pelo mundo. Por meio de tecnologia buscamos fortalecer e
+    conectar este movimento, ajudando comunidades a cuidarem de sua própria
+    economia local.
+
   image: /images/home-hero.png
   title: The Complete OpenAPI Specification Toolkit
 testimonials:

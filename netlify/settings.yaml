@@ -1,9 +1,9 @@
 banners: []
 info:
   address:
-    addressLocality: Austin
-    addressRegion: TX
-    alternateName: Stoplight
+    addressLocality: Piracanga
+    addressRegion: BR
+    alternateName: Cristal Network
     description: >-
       Stoplight, providing engineering teams with the best way to document,
       test, and build web APIs.
@@ -13,6 +13,7 @@ info:
     streetAddress: 1100 S 1st St
   email: sales@stoplight.io
 header:
+  title: Cristal **Network**
   items:
     - links:
         - href: /design/
@@ -190,15 +191,15 @@ footer:
         - fab
         - github
 meta:
-  description: The Complete API Toolkit for Teams and Enterprise | Stoplight
+  description: Economia Cristalina | Cristal Network
   favicon: /favicons/favicon.ico
   image: /images/home-hero.png
   robots: 'index, follow'
-  title: Stoplight
+  title: Cristal Network
   twitter:
     description: The Complete API Toolkit for Teams and Enterprise | Stoplight
     image: /images/home-hero.png
-    title: Stoplight
+    title: Cristal Network
     username: '@stoplightio'
   url: 'https://stoplight.io'
 integrations:

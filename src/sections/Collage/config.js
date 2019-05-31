@@ -7,9 +7,14 @@ export default {
   required: false,
   fields: [
     {
-      name: 'title',
-      widget: 'string',
-      required: false
+        name: 'title',
+        widget: 'string',
+        required: false
+    },
+    {
+        name: 'subtitle',
+        widget: 'string',
+        required: false
     },
     {
       name: 'description',

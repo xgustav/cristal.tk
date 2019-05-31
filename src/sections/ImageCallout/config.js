@@ -13,17 +13,23 @@ export default {
       required: false
     },
     {
-      name: 'image',
-      label: 'Image',
-      widget: 'image',
-      required: false
+        name: 'image',
+        label: 'Image',
+        widget: 'image',
+        required: false
     },
-    cta,
-    {
-      name: 'description',
-      label: 'Description',
-      widget: 'markdown',
-      required: false
-    }
+      cta,
+      {
+          name: 'description',
+          label: 'Left pane Description',
+          widget: 'markdown',
+          required: false
+      },
+      {
+          name: 'description2',
+          label: 'Right pane Description',
+          widget: 'markdown',
+          required: false
+      }
   ]
 }

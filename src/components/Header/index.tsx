@@ -2,6 +2,7 @@ import cn from 'clsx';
 import * as React from 'react';
 import Headroom from 'react-headroom';
 import { Head, withRouteData, withSiteData } from 'react-static';
+import MD from 'react-markdown'
 
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -76,6 +77,7 @@ export class Header extends React.Component<IHeader, IHeaderState> {
     const { header, meta, color, banners } = this.props;
     const { unpinned, showBanner } = this.state;
     const headerItems = (header && header.items) || [];
+    const title = (header && header.title) || null;
 
     let banner;
     if (showBanner && banners && banners.length) {
@@ -123,10 +125,9 @@ export class Header extends React.Component<IHeader, IHeaderState> {
                             onUnpin={this.onUnpin}
                             onUnfix={this.onUnfix}>
                             <nav className={cn(headerHeightClass, 'flex items-center')}>
-                                <Link to="/" className="text-white hover:opacity-75 hover:text-white text-2xl font-bold">
-                                    Stoplight
-                                </Link>
-
+                                {title &&                                 <Link to="/" className="text-white hover:opacity-75 hover:text-white text-2xl font-bold">
+                                    <MD>{title}</MD>
+                                </Link>}
                                 <Desktop items={headerItems} unpinned={unpinned} />
 
                                 <Mobile items={headerItems} />
