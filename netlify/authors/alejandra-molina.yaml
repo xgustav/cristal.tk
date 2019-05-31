@@ -1,0 +1,20 @@
+path: /blog/author/alejandra-molina
+tag: author
+title: Alejandra Molina
+subtitle: >-
+  Alejandra e uma experta em Web Design apaixonada pela UI e UX ela
+  participou de grandes projectos de impacto como EducarSE
+pageName: Founder
+image: /images/authors/alejandra.png
+from: Buenos Aires, Argentina
+color: black
+tabs:
+  - {}
+actionBar:
+  buttons:
+    - color: purple
+  enabled: false
+meta:
+  robots: 'index, follow'
+  twitter: {}
+pagination: {}

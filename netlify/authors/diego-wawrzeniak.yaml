@@ -1,0 +1,20 @@
+path: /blog/author/diego-wawrzeniak
+tag: author
+title: Diego Wawrzeniak
+subtitle: >-
+  Diego e un Economista, Investigador e Emprendedor Social ele lidera o
+  Banco Inkiri e crio su Banco Comunitario
+pageName: Founder
+image: /images/authors/diego.png
+from: Piracanga, Brasil
+color: black
+tabs:
+  - {}
+actionBar:
+  buttons:
+    - color: purple
+  enabled: false
+meta:
+  robots: 'index, follow'
+  twitter: {}
+pagination: {}

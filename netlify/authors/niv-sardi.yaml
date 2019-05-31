@@ -1,0 +1,20 @@
+path: /blog/author/niv-sardi
+tag: author
+title: Niv Sardi
+subtitle: >-
+  Hacker e Activista de renombre, o Niv e desenvolvedor Debian, Linux e
+  FFMPEg, ele liderou a equipe do Popcorn Time e do projeto Butter.
+pageName: Founder
+image: /images/authors/xaiki.png
+from: Neuquen, Argentina
+color: black
+tabs:
+  - {}
+actionBar:
+  buttons:
+    - color: purple
+  enabled: false
+meta:
+  robots: 'index, follow'
+  twitter: {}
+pagination: {}
