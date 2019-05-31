@@ -8,6 +8,7 @@ pageName: Founder
 image: /images/authors/alejandra.png
 from: Buenos Aires, Argentina
 color: black
+hidden: true
 tabs:
   - {}
 actionBar:

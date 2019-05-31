@@ -11,8 +11,9 @@ export interface IAuthor {
     name: string;
     description: string;
     from: string;
-    company: string;
-    role: string;
+    company?: string;
+    role?: string;
+    hidden?: boolean;
 }
 
 export interface IAuthors {
@@ -80,9 +81,10 @@ export const Authors: React.FunctionComponent<IAuthors> = ({
         <Section id="authors">
             <Container title={title} description={description}>
                 <div className="flex flex-wrap -mx-14 sm:mx-0">
-                    {authors.map((author, index) => {
-                        return <Author key={index} {...author} />;
-                    })}
+                    {authors.filter(author => !author.hidden)
+                            .map((author, index) => {
+                                return <Author key={index} {...author} />;
+                            })}
                 </div>
             </Container>
 

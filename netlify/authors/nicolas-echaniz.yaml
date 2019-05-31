@@ -1,0 +1,22 @@
+path: /blog/author/nicolas-echaniz
+tag: author
+name: Nicolás Echaniz
+description: >-
+  Cofundador y Miembro de Altermundi.net, cofundador de
+  https://libremesh.org/ (https://github.com/libremesh), cofundador de
+  MonedaPar. 
+pageName: Founder
+image: /images/authors/nicolas-echaniz.png
+from: Cordóba, Argentina
+color: black
+tabs:
+  - {}
+actionBar:
+  buttons:
+    - color: purple
+  enabled: false
+meta:
+  robots: 'index, follow'
+  github: nicoechaniz 
+  twitter: nicoechaniz
+pagination: {}
