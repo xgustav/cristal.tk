@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+.cards
+{
+    width: 100%;
+    padding-top: 96px;
+    padding-bottom: 36px;
+    background: #FFFFFF;
+
+    .cards_row
+    {
+	margin-top: 95px;
+    }
+    .card_col
+    {
+	margin-bottom: 91px;
+    }
+    .card
+    {
+	width: 100%;
+	background: #f4f7f8;
+	border-radius: 12px;
+	padding-top: 58px;
+	padding-bottom: 66px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border: solid 2px transparent;
+    }
+    .card:hover
+    {
+	border-color: #1befc5;
+	background: #FFFFFF;
+    }
+    .card_icon
+    {
+	width: 75px;
+	height: 75px;
+    }
+    .card_icon img
+    {
+	max-width: 100%;
+    }
+    .card_icon svg
+    {
+	max-width: 100%;
+	height: auto;
+    }
+    .svg path,
+    .svg rect,
+    .svg polygon
+    {
+	fill: #778990;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+    }
+    .card:hover .svg path,
+    .card:hover .svg rect,
+    .card:hover .svg polygon
+    {
+	fill: #1befc5;
+    }
+    .card_title
+    {
+	margin-top: 39px;
+    }
+    .card_text
+    {
+	margin-top: 19px;
+    }
+    .card_button
+    {
+	position: absolute;
+	bottom: -32px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 157px;
+	height: 63px;
+	background: #7836c6;
+	border-radius: 12px;
+    }
+    .card_button:hover
+    {
+	background: #1befc5;
+    }
+    .card_button a
+    {
+	display: block;
+	font-size: 16px;
+	font-weight: 600;
+	color: #1befc5;
+	line-height: 63px;
+    }
+    .card_button:hover a
+    {
+	color: #35214d;
+    }
+}

@@ -1,39 +1,59 @@
-hero:
-  bgColor: black
+marketing:
+  title: Nossa visao
   cards:
     - bgColor: blue
-      href: /design
+      button:
+        href: /moeda-local
+        caption: 'Criar Moeda'
       icon:
         name: paint-brush
         style: solid
-      subtitle: Use our visual designer to manage OpenAPI (Swagger) 10x faster
-      title: Design
-    - bgColor: green
-      href: /documentation
-      icon:
-        name: book
-        style: solid
-      subtitle: 'Increase customer adoption with beautiful, functional documentation'
-      title: Documentation
+      title: 'Moeda Local'
+      subtitle: 'Criar uma moeda local ficou fácil!'
+      description: >-
+         - Defina os critérios que serão aplicados em sua moeda social e que
+         tipo de parâmetros serão utilizados no design monetário.
+
+         - Coloque a moeda em circulação dentro de sua comunidade.
     - bgColor: orange
-      href: /testing
+      button:
+        href: /banco-comunitario
+        caption: 'Criar Banco Comunitário'
       icon:
         name: flask
         style: solid
-      subtitle: 'Leverage OpenAPI to test, automate, and debug web APIs'
-      title: Testing
+      title: Banco Comunitário
+      subtitle: 'Serviços bancários a sua comunidade'
+      description: >-
+         - Cristal é um sistema completo para bancos comunitários de desenvolvimento (BCDs).
+
+         - Possibilita transferências entre contas de pessoas e negócios, facilitando as trocas e apoiando a economia local.
+    - bgColor: green
+      button:
+        href: /economia-local
+        caption: 'Desenvolver Economia Local'
+      icon:
+        name: book
+        style: solid
+      title: 'Monitoreamento e Anàlises'
+      subtitle: 'Acompanhe de perto a economia local'
+      description: >-
+         - Tenha informação em tempo real sobre o que está acontecendo na economia local.
+
+         - Dashboard com indicadores, análises e ferramentas de apoio para o desenvolvimento local.
     - bgColor: grey-darkest
-      href: /mocking
+      button:
+        href: /signup
+        caption: 'Comence Agora'
       icon:
         name: server
         style: solid
-      subtitle: 'Parallelize development with one click mock servers, powered by Prism'
-      title: Mocking
-  cta:
-    href: 'https://next.stoplight.io/'
-    name: Get Started Now
-  particles: true
-  skew: rounded
+      title: 'Sólida, Transparente e Segura'
+      subtitle: 'Segurança de Nível Bancário'
+      description: >-
+        Usando a tecnologia Blockchain, oferecemos um registro seguro e imutável a todas as transações.
+        Tornando Cristal um sistema mais seguro e estável do que de muitos bancos grandes por aí.
+hero:
   subtitle: >-
     Em minutos você cria uma **moeda social**, configura um **banco
     communitário** e comença a fortalecer uma **nova economia** no local onde você mora.
