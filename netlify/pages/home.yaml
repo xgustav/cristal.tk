@@ -39,30 +39,21 @@ hero:
     communitário** e comença a fortalecer uma **nova economia** no local onde você mora.
   title: Desenvolva a Economia Local de Sua Comunidade
 collage:
-  cta:
-    color: green
-    href: /case-studies
-    name: Read the Case Studies
   images:
-    - alt: EA
-      src: /images/ea.png
-    - alt: Arkea
-      src: /images/arkea-logo-transparent-2x.png
-    - alt: Chargify
-      src: /images/chargify-new-logo.png
-    - alt: Deutsche Bank
-      src: /images/deutsche_bank.png
-    - alt: quicken
-      src: /images/customers/quicken.png
-    - alt: Sendgrid
-      src: /images/logo-sendgrid.png
-    - alt: Shopgate
-      src: /images/shopgate.png
-    - alt: TiVo
-      src: /images/tivo.png
-    - alt: Zendesk
-      src: /images/logo_zendesk.png
-  title: Thousands of companies use Stoplight to streamline
+    - alt: Banco Palmas
+      src: /images/partenairs/wb_banco_palmas.png
+    - alt: Biovilla
+      src: /images/partenairs/wb_biovilla.png
+    - alt: Banco Inkiri
+      src: /images/partenairs/wb_inkiri-logo.png
+    - alt: Butter Project
+      src: /images/partenairs/wb_popcorn-time-icon-png-4.png
+    - alt: Waba Network
+      src: /images/partenairs/wb_waba.png
+  title: Quem nos apóia
+  subtitle: >-
+    Cristal Network é uma iniciativa comunitária, apoiada por
+    diversas pessoas e ogranizaçôes, entre elas:
 imageCallout:
   cta:
     href: 'https://next.stoplight.io/'
