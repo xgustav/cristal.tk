@@ -251,54 +251,61 @@ const addListPages = (routes, allPages, listPages, propFactory) => {
   }
 }
 
+const meta = getFile(`${NETLIFY_PATH}/pages/meta.yaml`)
+
 export default {
   siteRoot: SITE_ROOT || undefined,
 
-  getSiteData: () => getFile(`${NETLIFY_PATH}/settings.yaml`),
+  getSiteData: () => {
+    let settings = getFile(`${NETLIFY_PATH}/settings.yaml`)
+
+    return {
+      ...settings,
+      meta
+    }
+  },
 
   getRoutes: async () => {
-      let [
-          home,
-          pricing,
-          about,
-          meta,
+    let [
+      home,
+      pricing,
+      about,
 
-          forms = [],
+      forms = [],
 
-          lists = [],
-          authors = [],
+      lists = [],
+      authors = [],
 
-          landings = [],
-          caseStudies = [],
-          blogPosts = [],
-          other = []
-      ] = await Promise.all([
-          getFile(`${NETLIFY_PATH}/pages/home.yaml`),
-          getFile(`${NETLIFY_PATH}/pages/pricing.yaml`),
-          getFile(`${NETLIFY_PATH}/pages/about.yaml`),
-          getFile(`${NETLIFY_PATH}/pages/meta.yaml`),
-          getFiles(`${NETLIFY_PATH}/forms`),
+      landings = [],
+      caseStudies = [],
+      blogPosts = [],
+      other = []
+    ] = await Promise.all([
+      getFile(`${NETLIFY_PATH}/pages/home.yaml`),
+      getFile(`${NETLIFY_PATH}/pages/pricing.yaml`),
+      getFile(`${NETLIFY_PATH}/pages/about.yaml`),
 
-          getFiles(`${NETLIFY_PATH}/lists`),
-          getFiles(`${NETLIFY_PATH}/authors`),
+      getFiles(`${NETLIFY_PATH}/forms`),
+      getFiles(`${NETLIFY_PATH}/lists`),
+      getFiles(`${NETLIFY_PATH}/authors`),
 
-          getFiles(`${NETLIFY_PATH}/landings`),
-          getFiles(`${NETLIFY_PATH}/case-studies`, ['.md']),
-          getFiles(`${NETLIFY_PATH}/blog-posts`, ['.md'], { includeToc: true }),
-          getFiles(`${NETLIFY_PATH}/subpages`, ['.md'], { includeToc: true })
+      getFiles(`${NETLIFY_PATH}/landings`),
+      getFiles(`${NETLIFY_PATH}/case-studies`, ['.md']),
+      getFiles(`${NETLIFY_PATH}/blog-posts`, ['.md'], { includeToc: true }),
+      getFiles(`${NETLIFY_PATH}/subpages`, ['.md'], { includeToc: true })
     ])
 
-      home = {
-          ...home,
-          authors,
-          meta
-      }
+    home = {
+      ...home,
+      authors,
+      meta
+    }
 
-      about = {
-          ...about,
-          team: authors,
-          meta
-      }
+    about = {
+      ...about,
+      team: authors,
+      meta
+    }
 
     const routes = [
       {
@@ -580,8 +587,8 @@ export default {
           )}
 
           <script
-            type='text/javascript'
-            dangerouslySetInnerHTML={{
+              type='text/javascript'
+              dangerouslySetInnerHTML={{
               __html: `
             console.log("${info.hirelog}");
             window.__SL = ${JSON.stringify(__SL)};
@@ -590,7 +597,7 @@ export default {
           />
         </Head>
         <Body>
-          {IS_PRODUCTION && googleTagManager && (
+            {IS_PRODUCTION && googleTagManager && (
             <noscript>
               <iframe
                 src={`https://www.googletagmanager.com/ns.html?id=${googleTagManager}`}
@@ -600,9 +607,9 @@ export default {
               />
             </noscript>
           )}
-          {children}
+            {children}
 
-          {IS_PRODUCTION && hubspot && (
+            {IS_PRODUCTION && hubspot && (
             <script
               type='text/javascript'
               id='hs-script-loader'
@@ -614,12 +621,12 @@ export default {
 
           <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: companyInfo }} />
 
-          {jld.breadCrumbs && (
+            {jld.breadCrumbs && (
             <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: meta.jld.breadCrumbs }} />
           )}
 
-          {jld.article && <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: meta.jld.article }} />}
-        </Body>
+            {jld.article && <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: meta.jld.article }} />}
+          </Body>
       </Html>
     )
   },
