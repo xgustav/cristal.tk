@@ -100,33 +100,16 @@ header:
           titleColor: purple
       title: Resources
       width: 400
-    - links:
-        - href: /about/
-          icon:
-            - fas
-            - users
-          title: About Us
-        - href: /case-studies/
-          icon:
-            - fas
-            - graduation-cap
-          title: Case Studies
-      title: Company
-      width: 250
+    - href: /about/
+      icon:
+        - fas
+        - users
+      title: About Us
     - href: /pricing/
       title: Pricing
     - href: /demo/
       isButton: true
       title: Request Demo
-    - altBg: green
-      altTitle: Sign Up FREE
-      hideMobile: true
-      href: 'https://next.stoplight.io'
-      icon:
-        - fas
-        - arrow-right
-      isButton: true
-      title: Sign In
 actionBar:
   buttons:
     - color: purple
