@@ -20,14 +20,13 @@ export const PanesCallout: React.FunctionComponent<IPanesCallout> = ({ title, ct
     return (
         <Section id={title}  noPadding className="cards">
             <Container title={title} className="flex flex-col justify-center">
-                <div className="flex flex-row">
+                <div className="flex flex-row flex-wrap">
                     <div
-                        className="w-1/2 mb-12 pb-12 leading-loose text-lg border-b border-darken-50 md:border-none sm:px-2"
+                        className="w-1/2 mb-12 pr-12 pl-12 leading-loose text-lg border-b border-darken-50 md:border-none sm:px-2"
                         dangerouslySetInnerHTML={{ __html: left }}
                     />
-                    <Image className="hover:opacity-75" src="/images/cristal-bw.svg" alt="Logo" />
                     <div
-                        className="w-1/2 mb-12 pb-12 leading-loose text-lg border-b border-darken-50 md:border-none sm:px-2"
+                        className="w-1/2 mb-12 pr-12 pl-12 leading-loose text-lg border-b border-darken-50 md:border-none sm:px-2"
                         dangerouslySetInnerHTML={{ __html: right }}
                     />
                 </div>
