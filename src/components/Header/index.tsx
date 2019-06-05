@@ -12,6 +12,8 @@ import { Mobile } from './Mobile';
 
 export const headerHeightClass = 'h-20';
 
+import './header.scss'
+
 export interface IHeaderLink {
   title: string;
   icon: string;
