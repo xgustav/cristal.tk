@@ -43,9 +43,9 @@ export const HeroCard: React.FunctionComponent<IHeroCard> = ({
       )}
     >
       <div className="flex items-center">
-        {icon && <FontAwesomeIcon icon={['fas', icon.name]} className="mr-3" />} <h3>{title}</h3>
+        {icon && <FontAwesomeIcon icon={['fas', icon.name]} className="mr-3" />} <h3 dangerouslySetInnerHTML={{ __html: title }}/>
       </div>
-      {subtitle && <div className="mt-4 leading-loose">{subtitle}</div>}
+      {subtitle && <div className="mt-4 leading-loose" dangerouslySetInnerHTML={{ __html: subtitle }}/>}
 
       {image && <Image src={image} className="rounded-full bg-cover h-48 w-32" size="sm" useDiv />}
       <div className={cn(`triangle-${indexMap[index]}`, 'platform-block-triangle')} />
