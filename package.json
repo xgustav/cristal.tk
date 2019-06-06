@@ -49,7 +49,7 @@
     "css-loader": "1.0.x",
     "extract-text-webpack-plugin": "3.0.x",
     "front-matter": "3.0.x",
-    "js-yaml": "3.12.0",
+    "js-yaml": "^3.13.1",
     "klaw": "3.0.x",
     "markdown-it": "8.4.x",
     "markdown-it-anchor": "5.0.x",
