@@ -123,36 +123,30 @@ actionBar:
   text: Getting started is easy. Be up and running in minutes.
 footer:
   columns:
-    - links:
+    - title: Products
+      links:
         - href: /design/
           title: Design
-        - href: /documentation/
-          title: Documentation
-        - href: /testing/
-          title: Testing
         - href: /mocking/
           title: Mocking
-      title: Products
-    - links:
-        - href: 'https://docs.stoplight.io'
-          title: Help Center
-        - href: 'https://community.stoplight.io'
-          title: 'Forum '
-        - href: /blog/
-          title: Blog
-        - href: 'https://press.stoplight.io'
-          title: Press
-      title: Resources
-    - links:
+    - title: Organization
+      links:
         - href: /about/
           title: About Us
         - href: /case-studies/
           title: Case Studies
         - href: /contact-us/
           title: Contact Us
-        - href: 'https://app.stoplight.io/login'
-          title: Classic Login
-      title: Company
+    - title: Supporters
+      links:
+        - href: https://piracanga.com/instituto-inkiri/
+          title: Inkiri
+        - href: https://institutobancopalmas.org
+          title: Banco Palmas
+        - href: https://www.biovilla.org/
+          title: BioVilla
+        - href: https://waba.network/
+          title: Waba
   legal:
     - href: /privacy/
       title: Privacy
@@ -161,15 +155,15 @@ footer:
     - href: /policy/
       title: Policy
   social:
-    - href: 'https://twitter.com/stoplightio'
+    - href: 'https://twitter.com/networkcristal'
       icon:
         - fab
         - twitter
-    - href: 'https://www.linkedin.com/company/stoplight'
+    - href: 'https://www.linkedin.com/company/cristalnetwork'
       icon:
         - fab
         - linkedin
-    - href: 'https://www.github.com/stoplightio'
+    - href: 'https://www.github.com/cristalnetwork'
       icon:
         - fab
         - github
