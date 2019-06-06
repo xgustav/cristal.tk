@@ -56,7 +56,7 @@ export const convertMarkdownToHTML = (data, options) => {
     if (data.hasOwnProperty(key)) {
       if (typeof data[key] === 'object') {
         data[key] = convertMarkdownToHTML(data[key], options)
-      } else if (['description', 'markdown'].includes(key)) {
+      } else if (['description', 'markdown', 'title', 'subtitle'].includes(key)) {
         // Don't include ToC for description or markdown properties
         data[key] = Renderer(data[key], { includeToc: false })
       }

@@ -1,6 +1,5 @@
 import cn from 'clsx';
 import * as React from 'react';
-import MD from 'react-markdown'
 
 import { headerHeightClass } from 'src/components/Header';
 import { Image } from 'src/components/Image';
@@ -46,11 +45,10 @@ export const Hero: React.FunctionComponent<IHero> = ({
 	                    <div className={cn("col")}>
 	                        <div className={cn("home_content", "text-center")}>
 	                            <div className={cn("home_title")}>
-                                        <MD className="sm:text-lg sm:text-white">
-                                            {title}
-                                        </MD>
-	                                <div className={cn("home_text2")}>
-                                            <MD>{subtitle}</MD>
+                                        <h1 dangerouslySetInnerHTML={{ __html: title }}/>
+
+	                                <div className={cn("home_text2")}
+                                             dangerouslySetInnerHTML={{ __html: subtitle }}>
 	                                </div>
 	                            </div>
 	                        </div>

@@ -8,7 +8,7 @@ export default {
         {
             name: 'title',
             label: 'Page Title',
-            widget: 'text',
+            widget: 'markdown',
         },
         {
             name: 'items',

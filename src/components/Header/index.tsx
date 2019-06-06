@@ -2,7 +2,6 @@ import cn from 'clsx';
 import * as React from 'react';
 import Headroom from 'react-headroom';
 import { Head, withRouteData, withSiteData } from 'react-static';
-import MD from 'react-markdown'
 
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -127,9 +126,11 @@ export class Header extends React.Component<IHeader, IHeaderState> {
                             onUnpin={this.onUnpin}
                             onUnfix={this.onUnfix}>
                             <nav className={cn(headerHeightClass, 'flex items-center')}>
-                                {title &&                                 <Link to="/" className="text-white hover:opacity-75 hover:text-white text-2xl font-bold">
-                                    <MD>{title}</MD>
-                                </Link>}
+                                {title &&
+                                 <Link to="/"
+                                       className="text-white hover:opacity-75 hover:text-white text-2xl font-bold"
+                                       dangerouslySetInnerHTML={{ __html: title }}>
+                                 </Link>}
                                 <Desktop items={headerItems} unpinned={unpinned} />
 
                                 <Mobile items={headerItems} />
