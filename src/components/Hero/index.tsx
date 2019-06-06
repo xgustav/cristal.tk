@@ -45,7 +45,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
 	                    <div className={cn("col")}>
 	                        <div className={cn("home_content", "text-center")}>
 	                            <div className={cn("home_title")}>
-                                        <h1 dangerouslySetInnerHTML={{ __html: title }}/>
+                                        <h1 className="text-white" dangerouslySetInnerHTML={{ __html: title }}/>
 
 	                                <div className={cn("home_text2")}
                                              dangerouslySetInnerHTML={{ __html: subtitle }}>
