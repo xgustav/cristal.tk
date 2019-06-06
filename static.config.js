@@ -518,10 +518,10 @@ export default {
           <meta name='viewport' content='width=device-width, initial-scale=1.0' />
           <meta name='robots' content={robots} />
 
-          <title>{meta.title}</title>
+          <title>{meta.pagetitle}</title>
           <meta name='description' content={meta.description} />
 
-          <meta property='og:title' content={meta.title} />
+          <meta property='og:title' content={meta.pagetitle} />
           <meta property='og:description' content={meta.description} />
           <meta property='og:url' content={meta.url} />
           <meta property='og:site_name' content='stoplight.io' />

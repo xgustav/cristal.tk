@@ -94,7 +94,7 @@ export class Header extends React.Component<IHeader, IHeaderState> {
     return (
         <React.Fragment>
             <Head key="meta">
-                <title>{meta && meta.title}</title>
+                <title >{meta && meta.pagetitle}</title>
             </Head>
 
             <div className="absolute pin">
