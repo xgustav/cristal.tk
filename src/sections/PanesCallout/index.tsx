@@ -12,6 +12,17 @@ export interface IPanesCallout extends ISection {
     right: string;
 }
 
+interface IPane {
+    children: object;
+}
+
+const Pane: React.FunctionComponent<IPane> = ({children}) => (
+    <div
+        className="w-1/2 sm:w-full mb-12 pr-12 pl-12 leading-loose text-lg border-b border-darken-50 md:border-none sm:px-2"
+        dangerouslySetInnerHTML={{ __html: children }}
+    />
+)
+
 export const PanesCallout: React.FunctionComponent<IPanesCallout> = ({ title, cta, left, right, image }) => {
     if (!image && !title && !description) {
         return null;
@@ -21,14 +32,8 @@ export const PanesCallout: React.FunctionComponent<IPanesCallout> = ({ title, ct
         <Section id={title}  noPadding className="cards">
             <Container title={title} className="flex flex-col justify-center">
                 <div className="flex flex-row flex-wrap">
-                    <div
-                        className="w-1/2 mb-12 pr-12 pl-12 leading-loose text-lg border-b border-darken-50 md:border-none sm:px-2"
-                        dangerouslySetInnerHTML={{ __html: left }}
-                    />
-                    <div
-                        className="w-1/2 mb-12 pr-12 pl-12 leading-loose text-lg border-b border-darken-50 md:border-none sm:px-2"
-                        dangerouslySetInnerHTML={{ __html: right }}
-                    />
+                    <Pane>{left}</Pane>
+                    <Pane>{right}</Pane>
                 </div>
                 {cta && <CallToAction {...cta} className="ml-auto mr-auto" />}
             </Container>
