@@ -46,7 +46,7 @@ export const Hero: React.FunctionComponent<IHero> = ({
 	                    <div className={cn("col")}>
 	                        <div className={cn("home_content", "text-center")}>
 	                            <div className={cn("home_title")}>
-                                        <MD>
+                                        <MD className="sm:text-lg sm:text-white">
                                             {title}
                                         </MD>
 	                                <div className={cn("home_text2")}>
