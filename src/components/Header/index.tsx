@@ -1,4 +1,4 @@
-import cn from 'classnames';
+import cn from 'clsx';
 import * as React from 'react';
 import Headroom from 'react-headroom';
 import { Head, withRouteData, withSiteData } from 'react-static';
@@ -10,6 +10,8 @@ import { Desktop } from './Desktop';
 import { Mobile } from './Mobile';
 
 export const headerHeightClass = 'h-20';
+
+import './header.scss'
 
 export interface IHeaderLink {
   title: string;
@@ -76,6 +78,7 @@ export class Header extends React.Component<IHeader, IHeaderState> {
     const { header, meta, color, banners } = this.props;
     const { unpinned, showBanner } = this.state;
     const headerItems = (header && header.items) || [];
+    const title = (header && header.title) || null;
 
     let banner;
     if (showBanner && banners && banners.length) {
@@ -90,7 +93,7 @@ export class Header extends React.Component<IHeader, IHeaderState> {
     return (
         <React.Fragment>
             <Head key="meta">
-                <title>{meta && meta.title}</title>
+                <title >{meta && meta.pagetitle}</title>
             </Head>
 
             <div className="absolute pin">
@@ -123,10 +126,11 @@ export class Header extends React.Component<IHeader, IHeaderState> {
                             onUnpin={this.onUnpin}
                             onUnfix={this.onUnfix}>
                             <nav className={cn(headerHeightClass, 'flex items-center')}>
-                                <Link to="/" className="text-white hover:opacity-75 hover:text-white text-2xl font-bold">
-                                    Stoplight
-                                </Link>
-
+                                {title &&
+                                 <Link to="/"
+                                       className="text-white hover:opacity-75 hover:text-white text-2xl font-bold"
+                                       dangerouslySetInnerHTML={{ __html: title }}>
+                                 </Link>}
                                 <Desktop items={headerItems} unpinned={unpinned} />
 
                                 <Mobile items={headerItems} />

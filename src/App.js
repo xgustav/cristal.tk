@@ -9,6 +9,8 @@ import Footer from 'src/components/Footer'
 import 'src/styles/app.css'
 import 'src/styles/app.scss'
 
+require('typeface-raleway')
+
 const AppContent = () => {
   return [
     <Header key='1' />,

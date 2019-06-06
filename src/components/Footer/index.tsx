@@ -40,7 +40,7 @@ export const Footer: React.FunctionComponent<{ footer: IFooter }> = ({ footer })
       <nav className="container mx-auto flex flex-col items-center">
         <div className="py-4">
           <Link to="/">
-            <Image className="h-16 hover:opacity-75" src="/images/robot-dude.svg" alt="Logo" />
+            <Image className="h-16 hover:opacity-75" src="/images/cristal-bw.svg" alt="Logo" />
           </Link>
         </div>
 
@@ -71,7 +71,7 @@ export const Footer: React.FunctionComponent<{ footer: IFooter }> = ({ footer })
 
         <div className="flex flex-wrap justify-between py-8 w-3/5 sm:w-full">
           <Link className="block text-grey pr-4" to="/">
-            &copy; {new Date().getFullYear()} Stoplight
+            &copy; {new Date().getFullYear()} Cristal Network
           </Link>
 
           {legal && (

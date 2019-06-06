@@ -8,13 +8,13 @@ export default {
     {
       name: 'title',
       label: 'Title',
-      widget: 'string',
+      widget: 'markdown',
       default: 'title'
     },
     {
       name: 'subtitle',
       label: 'Subtitle',
-      widget: 'string',
+      widget: 'markdown',
       default: 'subtitle'
     },
     {

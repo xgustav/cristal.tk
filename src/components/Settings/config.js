@@ -39,13 +39,18 @@ export default {
           ]
         },
         {
-          label: 'Stoplight Info',
+          label: 'Company Info',
           name: 'info',
           widget: 'object',
           fields: [
             {
               name: 'email',
               label: 'email',
+              widget: 'string'
+            },
+            {
+              name: 'hirelog',
+              label: 'hire log',
               widget: 'string'
             },
             {

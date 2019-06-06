@@ -1,0 +1,24 @@
+path: /blog/author/pablo-tutino
+tag: author
+name: Pablo Tutino
+description: >-
+  Pablo e un Developer e Entrepreneur con muitos anos de experiencia en
+  desenvolvimento de apps de cryptomoeda de alto impacto, lidero os projetos
+  Waba Network, Discoin, MonedaPar.
+  
+  Vocal ONG Bitcoin Argentina, cofundador Espacio Bitcoin Argentina.
+  +10 años en desarrollo de productos Finctech, Blockchain, Mobile.
+pageName: Founder
+image: /images/authors/pablo-tutino.png
+from: Buenos Aires, Argentina
+color: black
+tabs:
+  - {}
+actionBar:
+  buttons:
+    - color: purple
+  enabled: false
+meta:
+  robots: 'index, follow'
+  twitter: {}
+pagination: {}

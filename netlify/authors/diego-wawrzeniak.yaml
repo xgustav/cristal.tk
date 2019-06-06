@@ -1,0 +1,28 @@
+path: /blog/author/diego-wawrzeniak
+tag: author
+name: Diego Wawrzeniak
+description: >-
+  Empreendedor social, apaixonado por desenvolver projetos comunitários. Faz
+  parte da Comunidade inkiri, uma comunidade intencional localizada na
+  Bahia, Brazil, onde cuida da economia local e liderou o processo de
+  criação e implementação do Banco e da Moeda inkiri. Atualmente utilizada
+  por mais de 20 projetos comunitários e aceita em diversos estabelecimentos
+  locais. 
+  
+  Antes de se apaixonar pela vida em comunidade e descobrir o poder
+  das economias locais, formou-se em economia pela Fundação Getúlio Vargas,
+  trabalhou no mercado financeiro e teve uma startup fintech.
+pageName: Founder
+image: /images/authors/diego-wawrzeniak.png
+from: Piracanga, Brasil
+color: black
+tabs:
+  - {}
+actionBar:
+  buttons:
+    - color: purple
+  enabled: false
+meta:
+  robots: 'index, follow'
+  twitter: {}
+pagination: {}

@@ -18,7 +18,7 @@ const DEFAULT_PAGINATION_PAGE_SIZE = 10
 
 let SITE_ROOT = ''
 if (IS_PRODUCTION) {
-  SITE_ROOT = 'https://stoplight.io'
+  SITE_ROOT = 'https://cristal.tk'
 }
 
 chokidar.watch(NETLIFY_PATH).on('all', () => reloadRoutes())
@@ -251,16 +251,26 @@ const addListPages = (routes, allPages, listPages, propFactory) => {
   }
 }
 
+const meta = getFile(`${NETLIFY_PATH}/pages/meta.yaml`)
+
 export default {
   siteRoot: SITE_ROOT || undefined,
 
-  getSiteData: () => getFile(`${NETLIFY_PATH}/settings.yaml`),
+  getSiteData: () => {
+    let settings = getFile(`${NETLIFY_PATH}/settings.yaml`)
+
+    return {
+      ...settings,
+      meta
+    }
+  },
 
   getRoutes: async () => {
     let [
       home,
       pricing,
       about,
+
       forms = [],
 
       lists = [],
@@ -274,8 +284,8 @@ export default {
       getFile(`${NETLIFY_PATH}/pages/home.yaml`),
       getFile(`${NETLIFY_PATH}/pages/pricing.yaml`),
       getFile(`${NETLIFY_PATH}/pages/about.yaml`),
-      getFiles(`${NETLIFY_PATH}/forms`),
 
+      getFiles(`${NETLIFY_PATH}/forms`),
       getFiles(`${NETLIFY_PATH}/lists`),
       getFiles(`${NETLIFY_PATH}/authors`),
 
@@ -284,6 +294,18 @@ export default {
       getFiles(`${NETLIFY_PATH}/blog-posts`, ['.md'], { includeToc: true }),
       getFiles(`${NETLIFY_PATH}/subpages`, ['.md'], { includeToc: true })
     ])
+
+    home = {
+      ...home,
+      authors,
+      meta
+    }
+
+    about = {
+      ...about,
+      team: authors,
+      meta
+    }
 
     const routes = [
       {
@@ -374,7 +396,7 @@ export default {
               author: { '@type': 'Person', name: props.author ? props.author.name : null },
               publisher: {
                 '@type': 'Organization',
-                name: 'Stoplight',
+                name: 'Cristal Network',
                 logo: {
                   '@type': 'ImageObject',
                   url:
@@ -496,10 +518,10 @@ export default {
           <meta name='viewport' content='width=device-width, initial-scale=1.0' />
           <meta name='robots' content={robots} />
 
-          <title>{meta.title}</title>
+          <title>{meta.pagetitle}</title>
           <meta name='description' content={meta.description} />
 
-          <meta property='og:title' content={meta.title} />
+          <meta property='og:title' content={meta.pagetitle} />
           <meta property='og:description' content={meta.description} />
           <meta property='og:url' content={meta.url} />
           <meta property='og:site_name' content='stoplight.io' />
@@ -565,17 +587,17 @@ export default {
           )}
 
           <script
-            type='text/javascript'
-            dangerouslySetInnerHTML={{
+              type='text/javascript'
+              dangerouslySetInnerHTML={{
               __html: `
-            console.log("Interested in working for Stoplight? Check out our jobs listing: https://angel.co/stoplight/jobs");
+            console.log("${info.hirelog}");
             window.__SL = ${JSON.stringify(__SL)};
             `
             }}
           />
         </Head>
         <Body>
-          {IS_PRODUCTION && googleTagManager && (
+            {IS_PRODUCTION && googleTagManager && (
             <noscript>
               <iframe
                 src={`https://www.googletagmanager.com/ns.html?id=${googleTagManager}`}
@@ -585,9 +607,9 @@ export default {
               />
             </noscript>
           )}
-          {children}
+            {children}
 
-          {IS_PRODUCTION && hubspot && (
+            {IS_PRODUCTION && hubspot && (
             <script
               type='text/javascript'
               id='hs-script-loader'
@@ -599,12 +621,12 @@ export default {
 
           <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: companyInfo }} />
 
-          {jld.breadCrumbs && (
+            {jld.breadCrumbs && (
             <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: meta.jld.breadCrumbs }} />
           )}
 
-          {jld.article && <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: meta.jld.article }} />}
-        </Body>
+            {jld.article && <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: meta.jld.article }} />}
+          </Body>
       </Html>
     )
   },

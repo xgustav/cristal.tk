@@ -1,4 +1,4 @@
-import cn from 'classnames';
+import cn from 'clsx';
 import * as React from 'react';
 
 import { CallToAction, ICallToAction } from 'src/components/CallToAction';

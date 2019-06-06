@@ -1,14 +1,9 @@
-banners:
-  - ends: '1559444414197'
-    markdown: >-
-      **Stoplight named Gartner Cool Vendor!** <u class='ml-3'>[Read the full
-      report](https://stoplight.io/gartner-cool-vendor/?hsCtaTracking=0590be9f-2900-4c27-aebf-57deda9ef459%7C744f9933-0b30-4d59-a17b-c5ab03102537)</u>
-    starts: 1558463654467
+banners: []
 info:
   address:
-    addressLocality: Austin
-    addressRegion: TX
-    alternateName: Stoplight
+    addressLocality: Piracanga
+    addressRegion: BR
+    alternateName: Cristal Network
     description: >-
       Stoplight, providing engineering teams with the best way to document,
       test, and build web APIs.
@@ -18,6 +13,7 @@ info:
     streetAddress: 1100 S 1st St
   email: sales@stoplight.io
 header:
+  title: Cristal **Network**
   items:
     - links:
         - href: /design/
@@ -104,33 +100,16 @@ header:
           titleColor: purple
       title: Resources
       width: 400
-    - links:
-        - href: /about/
-          icon:
-            - fas
-            - users
-          title: About Us
-        - href: /case-studies/
-          icon:
-            - fas
-            - graduation-cap
-          title: Case Studies
-      title: Company
-      width: 250
+    - href: /about/
+      icon:
+        - fas
+        - users
+      title: About Us
     - href: /pricing/
       title: Pricing
     - href: /demo/
       isButton: true
       title: Request Demo
-    - hideMobile: true
-      href: 'https://next.stoplight.io'
-      icon:
-        - fas
-        - arrow-right
-      isButton: true
-      title: Sign In
-      altTitle: Sign Up FREE
-      altBg: green
 actionBar:
   buttons:
     - color: purple
@@ -144,36 +123,30 @@ actionBar:
   text: Getting started is easy. Be up and running in minutes.
 footer:
   columns:
-    - links:
+    - title: Products
+      links:
         - href: /design/
           title: Design
-        - href: /documentation/
-          title: Documentation
-        - href: /testing/
-          title: Testing
         - href: /mocking/
           title: Mocking
-      title: Products
-    - links:
-        - href: 'https://docs.stoplight.io'
-          title: Help Center
-        - href: 'https://community.stoplight.io'
-          title: 'Forum '
-        - href: /blog/
-          title: Blog
-        - href: 'https://press.stoplight.io'
-          title: Press
-      title: Resources
-    - links:
+    - title: Organization
+      links:
         - href: /about/
           title: About Us
         - href: /case-studies/
           title: Case Studies
         - href: /contact-us/
           title: Contact Us
-        - href: 'https://app.stoplight.io/login'
-          title: Classic Login
-      title: Company
+    - title: Supporters
+      links:
+        - href: https://piracanga.com/instituto-inkiri/
+          title: Inkiri
+        - href: https://institutobancopalmas.org
+          title: Banco Palmas
+        - href: https://www.biovilla.org/
+          title: BioVilla
+        - href: https://waba.network/
+          title: Waba
   legal:
     - href: /privacy/
       title: Privacy
@@ -182,28 +155,28 @@ footer:
     - href: /policy/
       title: Policy
   social:
-    - href: 'https://twitter.com/stoplightio'
+    - href: 'https://twitter.com/networkcristal'
       icon:
         - fab
         - twitter
-    - href: 'https://www.linkedin.com/company/stoplight'
+    - href: 'https://www.linkedin.com/company/cristalnetwork'
       icon:
         - fab
         - linkedin
-    - href: 'https://www.github.com/stoplightio'
+    - href: 'https://www.github.com/cristalnetwork'
       icon:
         - fab
         - github
 meta:
-  description: The Complete API Toolkit for Teams and Enterprise | Stoplight
+  description: Economia Cristalina | Cristal Network
   favicon: /favicons/favicon.ico
   image: /images/home-hero.png
   robots: 'index, follow'
-  title: Stoplight
+  title: Cristal Network
   twitter:
     description: The Complete API Toolkit for Teams and Enterprise | Stoplight
     image: /images/home-hero.png
-    title: Stoplight
+    title: Cristal Network
     username: '@stoplightio'
   url: 'https://stoplight.io'
 integrations:

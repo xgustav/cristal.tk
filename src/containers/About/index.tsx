@@ -1,4 +1,4 @@
-import cn from 'classnames';
+import cn from 'clsx';
 import * as React from 'react';
 import { withRouteData } from 'react-static';
 
@@ -61,9 +61,12 @@ export const About: React.FunctionComponent<IAbout> = ({
       {team.length ? (
         <div className="bg-grey-lightest relative z-5">
           <div className="container flex flex-wrap justify-center md:justify-around text-center md:px-0">
-            {team.map((member, index) => (
-              <Member key={index} isLast={index === team.length - 1} {...member} />
-            ))}
+              {team.filter(member => !member.hidden)
+                   .map((member, index) => (
+                       <Member key={index}
+                               isLast={index === team.length - 1}
+                               {...member} />
+                   ))}
           </div>
 
           {actionBar && actionBar.enabled ? (

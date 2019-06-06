@@ -1,4 +1,4 @@
-import cn from 'classnames';
+import cn from 'clsx';
 import * as React from 'react';
 import { Image } from 'src/components/Image';
 import { Link } from 'src/components/Link';
