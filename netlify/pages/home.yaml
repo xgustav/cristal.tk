@@ -2,9 +2,9 @@ marketing:
   title: Nossa visao
   cards:
     - bgColor: blue
-      button:
-        href: /moeda-local
-        caption: 'Criar Moeda'
+#      button:
+#        href: /moeda-local
+#        caption: 'Criar Moeda'
       icon:
         name: paint-brush
         style: solid
@@ -16,9 +16,9 @@ marketing:
 
          - Coloque a moeda em circulação dentro de sua comunidade.
     - bgColor: orange
-      button:
-        href: /banco-comunitario
-        caption: 'Criar Banco Comunitário'
+      # button:
+      #   href: /banco-comunitario
+      #   caption: 'Criar Banco Comunitário'
       icon:
         name: flask
         style: solid
@@ -29,9 +29,9 @@ marketing:
 
          - Possibilita transferências entre contas de pessoas e negócios, facilitando as trocas e apoiando a economia local.
     - bgColor: green
-      button:
-        href: /economia-local
-        caption: 'Desenvolver Economia Local'
+      # button:
+      #   href: /economia-local
+      #   caption: 'Desenvolver Economia Local'
       icon:
         name: book
         style: solid
@@ -42,9 +42,9 @@ marketing:
 
          - Dashboard com indicadores, análises e ferramentas de apoio para o desenvolvimento local.
     - bgColor: grey-darkest
-      button:
-        href: /signup
-        caption: 'Comence Agora'
+      # button:
+      #   href: /signup
+      #   caption: 'Comence Agora'
       icon:
         name: server
         style: solid
