@@ -22,7 +22,7 @@ export const Collage: React.FunctionComponent<ICollage> = ({ images, title, subt
                 <div className="flex justify-center flex-wrap items-center">
                     {images.map((image, key) => (
                         <div key={key} className="sm:w-1/2 sm:p-6 p-8 text-center">
-                            <Image className="h-12" src={image.src} alt={image.alt} size="sm" />
+                            <Image className="h-40" src={image.src} alt={image.alt} size="sm" />
                         </div>
                     ))}
                 </div>
