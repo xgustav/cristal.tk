@@ -15,15 +15,13 @@ info:
 header:
   title: Cristal **Network**
   items:
-    - href: /product_roadmap/
-      title: Product and Roadmap
-    - href: /case-studies/
-      title: Case Studies
     - href: /about/
       icon:
         - fas
         - users
-      title: About Us
+      title: Quem somos
+    - href: /roadmap/
+      title: Roadmap
     - href: /demo/
       isButton: true
       title: Request Demo
@@ -50,8 +48,8 @@ footer:
       links:
         - href: /about/
           title: About Us
-        - href: /case-studies/
-          title: Case Studies
+        - href: /roadmap/
+          title: Roadmap
         - href: /contact-us/
           title: Contact Us
     - title: Supporters
