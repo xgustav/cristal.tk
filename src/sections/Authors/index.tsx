@@ -6,6 +6,8 @@ import { Container } from 'src/components/Container';
 import { Image } from 'src/components/Image';
 import { Section } from 'src/components/Section';
 
+import './authors.scss'
+
 export interface IAuthor {
     image: string;
     name: string;
@@ -57,7 +59,7 @@ export const Author: React.FunctionComponent<IAuthor> = ({ image, name, descript
                     <p className="font-bold mt-4">
                         {name}
                         {company && `, ${company}`}
-                        {role && `, ${role}`}
+        {role && <span className="role text-grey-dark">{role}</span>}
                     </p>
 
                     <p className="text-grey-darker leading-loose flex-1"                         dangerouslySetInnerHTML={{ __html: description }} />
