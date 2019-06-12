@@ -11,7 +11,7 @@ import * as SubpagesConfig from 'src/containers/Subpage/config'
 
 export const config = {
     backend: {
-        name: 'github',
+        name: 'git-gateway',
         repo: 'cristalnetwork/cristal.tk',
         branch: 'develop',
         squash_merges: true,
