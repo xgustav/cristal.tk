@@ -1,15 +1,15 @@
 path: /roadmap
 tag: 'roadmap'
 component: 'Roadmap'
-subtitle: O caminho pro Nirvana
+subtitle: 
 title: Mapa de desenvolvimento
 currentMilestone: 0
 actionBar:
-  enabled: true
+  enabled: false
 pageName: Roadmap
 meta:
   favicon: /images/mark_light_bg.png
-  title: Nossa Visao
-  description: Temos vontade e temos un plan
+  title: Mapa de Desenvolvimento
+  description: 
 pagination:
   enabled: true

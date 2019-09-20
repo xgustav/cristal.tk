@@ -4,6 +4,14 @@
     background: #FFFFFF;
     padding: 0 0 96px 0!important;
 }
+
+.roadmap_component_only{
+    width: 100%;
+    padding-top: 96px;
+    padding-bottom: 36px;
+    background: #FFFFFF;
+
+}
 .roadmap_row
 {
     margin-top: 98px;
@@ -26,6 +34,11 @@
     height: 10vw;
     border-radius: 50%;
     background: #d5dfe3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 .milestone_col.active .milestone_icon_container
 {
@@ -99,4 +112,8 @@
 
 .roadmap_dots img {
     width: 100vw;
+}
+
+.milestone_title{
+    margin-top:40px;
 }

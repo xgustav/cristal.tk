@@ -1,0 +1,26 @@
+path: /blog/author/pablo-tutino
+tag: author
+name: Pablo Tutino
+role: FinTech
+description: >-
+  Pablo e un Developer e Empreendedor Blockchain de linha de fundo triplo, engenheiro de TI, con muitos anos de experiencia en
+  desenvolvimento de apps de cryptomoeda de impacto triplo.
+  
+  Tentando capacitar as pessoas a criar economias / comunidades resilientes, aproveitando o melhor da + Fintech + socioeconômica + blockchain na waba.network
+  
+  Co-fundador em monedapar.com & Co-fundador em bitcoinargentina.org
+  +10 años en desarrollo de productos Finctech, Blockchain, Mobile.
+pageName: Founder
+image: /images/authors/tuti.jpg
+from: Buenos Aires, Argentina
+color: black
+tabs:
+  - {}
+actionBar:
+  buttons:
+    - color: purple
+  enabled: false
+meta:
+  robots: 'index, follow'
+  twitter: {}
+pagination: {}

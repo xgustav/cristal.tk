@@ -16,13 +16,21 @@ export const Collage: React.FunctionComponent<ICollage> = ({ images, title, subt
         return null;
     }
 
+    function renderImage(image){
+        if(image.href)
+            return(<a href={image.href} target="_blank"><Image className="h-40" src={image.src} alt={image.alt} size="sm" /></a>);
+        return (<Image className="h-40" src={image.src} alt={image.alt} size="sm" />);
+    }; 
+
     return (
         <Section {...sectionProps}>
             <Container title={title} description={subtitle} cta={cta}>
                 <div className="flex justify-center flex-wrap items-center">
                     {images.map((image, key) => (
                         <div key={key} className="sm:w-1/3 sm:p-6 p-8 text-center">
-                            <Image className="h-40" src={image.src} alt={image.alt} size="sm" />
+                            
+                            {renderImage(image)}
+                            
                         </div>
                     ))}
                 </div>

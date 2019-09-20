@@ -22,9 +22,9 @@ header:
       title: Quem somos
     - href: /roadmap/
       title: Roadmap
-    - href: /demo/
+    - href: 'https://app.cristalnetwork.org'
       isButton: true
-      title: Request Demo
+      title: Demo
 actionBar:
   buttons:
     - color: purple

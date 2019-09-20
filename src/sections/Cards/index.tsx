@@ -46,26 +46,36 @@ export const Card: React.FunctionComponent<ICard> = ({
     icon,
     image
 }) => {
-    return (
-        <div className="w-1/2 sm:w-full flex px-14 pb-20 sm:px-0 sm:px-10 card_col magic_fade_in">
-	    <div className="card d-flex flex-column align-items-center justify-content-start text-center trans_200">
-                {image &&
-	         <div className="card_icon ml-auto mr-auto">
-                     <Image className="svg" src={image} alt="https://www.flaticon.com/authors/freepik"/>
-                </div>}
+    const style = image?{}:{paddingTop: 10, paddingBottom: 10, border: 'none'};
+    let card_content = 
+    (<div className="card d-flex flex-column align-items-center justify-content-start text-center trans_200" style={style}>
+                    {image &&
+                 <div className="card_icon ml-auto mr-auto">
+                         <Image className="svg" src={image} alt="https://www.flaticon.com/authors/freepik"/>
+                    </div>}
 
-	        <div className="card_title">
-                    <h3 dangerouslySetInnerHTML={{ __html: title }}/>
+                <div className="card_title">
+                        <h3 dangerouslySetInnerHTML={{ __html: title }}/>
+                    </div>
+                    { subtitle && <div className="card_title">
+                        <h4 dangerouslySetInnerHTML={{ __html: subtitle }}/>
+                    </div>}
+                <div className="card_text" dangerouslySetInnerHTML={{ __html: description }}>
                 </div>
-                { subtitle && <div className="card_title">
-                    <h4 dangerouslySetInnerHTML={{ __html: subtitle }}/>
-                </div>}
-	        <div className="card_text" dangerouslySetInnerHTML={{ __html: description }}>
-	        </div>
-                {button && <div className="card_button trans_200"><a href={button.href}>{button.caption}</a></div>}
-	    </div>
-	</div>
-    );
+                    {button && <div className="card_button trans_200"><a href={button.href}>{button.caption}</a></div>}
+            </div>);
+    if(image)
+        return (
+        <div className="w-1/2 sm:w-full flex px-14 pb-20 sm:px-0 sm:px-10 card_col magic_fade_in">
+    	    {card_content}
+    	</div>
+        );
+    
+    return (
+        <div className="w-1/3 sm:w-full flex px-14 pb-20 sm:px-0 sm:px-10 card_col magic_fade_in">
+            {card_content}
+        </div>
+        );
 };
 
 export const Cards: React.FunctionComponent<ICards> = ({

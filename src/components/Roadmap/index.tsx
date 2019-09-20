@@ -83,34 +83,52 @@ export const Roadmap: React.FunctionComponent<IRoadmap> = ({
     description,
     items,
     actionBar,
-    currentMilestone = 0
+    currentMilestone = 0,
+    do_hero=1
 }) => {
     if (!items || !items.length) {
         return null;
     }
 
-    return (
-        <React.Fragment>
-            <Hero title={title} subtitle={subtitle} className="small"/>
-            <Section id="roadmap" className={cn("roadmap")}>
-                <Container>
-                    <div className="row">
-	                <div className="roadmap_dots magic_fade_in">
-                            <Image src="/images/bezier.svg"/>
+    if(do_hero)
+        return (
+            <React.Fragment>
+                <Hero title={title} subtitle={subtitle} className="small"/>
+                <Section id="roadmap" className={cn("roadmap")}>
+                    <Container>
+                        <div className="row">
+    	                <div className="roadmap_dots magic_fade_in">
+                                <Image src="/images/bezier.svg"/>
+                            </div>
+    	            </div>
+                        <div className="flex flex-wrap -mx-14 sm:mx-0 roadmap_row">
+                            {items.filter(milestone => !milestone.hidden)
+                                  .map((milestone, index) => {
+                                      return <Milestone key={index} active={index === currentMilestone} {...milestone} />;
+                                  })}
                         </div>
-	            </div>
-                    <div className="flex flex-wrap -mx-14 sm:mx-0 roadmap_row">
-                        {items.filter(milestone => !milestone.hidden)
-                              .map((milestone, index) => {
-                                  return <Milestone key={index} active={index === currentMilestone} {...milestone} />;
-                              })}
-                    </div>
-                </Container>
+                    </Container>
 
-                {actionBar && actionBar.enabled ? <ActionBar className="bg-grey-lightest sm:mt-20 mt-32" {...actionBar} /> : null}
-            </Section>
-        </React.Fragment>
-    );
+                    {actionBar && actionBar.enabled ? <ActionBar className="bg-grey-lightest sm:mt-20 mt-32" {...actionBar} /> : null}
+                </Section>
+            </React.Fragment>
+        );
+
+    return (
+                <Section id="roadmap" className={cn("roadmap_component_only")}>
+                    <Container title={title}>
+                        <div className="flex flex-wrap -mx-14 sm:mx-0 roadmap_row">
+                            {items.filter(milestone => !milestone.hidden)
+                                  .map((milestone, index) => {
+                                      return <Milestone key={index} active={index === currentMilestone} {...milestone} />;
+                                  })}
+                        </div>
+                    </Container>
+
+                    {actionBar && actionBar.enabled ? <ActionBar className="bg-grey-lightest sm:mt-20 mt-32" {...actionBar} /> : null}
+                </Section>
+            
+        );
 };
 
 export default withRouteData(Roadmap)

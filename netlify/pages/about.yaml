@@ -33,10 +33,10 @@ pressSection:
     href: 'https://press.cristal.tk/company'
     name: More Press & Assets
   title: In The Press
-actionBar:
-  buttons:
-    - color: accent
-      href: 'https://angel.co/stoplight/jobs'
-      title: Learn More
-  enabled: true
-  text: Want to join the team? We're hiring!
+# actionBar:
+#   buttons:
+#     - color: accent
+#       href: 'https://angel.co/stoplight/jobs'
+#       title: Learn More
+#   enabled: true
+#   text: Want to join the team? We're hiring!
