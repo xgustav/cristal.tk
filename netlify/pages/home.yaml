@@ -17,27 +17,27 @@ marketing:
 hero:
   subtitle: >-
     Facilite as Trocas e Promova Desenvolvimento em Uma Economia Local.
-  title: Sistema Bancário Para Economias Locais
+  title: Sistema Bancário Para <br/> Economias Locais
 collage:
   images:
-    - alt: Banco Palmas
-      src: /images/partenairs/wb_banco_palmas.png
-      href: https://www.institutobancopalmas.org/
-    - alt: Biovilla
-      src: /images/partenairs/wb_biovilla.png
-      href: https://www.biovilla.org/
     - alt: Instituto inkiri
       src: /images/partenairs/wb_inkiri-logo.png
       href: https://piracanga.com/
-    - alt: Butter Project
-      src: /images/partenairs/wb_popcorn-time-icon-png-4.png
-      href: http://butterproject.org/
+    - alt: Banco Palmas
+      src: /images/partenairs/wb_banco_palmas.png
+      href: https://www.institutobancopalmas.org/
     - alt: Fundação Getúlio Vargas
       src: /images/partenairs/fgv_trans.png
       href: https://portal.fgv.br/en
     - alt: Universidade Federal do Rio de Janeiro
       src: /images/partenairs/ufrj.png
       href: https://ufrj.br/
+    - alt: Biovilla
+      src: /images/partenairs/wb_biovilla.png
+      href: https://www.biovilla.org/
+    - alt: Butter Project
+      src: /images/partenairs/wb_popcorn-time-icon-png-4.png
+      href: http://butterproject.org/
     - alt: Waba Network
       src: /images/partenairs/wb_waba.png
       href: https://waba.network

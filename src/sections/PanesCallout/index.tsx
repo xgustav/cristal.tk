@@ -16,9 +16,10 @@ interface IPane {
     children: object;
 }
 
+// w-1/2 sm:w-full mb
 const Pane: React.FunctionComponent<IPane> = ({children}) => (
     <div
-        className="w-1/2 sm:w-full mb-12 pr-12 pl-12 leading-loose text-lg border-b border-darken-50 md:border-none sm:px-2"
+        className="w-1/2 sm:w-full mb-12 pr-12 pl-12 leading-loose text-lg sm:px-2"
         dangerouslySetInnerHTML={{ __html: children }}
     />
 )

@@ -15,11 +15,8 @@ info:
 header:
   title: Cristal **Network**
   items:
-    - href: /about/
-      icon:
-        - fas
-        - users
-      title: Quem somos
+    - href: /quem-somos/
+      title: Quem Somos?
     - href: /roadmap/
       title: Roadmap
     - href: 'https://app.cristalnetwork.org'
@@ -38,30 +35,51 @@ actionBar:
   text: Getting started is easy. Be up and running in minutes.
 footer:
   columns:
-    - title: Products
+    - title: Product Discovery
       links:
-        - href: /design/
-          title: Design
-        - href: /mocking/
-          title: Mocking
+        # - href: https://github.com/cristalnetwork/inkiri-frontend
+        #   title: Frontend Source Code
+        # - href: https://github.com/cristalnetwork/inkiri-backend
+        #   title: Backend Source Code
+        # - href: https://github.com/cristalnetwork/inkiri-eos-contracts
+        #   title: Smart Contracts
+        # - href: https://github.com/cristalnetwork
+        #   title: Github
+        - href: https://whimsical.com/9kXXrEa6LzuJtRroPsihpa
+          title: Tech Architecture
+        - href: https://www.figma.com/proto/wesbb4BGHRSwTIFdqpbyFT/inkiri-dise%C3%B1o-v1-(mine)?node-id=147%3A4464&scaling=min-zoom
+          title: Bank Administrator @ Figma
+        - href: https://www.figma.com/proto/wesbb4BGHRSwTIFdqpbyFT/inkiri-dise%C3%B1o-v1-(mine)?node-id=580%3A160&scaling=min-zoom
+          title: Personal Account @ Figma
+        - href: https://www.figma.com/proto/wesbb4BGHRSwTIFdqpbyFT/inkiri-dise%C3%B1o-v1-mine?node-id=472%3A9248&scaling=min-zoom
+          title: Personal Account Mobile @ Figma
+        - href: https://www.figma.com/proto/wesbb4BGHRSwTIFdqpbyFT/inkiri-dise%C3%B1o-v1-(mine)?node-id=627%3A0&scaling=min-zoom
+          title: Business/Fundo Account @ Figma
     - title: Organization
       links:
-        - href: /about/
-          title: About Us
+        - href: /quem-somos/
+          title: Quem Somos?
         - href: /roadmap/
           title: Roadmap
-        - href: /contact-us/
-          title: Contact Us
+        # - href: /contact-us/
+        #   title: Contact Us
     - title: Supporters
       links:
-        - href: https://piracanga.com/instituto-inkiri/
-          title: Inkiri
-        - href: https://institutobancopalmas.org
-          title: Banco Palmas
         - href: https://www.biovilla.org/
-          title: BioVilla
-        - href: https://waba.network/
-          title: Waba
+          title: Biovilla
+        - href: https://www.institutobancopalmas.org/
+          title: Banco Palmas
+        - href: https://portal.fgv.br/en
+          title: Fundação Getúlio Vargas
+        - href: https://ufrj.br/
+          # title: Universidade Federal do Rio de Janeiro
+          title: UFRJ
+        - href: https://piracanga.com/
+          title: Instituto inkiri
+        - href: http://butterproject.org/
+          title: Butter Project
+        - href: https://waba.network
+          title: Waba.Network
   legal:
     - href: /privacy/
       title: Privacy

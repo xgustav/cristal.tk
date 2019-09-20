@@ -8,11 +8,15 @@ import { Section } from 'src/components/Section';
 
 import './authors.scss'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'src/components/Link';
+
 export interface IAuthor {
     image: string;
     name: string;
     description: string;
-    from: string;
+    linkedin?: string;
+    from?: string;
     company?: string;
     role?: string;
     hidden?: boolean;
@@ -25,7 +29,27 @@ export interface IAuthors {
     actionBar: IActionBar;
 }
 
-export const Author: React.FunctionComponent<IAuthor> = ({ image, name, description, company, role }) => {
+export const Author: React.FunctionComponent<IAuthor> = ({ image, name, description, company, role, linkedin}) => {
+    return (
+        <div className="w-1/2 sm:w-full flex px-14 pb-20 sm:px-0 sm:px-10" style={{justifyContent: 'center'}}>
+            <div className="block text-center shadow bg-white py-10 sm:py-4 px-4 sm:px-0 h-64 w-64 sm:w-full rounded-lg">
+                <Image
+                    src={image}
+                    className="-mt-20 mx-auto rounded-full bg-center bg-contain shadow-sm border-grey border h-32 w-32 mb-10"
+                    size="sm"
+                    useDiv
+                />
+
+                <div className="font-bold uppercase text-green">{name}</div>
+
+                {role && <div className="pt-2 text-black">{role}</div>}
+                {linkedin && <Link key={'linkedin_'+name} to={linkedin} style={{paddingLeft:10}}><FontAwesomeIcon icon={['fab', 'linkedin']}  className="text-grey-darker hover:text-black" style={{fontSize: 15 }} /></Link>}
+      </div>
+    </div>
+  );
+};
+
+export const AuthorX: React.FunctionComponent<IAuthorX> = ({ image, name, description, company, role }) => {
     return (
         <div className="w-1/2 sm:w-full flex px-14 pb-20 sm:px-0 sm:px-10">
             <div className="author-card max-w-lg w-full lg:flex shadow-lg mx-auto items-stretch bg-white relative">
