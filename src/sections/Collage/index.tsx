@@ -18,8 +18,9 @@ export const Collage: React.FunctionComponent<ICollage> = ({ images, title, subt
 
     function renderImage(image){
         if(image.href)
-            return(<a href={image.href} target="_blank"><Image className="h-40" src={image.src} alt={image.alt} size="sm" /></a>);
-        return (<Image className="h-40" src={image.src} alt={image.alt} size="sm" />);
+            return(<a href={image.href} target="_blank"><Image className=" mx-auto bg-center bg-contain bg-no-repeat h-32 w-32 mb-10"
+                    useDiv src={image.src} alt={image.alt} size="sm" /></a>);
+        return (<Image className="mx-auto bg-center bg-contain bg-no-repeat h-32 w-32 mb-10" src={image.src} alt={image.alt} size="sm" />);
     }; 
 
     return (
