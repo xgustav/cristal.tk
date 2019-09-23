@@ -3,7 +3,7 @@ path: /roadmap/3/expansion
 title: Expansão da Rede
 subtitle: >-
   Mais bancos comunitários e moedas locais usando Cristal e gerando desenvolvimento local.
-image: /images/roadmap/icons8-network-64.png
+image: /images/roadmap/icons8-geography-64.png
 color: orange
 tabs: []
 sidebar:
