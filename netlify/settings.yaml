@@ -19,7 +19,7 @@ header:
       title: Quem Somos?
     - href: /roadmap/
       title: Roadmap
-    - href: 'https://inkiri.cristalnetwork.org'
+    - href: 'https://demo.cristalnetwork.org'
       isButton: true
       title: Demo
 actionBar:
