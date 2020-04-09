@@ -1,17 +1,16 @@
 marketing:
   title: Benefícios
   cards:
-    - title: '#1 É Fácil Criar Uma Nova Moeda Local e um Banco Comunitário'
+    - title: 'É Fácil Criar Uma Nova Moeda Local e um Banco Comunitário'
       subtitle: De maneira rápida e intuitiva, você cria uma nova moeda local, faz a primeira emissão do valor que deseja colocar em circulação e começa a oferecer serviços bancários em uma economia local.
-
       image: images/icons/icons8-refund-64.png
-    - title: '#2 Facilita As Trocas Locais'
+    - title: 'Facilita As Trocas Locais'
       subtitle: Cristal permite que pessoas e negócios possam facilmente comprar e vender produtos e serviços na economia local, de forma rápida, prática e segura. Seja por meio de transferências entre diferentes contas, ou vendas diretas usando a função de cobrança no Pontos de Venda, usar uma moeda local não foi tão fácil!
       image: images/icons/icons8-market-square-64.png
-    - title: '#3 Fácil de Implementar Gerenciar'
+    - title: 'Fácil de Implementar Gerenciar'
       subtitle: Acompanhe em tempo real as movimentações na economia real, gere relatórios, métricas de velocidade de circulação da moeda, número de contas ativas, etc. Tudo o que você precisa estar de olho para o desenvolvimento de sua economia local.
       image: images/icons/icons8-dashboard-64.png 
-    - title: '#4 Extremamente Segura - Blockchain Powered'
+    - title: 'Extremamente Segura - Blockchain Powered'
       subtitle:  Cristal utiliza as mais avançadas tecnologias de segurança e processamento de dados. Usamos Blockchain para registro todas as movimentações realizadas, garantindo muito mais segurança para os usuários da moeda local e para os gestores do banco comunitário.
       image: images/icons/icons8-diamond-64.png
 hero:
@@ -48,7 +47,7 @@ collage:
 panesCallout:
   title: Para Quem?
   cta:
-    href: 'https://demo.cristalnetowrk.org'
+    href: 'https://demo.cristalnetwork.org'
     name: Experimente!
   left: >-
     Cristal é destinada para qualquer organização, comunidade ou grupo de pessoas que deseja criar ou fortalecer uma economia local, incentivando a facilitando as trocas, 
@@ -56,7 +55,7 @@ panesCallout:
     fortalecendo as relações coletivas, apoiando o empreendedorismo, garantindo segurança, transparência e ressignificando a relação com o dinheiro.
 
 services:
-  title: Serviços Oferecidos
+  title: Características e funções
   cards:
     - title: 'Pessoas e Negócios'
       description: pessoas e negócios têm necessidades diferentes, Cristal oferece recursos diferentes para cada um.
@@ -68,7 +67,7 @@ services:
       description: facilmente transfira valores para outras contas, sem custos
     - title: 'Depósito / Saque'
       description: permite que os usuários usem a versão em papel da moeda local
-    - title: 'Solicitar Transferência Externa'
+    - title: 'Transferência Externa'
       description: permite que os usuários solicitem câmbio, caso sua moeda local seja lastreada por uma moeda nacional.
     - title: 'Pagar Fornecedor'
       description: permite que negócios solicitem pagamento a fornecedores fora da economia local.

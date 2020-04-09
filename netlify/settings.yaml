@@ -35,26 +35,26 @@ actionBar:
   text: Getting started is easy. Be up and running in minutes.
 footer:
   columns:
-    - title: Product Discovery
+    - title: Source Code
       links:
-        # - href: https://github.com/cristalnetwork/inkiri-frontend
-        #   title: Frontend Source Code
-        # - href: https://github.com/cristalnetwork/inkiri-backend
-        #   title: Backend Source Code
-        # - href: https://github.com/cristalnetwork/inkiri-eos-contracts
-        #   title: Smart Contracts
-        # - href: https://github.com/cristalnetwork
-        #   title: Github
+        - href: https://github.com/cristalnetwork/inkiri-frontend
+          title: Frontend - ReactJS DApp
+        - href: https://github.com/cristalnetwork/inkiri-backend
+          title: Backend - NodeJS
+        - href: https://github.com/cristalnetwork/inkiri-eos-contracts
+          title: Smart Contracts - EOS, TELOS
+        - href: https://github.com/cristalnetwork
+          title: Organization repo
         - href: https://whimsical.com/9kXXrEa6LzuJtRroPsihpa
           title: Tech Architecture
-        - href: https://www.figma.com/proto/wesbb4BGHRSwTIFdqpbyFT/inkiri-dise%C3%B1o-v1-(mine)?node-id=147%3A4464&scaling=min-zoom
-          title: Bank Administrator @ Figma
-        - href: https://www.figma.com/proto/wesbb4BGHRSwTIFdqpbyFT/inkiri-dise%C3%B1o-v1-(mine)?node-id=580%3A160&scaling=min-zoom
-          title: Personal Account @ Figma
-        - href: https://www.figma.com/proto/wesbb4BGHRSwTIFdqpbyFT/inkiri-dise%C3%B1o-v1-mine?node-id=472%3A9248&scaling=min-zoom
-          title: Personal Account Mobile @ Figma
-        - href: https://www.figma.com/proto/wesbb4BGHRSwTIFdqpbyFT/inkiri-dise%C3%B1o-v1-(mine)?node-id=627%3A0&scaling=min-zoom
-          title: Business/Fundo Account @ Figma
+        # - href: https://www.figma.com/proto/wesbb4BGHRSwTIFdqpbyFT/inkiri-dise%C3%B1o-v1-(mine)?node-id=147%3A4464&scaling=min-zoom
+        #   title: Bank Administrator @ Figma
+        # - href: https://www.figma.com/proto/wesbb4BGHRSwTIFdqpbyFT/inkiri-dise%C3%B1o-v1-(mine)?node-id=580%3A160&scaling=min-zoom
+        #   title: Personal Account @ Figma
+        # - href: https://www.figma.com/proto/wesbb4BGHRSwTIFdqpbyFT/inkiri-dise%C3%B1o-v1-mine?node-id=472%3A9248&scaling=min-zoom
+        #   title: Personal Account Mobile @ Figma
+        # - href: https://www.figma.com/proto/wesbb4BGHRSwTIFdqpbyFT/inkiri-dise%C3%B1o-v1-(mine)?node-id=627%3A0&scaling=min-zoom
+        #   title: Business/Fundo Account @ Figma
     - title: Organization
       links:
         - href: /quem-somos/

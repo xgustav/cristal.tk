@@ -128,7 +128,7 @@ export class Header extends React.Component<IHeader, IHeaderState> {
                             <nav className={cn(headerHeightClass, 'flex items-center')}>
                                 {title &&
                                  <Link to="/"
-                                       className="text-white hover:opacity-75 hover:text-white text-2xl font-bold"
+                                       className="text-white hover:opacity-75 hover:text-white text-2xl font-bold title_logo"
                                        dangerouslySetInnerHTML={{ __html: title }}>
                                  </Link>}
                                 <Desktop items={headerItems} unpinned={unpinned} />

@@ -8,70 +8,88 @@
     padding-bottom: 36px;
     background: #FFFFFF;
 
+    &._services .card_title{
+        height:50px;
+    }
+
     .cards_row
     {
-	margin-top: 95px;
+	   margin-top: 95px;
     }
     .card_col
     {
-	margin-bottom: 91px;
+	   margin-bottom: 91px;
     }
     .card
     {
-	width: 100%;
-	border-radius: 12px;
-	padding-top: 58px;
-	padding-bottom: 66px;
-	padding-left: 30px;
-	padding-right: 30px;
-	border: solid 2px transparent;
-    /*background: #f4f7f8;*/
-    
-    background: #FFFFFF;
+
+        position:relative;
+        z-index:5000;
+        min-height:250px;
+      	
+        width: 100%;
+      	border-radius: 12px;
+      	padding-top: 58px;
+      	padding-bottom: 66px;
+      	padding-left: 30px;
+      	padding-right: 30px;
+      	border: solid 2px transparent;
+        /*background: #f4f7f8;*/
+        
+        background: #FFFFFF;
     }
+    &._services .card {
+        background: #f4f7f8;
+    }
+
     .card:hover
     {
-	border-color: #1befc5;
-	background: #FFFFFF;
+    	border-color: #1befc5;
+    	background: #FFFFFF;
+    }
+
+    &._services .card:hover {
+        background: #f4f7f8;
     }
     .card_icon
     {
-	width: 75px;
-	height: 75px;
+    	width: 75px;
+    	height: 75px;
     }
     .card_icon img
     {
-	max-width: 100%;
+	   max-width: 100%;
     }
     .card_icon svg
     {
-	max-width: 100%;
-	height: auto;
+    	max-width: 100%;
+    	height: auto;
     }
     .svg path,
-    .svg rect,
-    .svg polygon
+        .svg rect,
+        .svg polygon
     {
-	fill: #778990;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
+    	fill: #778990;
+    	-webkit-transition: all 200ms ease;
+    	-moz-transition: all 200ms ease;
+    	-ms-transition: all 200ms ease;
+    	-o-transition: all 200ms ease;
+    	transition: all 200ms ease;
     }
     .card:hover .svg path,
     .card:hover .svg rect,
     .card:hover .svg polygon
     {
-	fill: #1befc5;
+      fill: #1befc5;
     }
     .card_title
     {
-	margin-top: 39px;
+    	margin-top: 39px;
     }
+
     .card_text
     {
-	margin-top: 19px;
+	   margin-top: 19px;
     }
     .card_button
     {

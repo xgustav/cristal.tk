@@ -33,7 +33,7 @@ export const Home: React.FunctionComponent<IHome> = ({ color, hero, marketing, s
 
             <Cards {...marketing} />
 
-            <Cards {...services} />
+            <Cards {...services} show_index={true} id="services" className="_services"/>
 
             <Collage id="customers" {...collage} />
 
