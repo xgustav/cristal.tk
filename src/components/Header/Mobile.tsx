@@ -23,7 +23,7 @@ class Mobile extends React.Component<IMobileHeader, IMobileHeaderState> {
 
 
   const getLanguages = () =>{
-    const active_language_code = this.props.activeLanguage.code;
+    const active_language_code = this.props.activeLanguage ? this.props.activeLanguage.code : 'en';
     const links = this.props.languages.map(lang => {
       return {
         title    : `header.languages.${lang.code}`
