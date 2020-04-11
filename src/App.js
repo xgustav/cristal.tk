@@ -42,7 +42,7 @@ class App extends React.Component {
         , defaultLanguage   : 'en'
         , onMissingTranslation : ({ translationId, languageCode }) => {
                                     // return 'ERROR-' + translationId + '-ERROR';
-                                    return translationId;
+                                    return '';
                                   }
       }
     });
