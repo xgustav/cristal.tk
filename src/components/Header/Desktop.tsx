@@ -66,8 +66,8 @@ const HeaderLangDropdown: React.FunctionComponent<IHeaderItem> = ({ languages, a
   const width                = 200;
   const icon                 = ['fas', 'language'];
   const titleColor           = '#000';
-  // console.log('languages:', languages, 'activeLanguage:', activeLanguage)
-  const active_language_code = activeLanguage.code;
+  
+  const active_language_code = activeLanguage?activeLanguage.code:'en';
   const links = languages.map(lang => {
     return {
       href       : ''
