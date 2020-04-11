@@ -6,8 +6,8 @@ import imageCallout from 'src/sections/ImageCallout/config'
 import testimonials from 'src/sections/Testimonials/config'
 
 export default {
-  label: 'Home',
-  name: 'home',
+  label:    'Home',
+  name:     'home',
   file: 'netlify/pages/home.yaml',
-  fields: [hero, collage, imageCallout, testimonials, metaTags]
+  fields:   [hero, collage, imageCallout, testimonials, metaTags]
 }

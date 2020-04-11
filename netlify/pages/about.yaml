@@ -1,4 +1,4 @@
-path: /quem-somos
+path: /team
 hero:
   particles: true
   # subtitle: >-
@@ -6,7 +6,7 @@ hero:
   #   crear soluciones de alta tecnologia que pegan perfectamente a las
   #   necesidades de las comunidades en las cuales sus miembros vienen creando
   #   micro-revoluciones hace varios años.
-  title: Quem Somos?
+  title: pages.about
 # businesses:
 #   quotes:
 #     - author: The Nice guy

@@ -2,14 +2,14 @@ path: /roadmap
 tag: 'roadmap'
 component: 'Roadmap'
 subtitle: 
-title: Mapa de desenvolvimento
+title: lists.development_roadmap
 currentMilestone: 0
 actionBar:
   enabled: false
 pageName: Roadmap
 meta:
   favicon: /images/mark_light_bg.png
-  title: Mapa de Desenvolvimento
+  title: lists.development_roadmap
   description: 
 pagination:
   enabled: true

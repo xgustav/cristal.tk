@@ -40,10 +40,18 @@
     justify-content: center;
 
 }
+.milestone_col.is_done .milestone_icon_container
+{
+    background: rgba(0,   155, 100, 0.6);
+    /* background: rgb(112, 191, 86);
+    background: rgb(0,   180, 147); */
+}
+
 .milestone_col.active .milestone_icon_container
 {
-    background: #1befc5;
+    background: rgba(255,200,40, .75);
 }
+
 .milestone_icon_container::before
 {
     position: absolute;
@@ -61,10 +69,16 @@
     background: rgba(213,223,227,0.25);
     content: '';
 }
+
 .milestone_col.active .milestone_icon_container::before
+{
+    background: rgba(255,200,40, 0.25);
+}
+.milestone_col.is_done .milestone_icon_container::before
 {
     background: rgba(27,239,197,0.25);
 }
+
 .milestone_icon
 {
     width: 56px;

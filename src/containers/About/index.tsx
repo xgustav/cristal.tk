@@ -14,10 +14,12 @@ import './about.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'src/components/Link';
 
+import { Translate } from "react-localize-redux";
 
 export interface IMember {
     image: string;
     name: string;
+    bio?: string;
     role?: string;
     from?: string;
     linkedin?: string;
@@ -47,14 +49,14 @@ const MemberX: React.FunctionComponent<IMemberX> = ({ image, name, role, from, i
 
                 <div className="font-bold uppercase text-green">{name}</div>
 
-                {role && <div className="pt-2 text-black">{role}</div>}
-                {from && <div className="from pt-2 text-grey">{from}</div>}
+                {role && <div className="pt-2 text-black"><Translate id={(role||'').trim()} /></div>}
+                {from && <div className="from pt-2 text-grey"><Translate id={(from||'').trim()} /></div>}
       </div>
     </div>
   );
 };
 
-export const Member: React.FunctionComponent<IMember> = ({ image, name, role, description, linkedin, isLast }) => {
+export const Member: React.FunctionComponent<IMember> = ({ image, name, role, description, bio, linkedin, isLast, github }) => {
     return (
         <div className="w-1/2 sm:w-full flex px-14 pb-20 sm:px-0 sm:px-10">
             <div className="author-card max-w-lg w-full lg:flex shadow-lg mx-auto items-stretch bg-white relative">
@@ -85,10 +87,13 @@ export const Member: React.FunctionComponent<IMember> = ({ image, name, role, de
                 )}
 
                 <div className="p-8 flex flex-col justify-center leading-normal">
-                    <div className="font-bold uppercase text-green">{name}</div>
-                    {role && <div className="font-bold pt-2 text-black">{role}</div>}
-                    <p className="text-grey-darker leading-loose flex-1" dangerouslySetInnerHTML={{ __html: description }} />
-                    {linkedin && <Link key={'linkedin_'+name} to={linkedin} style={{paddingLeft:10}}><FontAwesomeIcon icon={['fab', 'linkedin']}  className="text-grey-darker hover:text-black" style={{ fontSize: 15 }} /></Link>}
+                  <div className="font-bold uppercase text-green">{name}</div>
+                  {role && <div className="font-bold pt-2 text-black"><Translate id={(role||'').trim()} /></div>}
+                  <p className="text-grey-darker leading-loose flex-1 textJustify"><Translate id={(bio||'').trim()} /></p>
+                  <div className="author_profiles">
+                    {linkedin && <Link key={'linkedin_'+name} to={linkedin} className="alignRight"><FontAwesomeIcon icon={['fab', 'linkedin']}  className="text-grey-darker hover:text-black" style={{ fontSize: 15 }} /></Link>}
+                    {github && <Link key={'github_'+name} to={github} className="alignLeft"><FontAwesomeIcon icon={['fab', 'github']}  className="text-grey-darker hover:text-black" style={{ fontSize: 15 }} /></Link>}
+                  </div>
                 </div>
             </div>
         </div>

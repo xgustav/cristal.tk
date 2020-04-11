@@ -1384,3 +1384,16 @@ pre.line-numbers > code {
     align-self:flex-end;
   }
 }
+
+.textJustify{
+ text-align:justify; 
+}
+.author_profiles{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  a{flex:1;}
+  a.alignRight{text-align:right; padding-right:8px;}
+  a.alignLeft{text-align:left;padding-left:8px;}
+}

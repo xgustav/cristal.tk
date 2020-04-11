@@ -6,7 +6,9 @@ import { Link } from 'src/components/Link';
 import { Popup } from 'src/components/Popup';
 import { IHeaderItem } from '.';
 
-const DropdownItem = (item, index) => {
+import { withLocalize, Translate } from "react-localize-redux";
+
+const DropdownItem = (item, index, callback) => {
   return (
     <Link
       key={index}
@@ -26,7 +28,7 @@ const DropdownItem = (item, index) => {
       </div>
 
       <div className="flex-1">
-        <div className={cn('text-lg font-bold', item.titleColor && `text-${item.titleColor}`)}>{item.title}</div>
+        <div className={cn('text-lg font-bold', item.titleColor && `text-${item.titleColor}`)} onClick={() => callback && callback(item.code) }> <Translate id={item.title} /></div>
 
         {item.subtitle && <div className="text-base opacity-75">{item.subtitle}</div>}
       </div>
@@ -34,11 +36,11 @@ const DropdownItem = (item, index) => {
   );
 };
 
-const HeaderDropdown: React.FunctionComponent<IHeaderItem> = ({ width, title, links }) => {
+const HeaderDropdown: React.FunctionComponent<IHeaderItem> = ({ width, title, links, icon }) => {
   if (!links || !links.length) {
     return null;
   }
-
+  const titleColor = '#000';
   return (
     <Popup
       width={width}
@@ -46,10 +48,51 @@ const HeaderDropdown: React.FunctionComponent<IHeaderItem> = ({ width, title, li
       posY="bottom"
       renderTrigger={attributes => (
         <div className="flex select-none cursor-default text-white py-2 px-4 mx-2 font-semibold" {...attributes}>
-          <div className="flex-1 mr-2">{title}</div>
+          <div className="flex-1 mr-2">{icon && (
+          <FontAwesomeIcon
+            className={cn(titleColor && `text-${titleColor}`)}
+            icon={icon}
+            size={'lg'}
+          />
+        )}{title}</div>
         </div>
       )}
       renderContent={() => <div className="bg-white rounded-lg shadow-lg p-6">{links.map(DropdownItem)}</div>}
+    />
+  );
+};
+
+const HeaderLangDropdown: React.FunctionComponent<IHeaderItem> = ({ languages, activeLanguage, setActiveLanguage }) => {
+  const width                = 200;
+  const icon                 = ['fas', 'language'];
+  const titleColor           = '#000';
+  // console.log('languages:', languages, 'activeLanguage:', activeLanguage)
+  const active_language_code = activeLanguage.code;
+  const links = languages.map(lang => {
+    return {
+      href       : ''
+      , title    : `header.languages.${lang.code}`
+      , code     : lang.code
+      , active   : lang.code==(active_language_code)
+    }
+  })
+  return (
+    <Popup
+      width={width}
+      posX="center"
+      posY="bottom"
+      renderTrigger={attributes => (
+        <div className="flex select-none cursor-default text-white py-2 px-4 mx-2 font-semibold" {...attributes}>
+          <div className="flex-1 mr-2">{icon && (
+          <FontAwesomeIcon
+            className={cn(titleColor && `text-${titleColor}`)}
+            icon={icon}
+            size={'lg'}
+          />
+        )} <Translate id={`header.languages.${active_language_code}`} /> </div>
+        </div>
+      )}
+      renderContent={() => <div className="bg-white rounded-lg shadow-lg p-6">{links.map( (item, idx) => DropdownItem(item, idx, setActiveLanguage) )}</div>}
     />
   );
 };
@@ -69,12 +112,10 @@ const HeaderButton: React.FunctionComponent<IHeaderItem> = ({ title, href, icon,
   );
 };
 
-export const Desktop: React.FunctionComponent<{ items: IHeaderItem[]; unpinned: boolean }> = ({ items, unpinned }) => {
+export const Desktop: React.FunctionComponent<{ items: IHeaderItem[]; unpinned: boolean }> = ({ items, unpinned, show_languages, languages, activeLanguage, setActiveLanguage }) => {
   if (!items || !items.length) return null;
 
-  return (
-    <div className="sm:hidden flex flex-1 justify-end items-center text-lg">
-      {items.map((item, index) => {
+  let content = items.map((item, index) => {
         const { title: _title, href, icon, links, altTitle, altBg, isButton } = item;
 
         const title = unpinned ? altTitle || _title : _title;
@@ -87,7 +128,7 @@ export const Desktop: React.FunctionComponent<{ items: IHeaderItem[]; unpinned: 
           return (
             <HeaderButton
               key={index}
-              title={title}
+              title={<Translate id={title.trim()} />}
               href={href}
               icon={icon}
               className={unpinned && altBg ? `bg-${altBg} ease-in` : ''}
@@ -101,10 +142,19 @@ export const Desktop: React.FunctionComponent<{ items: IHeaderItem[]; unpinned: 
             to={href}
             className="text-white hover:opacity-85 hover:text-white py-2 px-4 mx-2 font-semibold"
           >
-            {title}
+            <Translate id={title.trim()} />
           </Link>
         );
-      })}
+      });
+  if(show_languages)
+  {
+    content.push (<HeaderLangDropdown key={999} languages={languages} activeLanguage={activeLanguage} setActiveLanguage={setActiveLanguage} />);
+  }
+  return (
+    <div className="sm:hidden flex flex-1 justify-end items-center text-lg">
+      {content}
     </div>
   );
 };
+
+export default withLocalize(Desktop);

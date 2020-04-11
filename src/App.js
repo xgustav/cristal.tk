@@ -9,6 +9,11 @@ import Footer from 'src/components/Footer'
 import 'src/styles/app.css'
 import 'src/styles/app.scss'
 
+import { withLocalize } from "react-localize-redux";
+import * as en from "./lang/locales/en.json"
+import * as es from "./lang/locales/es.json"
+import * as pt from "./lang/locales/pt.json"
+
 require('typeface-raleway')
 
 const AppContent = () => {
@@ -22,15 +27,37 @@ const AppContent = () => {
 }
 
 class App extends React.Component {
+  
+  constructor(props) {
+    super(props);
+
+    this.props.initialize({
+      languages: [
+        { name: "English",     code: "en" },
+        { name: "Spanish",     code: "es" },
+        { name: "Portuguese",  code: "pt" }
+      ],
+      options: {
+        renderToStaticMarkup: false
+        , defaultLanguage   : 'en'
+        , onMissingTranslation : ({ translationId, languageCode }) => {
+                                    return 'ERROR-' + translationId + '-ERROR';
+                                  }
+      }
+    });
+    this.props.addTranslationForLanguage(es, "es");
+    this.props.addTranslationForLanguage(en, "en");
+    this.props.addTranslationForLanguage(pt, "pt");
+  }
   render () {
     return (
-      <Router>
-        <Analytics>
-          <AppContent />
-        </Analytics>
-      </Router>
+        <Router>
+          <Analytics>
+            <AppContent />
+          </Analytics>
+        </Router>
     )
   }
 }
 
-export default App
+export default withLocalize(App)

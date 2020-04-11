@@ -1,9 +1,8 @@
 ---
 path: /roadmap/0/first
-title: Primeira Versão
-subtitle: >-
-  Atualmente estamos fazendo a primeira implementação da Cristal na economia local da Comunidade inkiri, localizada no Sul da Bahia, com mais de 20 projetos comunitários ativos.
-image: /images/roadmap/icons8-place-marker-64.png
+title: pages.home.roadmap.items.0.title
+subtitle: pages.home.roadmap.items.0.subtitle
+image: /images/roadmap/b_n_w/icons8-place-marker-64.png
 color: green
 tabs: []
 sidebar:

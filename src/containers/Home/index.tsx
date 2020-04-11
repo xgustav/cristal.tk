@@ -14,6 +14,8 @@ import { Container } from 'src/components/Container';
 
 import { Roadmap } from 'src/components/Roadmap';
 
+import Languages from 'src/lang/Languages';
+
 export interface IHome {
     color: string;
     hero: IHero;
@@ -24,11 +26,13 @@ export interface IHome {
     authors: [IAuthors];
 }
 
-export const Home: React.FunctionComponent<IHome> = ({ color, hero, marketing, services, roadmap, panesCallout, collage, authors }) => {
+export const Home: React.FunctionComponent<IHome> = ({ color, hero, marketing, services, roadmap, panesCallout, collage, authors, team }) => {
     return (
         <React.Fragment>
             <Hero bgColor={color} {...hero} />
 
+            <Languages />
+            
             <PanesCallout {...panesCallout} />
 
             <Cards {...marketing} />
@@ -37,9 +41,9 @@ export const Home: React.FunctionComponent<IHome> = ({ color, hero, marketing, s
 
             <Collage id="customers" {...collage} />
 
-            <Authors title="Quem Somos" authors={authors} />
+            <Authors {...team} authors={authors} />
 
-            <Roadmap title="Mapa de Desenvolvimento" items={roadmap.items} do_hero={0} />
+            <Roadmap {...roadmap} do_hero={0} currentMilestone={1}/>
 
         </React.Fragment>
     );

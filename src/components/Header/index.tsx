@@ -6,8 +6,10 @@ import { Head, withRouteData, withSiteData } from 'react-static';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'src/components/Link';
-import { Desktop } from './Desktop';
+import Desktop from './Desktop';
 import { Mobile } from './Mobile';
+
+import { withLocalize } from "react-localize-redux";
 
 export const headerHeightClass = 'h-20';
 
@@ -46,6 +48,7 @@ export interface IHeader {
   meta: any;
   color?: string;
   banners: IBanner[];
+  show_languages?: boolean;
 }
 
 export interface IHeaderState {
@@ -55,8 +58,8 @@ export interface IHeaderState {
 
 export class Header extends React.Component<IHeader, IHeaderState> {
   public state: IHeaderState = {
-    unpinned: false,
-    showBanner: true,
+    unpinned:     false,
+    showBanner:   true,
   };
 
   constructor(props) {
@@ -76,10 +79,11 @@ export class Header extends React.Component<IHeader, IHeaderState> {
 
   public render() {
     const { header, meta, color, banners } = this.props;
-    const { unpinned, showBanner } = this.state;
-    const headerItems = (header && header.items) || [];
-    const title = (header && header.title) || null;
-
+    const { unpinned, showBanner }         = this.state;
+    const headerItems                      = (header && header.items) || [];
+    const title                            = (header && header.title) || null;
+    const show_languages                   = header.show_languages;
+    // console.log('header.show_languages:', show_languages)
     let banner;
     if (showBanner && banners && banners.length) {
       const time = new Date().getTime();
@@ -131,9 +135,8 @@ export class Header extends React.Component<IHeader, IHeaderState> {
                                        className="text-white hover:opacity-75 hover:text-white text-2xl font-bold title_logo"
                                        dangerouslySetInnerHTML={{ __html: title }}>
                                  </Link>}
-                                <Desktop items={headerItems} unpinned={unpinned} />
-
-                                <Mobile items={headerItems} />
+                                <Desktop items={headerItems} unpinned={unpinned} show_languages={show_languages} />
+                                <Mobile items={headerItems} show_languages={show_languages}/>
                             </nav>
                         </Headroom>
                     </div>
@@ -144,4 +147,4 @@ export class Header extends React.Component<IHeader, IHeaderState> {
   }
 }
 
-export default withSiteData(withRouteData(Header));
+export default withSiteData(withRouteData(withLocalize(Header)));

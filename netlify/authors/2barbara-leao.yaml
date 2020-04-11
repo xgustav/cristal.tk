@@ -1,11 +1,10 @@
 path: /blog/author/barbara-leao
 tag: author
 name: Bárbara Leão
-description: >-
-  Bárbara e uma Emprendedora Social, formada como Marketer ela fiz suas
-  primeras armas con biovilla.org
-role: Social Entrepreneur, Marketer
-pageName: Founder
+role: authors.2barbara.rol
+description: authors.2barbara.description
+bio: authors.2barbara.description
+pageName: authors.2barbara.pageName
 image: /images/authors/barbara-leao.png
 from: Lisboa, Portugal
 color: black

@@ -1,11 +1,10 @@
 path: /blog/author/norton-toribio
 tag: author
 name: Norton Toribio
-role: Financist, Economist
-description: >-
-  Norton e um Economista que se formou como Gestor Financeiro da AMBEV, hoje
-  ele participa do Insttuito Inkiri
-pageName: Founder
+role: authors.3norton.rol
+description: authors.3norton.description
+bio: authors.3norton.description
+pageName: authors.3norton.pageName
 image: /images/authors/norton-toribio.png
 from: Piracanga, Brasil
 color: black

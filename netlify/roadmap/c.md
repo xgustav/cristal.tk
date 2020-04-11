@@ -1,9 +1,8 @@
 ---
 path: /roadmap/2/credits
-title: Crédito e Outros Serviços
-subtitle: >-
-  Após estar validada, vamos adicionar outros serviços bancários a plataforma, com destaque para a possibilidade de crédito mútuo na economia local.
-image: /images/roadmap/icons8-bank-building-64.png
+title: pages.home.roadmap.items.2.title
+subtitle: pages.home.roadmap.items.2.subtitle
+image: /images/roadmap/b_n_w/icons8-bank-building-64.png
 color: blue
 sidebar:
   info: {}

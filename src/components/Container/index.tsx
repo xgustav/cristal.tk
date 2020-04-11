@@ -12,9 +12,12 @@ export interface IContainer {
 }
 
 export const Container: React.FunctionComponent<IContainer> = ({ className, children, title, style, cta }) => {
+  
+
+  //{title && <h2 className="text-center text-3xl mb-20 md:mb-14" dangerouslySetInnerHTML={{ __html: title }}/>}
   return (
       <div className={cn('container', className)} style={style}>
-          {title && <h2 className="text-center text-3xl mb-20 md:mb-14" dangerouslySetInnerHTML={{ __html: title }}/>}
+          {title && <h2 className="text-center text-3xl mb-20 md:mb-14">{title}</h2>}    
 
           {children}
 

@@ -4,6 +4,8 @@ import { Container, IContainer } from 'src/components/Container';
 import { IImage, Image } from 'src/components/Image';
 import { ISection, Section } from 'src/components/Section';
 
+import { Translate } from "react-localize-redux";
+
 export interface ICollage extends ISection {
     images: IImage[];
     title?: IContainer['title'];
@@ -25,7 +27,7 @@ export const Collage: React.FunctionComponent<ICollage> = ({ images, title, subt
 
     return (
         <Section {...sectionProps}>
-            <Container title={title} description={subtitle} cta={cta}>
+            <Container title={<Translate id={(title||'').trim()} />} description={subtitle} cta={cta}>
                 <div className="flex justify-center flex-wrap items-center">
                     {images.map((image, key) => (
                         <div key={key} className="sm:w-1/3 sm:p-6 p-8 text-center">

@@ -20,12 +20,14 @@ import { faBolt } from '@fortawesome/free-solid-svg-icons/faBolt'
 import { faVideo } from '@fortawesome/free-solid-svg-icons/faVideo'
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons/faQuoteLeft'
 import { faQuoteRight } from '@fortawesome/free-solid-svg-icons/faQuoteRight'
+import { faLanguage } from '@fortawesome/free-solid-svg-icons/faLanguage'
 
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin'
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
 
 export const init = () => {
+  library.add(faLanguage)
   library.add(faPaintBrush)
   library.add(faBook)
   library.add(faBookOpen)

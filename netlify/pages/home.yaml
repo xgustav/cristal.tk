@@ -1,91 +1,97 @@
 marketing:
-  title: Benefícios
+  title: pages.home.marketing.title
   cards:
-    - title: 'É Fácil Criar Uma Nova Moeda Local e um Banco Comunitário'
-      subtitle: De maneira rápida e intuitiva, você cria uma nova moeda local, faz a primeira emissão do valor que deseja colocar em circulação e começa a oferecer serviços bancários em uma economia local.
-      image: images/icons/icons8-refund-64.png
-    - title: 'Facilita As Trocas Locais'
-      subtitle: Cristal permite que pessoas e negócios possam facilmente comprar e vender produtos e serviços na economia local, de forma rápida, prática e segura. Seja por meio de transferências entre diferentes contas, ou vendas diretas usando a função de cobrança no Pontos de Venda, usar uma moeda local não foi tão fácil!
-      image: images/icons/icons8-market-square-64.png
-    - title: 'Fácil de Implementar Gerenciar'
-      subtitle: Acompanhe em tempo real as movimentações na economia real, gere relatórios, métricas de velocidade de circulação da moeda, número de contas ativas, etc. Tudo o que você precisa estar de olho para o desenvolvimento de sua economia local.
-      image: images/icons/icons8-dashboard-64.png 
-    - title: 'Extremamente Segura - Blockchain Powered'
-      subtitle:  Cristal utiliza as mais avançadas tecnologias de segurança e processamento de dados. Usamos Blockchain para registro todas as movimentações realizadas, garantindo muito mais segurança para os usuários da moeda local e para os gestores do banco comunitário.
-      image: images/icons/icons8-diamond-64.png
+    - title: pages.home.marketing.title.cards.0.title
+      subtitle: pages.home.marketing.title.cards.0.subtitle
+      image: /images/icons/b_n_w/icons8-refund-64.png
+    - title: pages.home.marketing.title.cards.1.title
+      subtitle: pages.home.marketing.title.cards.1.subtitle
+      image: /images/icons/b_n_w/icons8-market-square-64.png
+    - title: pages.home.marketing.title.cards.2.title
+      subtitle: pages.home.marketing.title.cards.2.subtitle
+      image: /images/icons/b_n_w/icons8-dashboard-64.png 
+    - title: pages.home.marketing.title.cards.3.title
+      subtitle: pages.home.marketing.title.cards.3.subtitle
+      image: /images/icons/b_n_w/icons8-diamond-64.png
 hero:
-  subtitle: >-
-    Facilite as Trocas e Promova Desenvolvimento em Uma Economia Local.
-  title: Sistema Bancário Para <br/> Economias Locais
+  subtitle: pages.home.hero.subtitle
+  title: pages.home.hero.title
 collage:
   images:
-    - alt: Instituto inkiri
+    - alt: pages.home.collage.images.0.alt
       src: /images/partenairs/wb_inkiri-logo.png
       href: https://piracanga.com/
-    - alt: Banco Palmas
+    - alt: pages.home.collage.images.2.alt
       src: /images/partenairs/wb_banco_palmas.png
       href: https://www.institutobancopalmas.org/
-    - alt: Fundação Getúlio Vargas
+    - alt: pages.home.collage.images.3.alt
       src: /images/partenairs/fgv_trans.png
       href: https://portal.fgv.br/en
-    - alt: Universidade Federal do Rio de Janeiro
+    - alt: pages.home.collage.images.4.alt
       src: /images/partenairs/ufrj.png
       href: https://ufrj.br/
-    - alt: Biovilla
+    - alt: pages.home.collage.images.5.alt
       src: /images/partenairs/wb_biovilla.png
       href: https://www.biovilla.org/
-    - alt: Butter Project
+    - alt: pages.home.collage.images.6.alt
       src: /images/partenairs/wb_popcorn-time-icon-png-4.png
       href: http://butterproject.org/
-    - alt: Waba Network
+    - alt: pages.home.collage.images.7.alt
       src: /images/partenairs/wb_waba.png
       href: https://waba.network
-  title: Quem nos apóia
-  subtitle: >-
-    Cristal Network é uma iniciativa comunitária, apoiada por
-    diversas pessoas e ogranizaçôes, entre elas:
+  title: pages.home.collage.title
+  subtitle: pages.home.collage.subtitle
 panesCallout:
-  title: Para Quem?
+  title: pages.home.panesCallout.title
   cta:
     href: 'https://demo.cristalnetwork.org'
-    name: Experimente!
-  left: >-
-    Cristal é destinada para qualquer organização, comunidade ou grupo de pessoas que deseja criar ou fortalecer uma economia local, incentivando a facilitando as trocas, 
-  right: >-
-    fortalecendo as relações coletivas, apoiando o empreendedorismo, garantindo segurança, transparência e ressignificando a relação com o dinheiro.
-
+    name: pages.home.panesCallout.cta.name
+  left: pages.home.panesCallout.left
+  right: pages.home.panesCallout.right
 services:
-  title: Características e funções
+  title: pages.home.services.title
   cards:
-    - title: 'Pessoas e Negócios'
-      description: pessoas e negócios têm necessidades diferentes, Cristal oferece recursos diferentes para cada um.
-    - title: 'Contas Correntes'
-      description: ofereça contas onde os participantes da economia local podem receber e armazenar moeda local.
-    - title: 'Saldo e Extrato'
-      description: permita que facilmente os usuários acessem seu seu saldo e histórico de transações.
-    - title: 'Transferências'
-      description: facilmente transfira valores para outras contas, sem custos
-    - title: 'Depósito / Saque'
-      description: permite que os usuários usem a versão em papel da moeda local
-    - title: 'Transferência Externa'
-      description: permite que os usuários solicitem câmbio, caso sua moeda local seja lastreada por uma moeda nacional.
-    - title: 'Pagar Fornecedor'
-      description: permite que negócios solicitem pagamento a fornecedores fora da economia local.
-    - title: 'Ponto de Venda'
-      description: permite que negócios realizem cobranças instantâneas no ponto de venda.
-    - title: 'Acesso Seguro'
-      description: permite que os usuários acessem de forma segura sua conta e solicitem operações
-    - title: 'Em qualquer dispositivo'
-      description: interface responsiva, funciona em computadores e em smartphones.
+    - title: pages.home.services.cards.0.title
+      description: pages.home.services.cards.0.description
+      hint: pages.home.services.cards.0.description
+    - title: pages.home.services.cards.1.title
+      description: pages.home.services.cards.1.description
+      hint: pages.home.services.cards.1.description
+    - title: pages.home.services.cards.2.title
+      description: pages.home.services.cards.2.description
+      hint: pages.home.services.cards.2.description
+    - title: pages.home.services.cards.3.title
+      description: pages.home.services.cards.3.description
+      hint: pages.home.services.cards.3.description
+    - title: pages.home.services.cards.4.title
+      description: pages.home.services.cards.4.description
+      hint: pages.home.services.cards.4.description
+    - title: pages.home.services.cards.5.title
+      description: pages.home.services.cards.5.description
+      hint: pages.home.services.cards.5.description
+    - title: pages.home.services.cards.6.title
+      description: pages.home.services.cards.6.description
+      hint: pages.home.services.cards.6.description
+    - title: pages.home.services.cards.7.title
+      description: pages.home.services.cards.7.description
+      hint: pages.home.services.cards.7.description
+    - title: pages.home.services.cards.8.title
+      description: pages.home.services.cards.8.description
+      hint: pages.home.services.cards.8.description
+    - title: pages.home.services.cards.9.title
+      description: pages.home.services.cards.9.description
+      hint: pages.home.services.cards.9.description
+
+team:
+  title: pages.home.team.title
 
 roadmap:
-  title: Mapa de desenvolvimento
+  title: pages.home.roadmap.title
   items:
   - path: /roadmap/0/first
-    title: Primeira Versão
-    subtitle: >-
-      Atualmente estamos fazendo a primeira implementação da Cristal na economia local da Comunidade inkiri, localizada no Sul da Bahia, com mais de 20 projetos comunitários ativos.
-    image: /images/roadmap/icons8-place-marker-64.png
+    title: pages.home.roadmap.items.0.title
+    subtitle: pages.home.roadmap.items.0.subtitle
+    image: /images/roadmap/b_n_w/icons8-place-marker-64.png
     color: green
     tabs: []
     sidebar:
@@ -101,10 +107,9 @@ roadmap:
       - first-version
     publishedDate: 2019-05-01T23:47:44.182Z
   - path: /roadmap/1/case-studies
-    title: Casos de Uso
-    subtitle: >-
-      Em breve Cristal será implementada em outras 3 economias locais ao redor do mundo.
-    image: /images/roadmap/icons8-map-pinpoint-64.png
+    title: pages.home.roadmap.items.1.title
+    subtitle: pages.home.roadmap.items.1.subtitle
+    image: /images/roadmap/b_n_w/icons8-map-pinpoint-64.png
     color: blue
     sidebar:
       info: {}
@@ -119,10 +124,9 @@ roadmap:
       - first-version
     publishedDate: 2019-05-01T23:47:44.182Z
   - path: /roadmap/2/credits
-    title: Crédito e Outros Serviços
-    subtitle: >-
-      Após estar validada, vamos adicionar outros serviços bancários a plataforma, com destaque para a possibilidade de crédito mútuo na economia local.
-    image: /images/roadmap/icons8-bank-building-64.png
+    title: pages.home.roadmap.items.2.title
+    subtitle: pages.home.roadmap.items.2.subtitle
+    image: /images/roadmap/b_n_w/icons8-bank-building-64.png
     color: blue
     sidebar:
       info: {}
@@ -137,10 +141,9 @@ roadmap:
       - first-version
     publishedDate: 2019-05-01T23:47:44.182Z
   - path: /roadmap/3/expansion
-    title: Expansão da Rede
-    subtitle: >-
-      Mais bancos comunitários e moedas locais usando Cristal e gerando desenvolvimento local.
-    image: /images/roadmap/icons8-geography-64.png
+    title: pages.home.roadmap.items.3.title
+    subtitle: pages.home.roadmap.items.3.subtitle
+    image: /images/roadmap/b_n_w/icons8-geography-64.png
     color: orange
     tabs: []
     sidebar:

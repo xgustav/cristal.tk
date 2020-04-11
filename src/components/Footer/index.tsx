@@ -69,11 +69,8 @@ export const Footer: React.FunctionComponent<{ footer: IFooter }> = ({ footer })
           </div>
         )}
 
-        <div className="flex flex-wrap justify-between py-8 w-3/5 sm:w-full">
-          <Link className="block text-grey pr-4" to="/">
-            &copy; {new Date().getFullYear()} Cristal Network
-          </Link>
-
+        <div className="flex flex-wrap justify-between w-3/5 sm:w-full">
+          
           {legal && (
             <div className="flex-1 text-center">
               {legal.map((link, index) => {
@@ -97,7 +94,7 @@ export const Footer: React.FunctionComponent<{ footer: IFooter }> = ({ footer })
           )}
 
           {social && (
-            <div>
+            <div className="flex-1 text-center">
               {social.map((link, index) => {
                 const elems = [
                   <Link key={index} to={link.href} className="text-grey hover:text-grey-lighter">
@@ -113,6 +110,14 @@ export const Footer: React.FunctionComponent<{ footer: IFooter }> = ({ footer })
               })}
             </div>
           )}
+        </div>
+
+        <div className="flex flex-wrap justify-between py-4 w-3/5 sm:w-full">
+          <div className="flex-1 text-center">
+            <Link className="block text-grey pr-4" to="/">
+              &copy; {new Date().getFullYear()} Cristal Network
+            </Link>
+          </div>
         </div>
       </nav>
     </footer>

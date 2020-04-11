@@ -10,6 +10,8 @@ import { Section } from 'src/components/Section';
 
 import { Hero } from 'src/components/Hero';
 
+import { Translate } from "react-localize-redux";
+
 import './roadmap.scss'
 
 export interface IButton {
@@ -31,6 +33,7 @@ export interface IMilestone {
     button: IButton;
     icon: IIcon;
     active?: boolean;
+    is_done?: boolean;
 }
 
 export interface IRoadmap {
@@ -50,10 +53,11 @@ export const Milestone: React.FunctionComponent<IMilestone> = ({
     button,
     icon,
     image,
-    active
+    active,
+    is_done
 }) => {
     return (
-        <div className={cn("sm:w-full flex px-4 pb-20 sm:px-0 sm:px-1 milestone_col magic_fade_in", {active} )}>
+        <div className={cn("sm:w-full flex px-4 pb-20 sm:px-0 sm:px-1 milestone_col magic_fade_in", {active} ) + (is_done?' is_done':'')}>
 	    <div className="milestone d-flex flex-column align-items-center justify-content-start text-center trans_200">
                 {image &&
                  <div className="milestone_icon_container mx-auto">
@@ -63,14 +67,13 @@ export const Milestone: React.FunctionComponent<IMilestone> = ({
                  </div>}
 
 	        <div className="milestone_title">
-                    <h3 dangerouslySetInnerHTML={{ __html: title }}/>
+                    <h3><Translate id={(title||'').trim()} /></h3>
                 </div>
                 { subtitle && <div className="milestone_title">
-                    <h4 dangerouslySetInnerHTML={{ __html: subtitle }}/>
+                    <h4><Translate id={(subtitle||'').trim()} /></h4>
                 </div>}
-	        <div className="milestone_text" dangerouslySetInnerHTML={{ __html: description }}>
-	        </div>
-                {button && <div className="milestone_button trans_200"><a href={button.href}>{button.caption}</a></div>}
+	        <div className="milestone_text"><Translate id={(description||'').trim()} /></div>
+            {button && button.caption && <div className="milestone_button trans_200"><a href={button.href}><Translate id={(button.caption||'').trim()} /></a></div>}
 	    </div>
 	</div>
     );
@@ -83,8 +86,8 @@ export const Roadmap: React.FunctionComponent<IRoadmap> = ({
     description,
     items,
     actionBar,
-    currentMilestone = 0,
-    do_hero=1
+    currentMilestone = 1,
+    do_hero=1, 
 }) => {
     if (!items || !items.length) {
         return null;
@@ -104,7 +107,7 @@ export const Roadmap: React.FunctionComponent<IRoadmap> = ({
                         <div className="flex flex-wrap -mx-14 sm:mx-0 roadmap_row">
                             {items.filter(milestone => !milestone.hidden)
                                   .map((milestone, index) => {
-                                      return <Milestone key={index} active={index === currentMilestone} {...milestone} />;
+                                      return <Milestone key={index} is_done={index < currentMilestone} active={index === currentMilestone} {...milestone} />;
                                   })}
                         </div>
                     </Container>
@@ -120,7 +123,7 @@ export const Roadmap: React.FunctionComponent<IRoadmap> = ({
                         <div className="flex flex-wrap -mx-14 sm:mx-0 roadmap_row">
                             {items.filter(milestone => !milestone.hidden)
                                   .map((milestone, index) => {
-                                      return <Milestone key={index} active={index === currentMilestone} {...milestone} />;
+                                      return <Milestone key={index} is_done={index < currentMilestone} active={index === currentMilestone} {...milestone} />;
                                   })}
                         </div>
                     </Container>

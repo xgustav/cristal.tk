@@ -1,20 +1,11 @@
 path: /blog/author/niv-sardi
 tag: author
 name: Niv Sardi
-role: Hacktivist, Developer, Advisor
-description: >-
-  Hacker militante del campo popular cuyas inquietudes se plasman en
-  problematicas tan diversas como la politica latinoamericana (Observatorio
-  de Politicas Culturales del CCC), los medios audiovisuales (WallKinTun
-  TV), el tango (PSOL), el derecho de autor (Butter Project/Popcorn Time),
-  la investigación científica (endlessm.com) y el Software Libre (Debian,
-  Linux, FFMPEG)
-
-  Matematico de formación se despempeño como ingeniero de I+D (Silicon
-  Graphics, SmartJog/Television De Francia), director de proyectos
-  (Alexandria, Popcorn Time), asesor tecnico/politico (INAES, UNQ) y educador
-  popular (Envión, Chela,…)
-pageName: Founder
+github: https://github.com/xaiki
+role: authors.4niv.rol
+description: authors.4niv.description
+bio: authors.4niv.description
+pageName: authors.4niv.pageName
 image: /images/authors/niv-sardi.png
 from: Neuquen, Argentina
 color: black

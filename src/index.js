@@ -4,6 +4,8 @@ import { AppContainer } from 'react-hot-loader'
 
 import { init as initIcons } from 'src/utils/fontawesome'
 
+import { LocalizeProvider } from "react-localize-redux";
+
 // Your top level component
 import App from './App'
 
@@ -18,7 +20,9 @@ if (typeof document !== 'undefined') {
   const render = Comp => {
     renderMethod(
       <AppContainer>
-        <Comp />
+        <LocalizeProvider>
+          <Comp />
+        </LocalizeProvider>
       </AppContainer>,
       document.getElementById('root')
     )

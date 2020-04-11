@@ -1,52 +1,52 @@
 banners: []
 info:
   address:
-    addressLocality: Piracanga
-    addressRegion: BR
-    alternateName: Cristal Network
-    description: >-
-      Stoplight, providing engineering teams with the best way to document,
-      test, and build web APIs.
-    email: hello@stoplight.io
-    name: Stoplight.io
-    postalCode: '78704'
-    streetAddress: 1100 S 1st St
-  email: sales@stoplight.io
+    addressLocality: info.address.addressLocality
+    addressRegion: info.address.addressRegion
+    alternateName: info.address.alternateName
+    description: info.address.description
+    email: hello@cristalnetwork.org
+    name: CristalNetwork.org
+    postalCode: info.address.postalCode
+    streetAddress: info.address.streetAddress
+  email: hello@cristalnetwork.org
 header:
   title: Cristal **Network**
+  show_languages: true
   items:
-    - href: /quem-somos/
-      title: Quem Somos?
+    - href: /team/
+      title: header.team
     - href: /roadmap/
-      title: Roadmap
+      title: header.roadmap
     - href: 'https://demo.cristalnetwork.org'
       isButton: true
-      title: Demo
-actionBar:
-  buttons:
-    - color: purple
-      href: /demo
-      outlined: true
-      title: Request a Demo
-    - color: purple
-      href: 'https://next.stoplight.io'
-      title: Create a Free Account
-  enabled: false
-  text: Getting started is easy. Be up and running in minutes.
+      title: header.demo
+    # - href: #
+    #   width: 200
+    #   icon:
+    #     - fas
+    #     - language
+    #   links: 
+    #     - href:  /en/
+    #       title: 'header.languages.en'
+    #     - href:  /pt/
+    #       title: 'header.languages.pt'
+    #     - href:  /es/
+    #       title: 'header.languages.es'
 footer:
   columns:
-    - title: Source Code
+    - title: footer.source_code
       links:
         - href: https://github.com/cristalnetwork/inkiri-frontend
-          title: Frontend - ReactJS DApp
+          title: footer.frontend
         - href: https://github.com/cristalnetwork/inkiri-backend
-          title: Backend - NodeJS
+          title: footer.backend
         - href: https://github.com/cristalnetwork/inkiri-eos-contracts
-          title: Smart Contracts - EOS, TELOS
+          title: footer.smart_contracts
         - href: https://github.com/cristalnetwork
-          title: Organization repo
+          title: footer.organization_repo
         - href: https://whimsical.com/9kXXrEa6LzuJtRroPsihpa
-          title: Tech Architecture
+          title: footer.tech_architecture
         # - href: https://www.figma.com/proto/wesbb4BGHRSwTIFdqpbyFT/inkiri-dise%C3%B1o-v1-(mine)?node-id=147%3A4464&scaling=min-zoom
         #   title: Bank Administrator @ Figma
         # - href: https://www.figma.com/proto/wesbb4BGHRSwTIFdqpbyFT/inkiri-dise%C3%B1o-v1-(mine)?node-id=580%3A160&scaling=min-zoom
@@ -55,64 +55,63 @@ footer:
         #   title: Personal Account Mobile @ Figma
         # - href: https://www.figma.com/proto/wesbb4BGHRSwTIFdqpbyFT/inkiri-dise%C3%B1o-v1-(mine)?node-id=627%3A0&scaling=min-zoom
         #   title: Business/Fundo Account @ Figma
-    - title: Organization
+    - title: footer.organizatione
       links:
-        - href: /quem-somos/
-          title: Quem Somos?
+        - href: /team/
+          title: footer.team
         - href: /roadmap/
-          title: Roadmap
-        # - href: /contact-us/
-        #   title: Contact Us
-    - title: Supporters
+          title: footer.roadmap
+        - href: /contact-us/
+          title: footer.contact_us
+    - title: footer.supporters
       links:
-        - href: https://www.biovilla.org/
-          title: Biovilla
-        - href: https://www.institutobancopalmas.org/
-          title: Banco Palmas
-        - href: https://portal.fgv.br/en
-          title: Fundação Getúlio Vargas
-        - href: https://ufrj.br/
-          # title: Universidade Federal do Rio de Janeiro
-          title: UFRJ
-        - href: https://piracanga.com/
-          title: Instituto inkiri
-        - href: http://butterproject.org/
-          title: Butter Project
-        - href: https://waba.network
-          title: Waba.Network
-  legal:
-    - href: /privacy/
-      title: Privacy
-    - href: /terms/
-      title: Terms of Use
-    - href: /policy/
-      title: Policy
+        - href:  https://www.biovilla.org/
+          title: footer.supporters.biovilla
+        - href:  https://www.institutobancopalmas.org/
+          title: footer.supporters.banco_palmas
+        - href:  https://portal.fgv.br/en
+          title: footer.supporters.fgv
+        - href:  https://ufrj.br/
+          title: footer.supporters.ufrj
+        - href:  https://piracanga.com/
+          title: footer.supporters.instituto_inkiri
+        - href:  http://butterproject.org/
+          title: footer.supporters.butter_project
+        - href:  https://waba.network
+          title: footer.supporters.waba_network
+  # legal:
+  #   - href: /privacy/
+  #     title: Privacy
+  #   - href: /terms/
+  #     title: Terms of Use
+  #   - href: /policy/
+  #     title: Policy
   social:
-    - href: 'https://twitter.com/networkcristal'
-      icon:
-        - fab
-        - twitter
-    - href: 'https://www.linkedin.com/company/cristalnetwork'
-      icon:
-        - fab
-        - linkedin
+    # - href: 'https://twitter.com/networkcristal'
+    #   icon:
+    #     - fab
+    #     - twitter
+    # - href: 'https://www.linkedin.com/company/cristalnetwork'
+    #   icon:
+    #     - fab
+    #     - linkedin
     - href: 'https://www.github.com/cristalnetwork'
       icon:
         - fab
         - github
 meta:
-  description: Economia Cristalina | Cristal Network
+  description: meta.description
   favicon: /favicons/favicon.ico
   image: /images/home-hero.png
   robots: 'index, follow'
-  title: Cristal Network
+  title: meta.title
   twitter:
-    description: The Complete API Toolkit for Teams and Enterprise | Stoplight
+    description: Cristal Network
     image: /images/home-hero.png
     title: Cristal Network
-    username: '@stoplightio'
-  url: 'https://stoplight.io'
+    username: '@cristalnetwork'
+  url: 'https://cristalnetwork.org'
 integrations:
-  googleTagManager: GTM-58LWL5P
-  hubspot: 4892910
-  intercom: g7eo4oae
+  googleTagManager: xx
+  hubspot: xx
+  intercom: xx

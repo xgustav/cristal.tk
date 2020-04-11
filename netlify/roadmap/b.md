@@ -1,9 +1,8 @@
 ---
 path: /roadmap/1/case-studies
-title: Casos de Uso
-subtitle: >-
-  Em breve Cristal será implementada em outras 3 economias locais ao redor do mundo.
-image: /images/roadmap/icons8-map-pinpoint-64.png
+title: pages.home.roadmap.items.1.title
+subtitle: pages.home.roadmap.items.1.subtitle
+image: /images/roadmap/b_n_w/icons8-map-pinpoint-64.png
 color: blue
 sidebar:
   info: {}
