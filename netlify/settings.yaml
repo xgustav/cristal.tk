@@ -55,7 +55,7 @@ footer:
         #   title: Personal Account Mobile @ Figma
         # - href: https://www.figma.com/proto/wesbb4BGHRSwTIFdqpbyFT/inkiri-dise%C3%B1o-v1-(mine)?node-id=627%3A0&scaling=min-zoom
         #   title: Business/Fundo Account @ Figma
-    - title: footer.organizatione
+    - title: footer.organization
       links:
         - href: /team/
           title: footer.team

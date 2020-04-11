@@ -26,12 +26,13 @@ export interface IHome {
     authors: [IAuthors];
 }
 
+//<Languages />
 export const Home: React.FunctionComponent<IHome> = ({ color, hero, marketing, services, roadmap, panesCallout, collage, authors, team }) => {
     return (
         <React.Fragment>
             <Hero bgColor={color} {...hero} />
 
-            <Languages />
+            
             
             <PanesCallout {...panesCallout} />
 

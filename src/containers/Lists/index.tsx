@@ -11,6 +11,8 @@ import { Section } from 'src/components/Section';
 import { ITab } from 'src/components/Tabs';
 import { Roadmap } from 'src/components/Roadmap'
 
+import { Translate } from "react-localize-redux";
+
 export const listRegistery = {
     Roadmap,
 }
@@ -67,7 +69,7 @@ export const ListItem: React.FunctionComponent<IListItem> = ({
 
         <div className="flex-1 flex flex-col h-full p-10 md:p-6">
           <div className="flex-1 mb-2 flex flex-col relative overflow-hidden">
-            <div className="text-3xl font-bold mb-4">{title}</div>
+            <div className="text-3xl font-bold mb-4"><Translate id={(title||'').trim()} options={{ renderInnerHtml: true }} /></div>
 
             {(listSubtitle || subtitle) && <p className="leading-loose">{listSubtitle || subtitle}</p>}
           </div>

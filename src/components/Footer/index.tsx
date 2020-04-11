@@ -5,6 +5,8 @@ import { withSiteData } from 'react-static';
 import { Image } from 'src/components/Image';
 import { Link } from 'src/components/Link';
 
+import { Translate } from "react-localize-redux";
+
 interface IFooterColumnLink {
   title: string;
   href: string;
@@ -49,7 +51,7 @@ export const Footer: React.FunctionComponent<{ footer: IFooter }> = ({ footer })
             {columns.map((column, index) => {
               return (
                 <div key={index}>
-                  <div className="font-bold text-grey-light py-2">{column.title}</div>
+                  <div className="font-bold text-grey-light py-2"><Translate id={(column.title||'').trim()} /></div>
 
                   {column.links &&
                     column.links.map((link, columnIndex) => {
@@ -59,7 +61,7 @@ export const Footer: React.FunctionComponent<{ footer: IFooter }> = ({ footer })
                           to={link.href}
                           className="cursor-pointer text-grey hover:text-grey-lighter block py-2"
                         >
-                          {link.title}
+                          <Translate id={(link.title||'').trim()} />
                         </Link>
                       );
                     })}
@@ -76,7 +78,7 @@ export const Footer: React.FunctionComponent<{ footer: IFooter }> = ({ footer })
               {legal.map((link, index) => {
                 const elems = [
                   <Link key={index} to={link.href} className="text-grey hover:text-grey-lighter">
-                    {link.title}
+                    <Translate id={(link.title||'').trim()} />
                   </Link>,
                 ];
 

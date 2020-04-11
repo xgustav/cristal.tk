@@ -7,7 +7,7 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'src/components/Link';
 import Desktop from './Desktop';
-import { Mobile } from './Mobile';
+import Mobile from './Mobile';
 
 import { withLocalize } from "react-localize-redux";
 

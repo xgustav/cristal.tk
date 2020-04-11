@@ -9,6 +9,8 @@ import * as Clouds from './images/'
 
 import styles from './hero.scss'
 
+import { Translate } from "react-localize-redux";
+
 export const indexMap = {
   1: 'one',
   2: 'two',
@@ -55,10 +57,10 @@ export const Hero: React.FunctionComponent<IHero> = ({
 	                    <div className={cn("col")}>
 	                        <div className={cn("home_content", "text-center")}>
 	                            <div className={cn("home_title")}>
-                                        <h1 className="text-white" dangerouslySetInnerHTML={{ __html: title }}/>
+                                        <h1 className="text-white"><Translate id={(title||'').trim()} options={{ renderInnerHtml: true }} /></h1>
 
-	                                <div className={cn("home_text2")}
-                                             dangerouslySetInnerHTML={{ __html: subtitle }}>
+	                                <div className={cn("home_text2")}>
+                                    <Translate id={(subtitle||'').trim()} options={{ renderInnerHtml: true }} />
 	                                </div>
 	                            </div>
 	                        </div>

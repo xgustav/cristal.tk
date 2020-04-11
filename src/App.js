@@ -41,7 +41,8 @@ class App extends React.Component {
         renderToStaticMarkup: false
         , defaultLanguage   : 'en'
         , onMissingTranslation : ({ translationId, languageCode }) => {
-                                    return 'ERROR-' + translationId + '-ERROR';
+                                    // return 'ERROR-' + translationId + '-ERROR';
+                                    return translationId;
                                   }
       }
     });

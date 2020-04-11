@@ -74,8 +74,11 @@ const HeaderLangDropdown: React.FunctionComponent<IHeaderItem> = ({ languages, a
       , title    : `header.languages.${lang.code}`
       , code     : lang.code
       , active   : lang.code==(active_language_code)
+      , icon     : lang.code==(active_language_code)?['fas', 'check']:undefined
     }
   })
+  // const lang_nav_title = <Translate id={`header.languages.${active_language_code}`} />;
+  const lang_nav_title = null;
   return (
     <Popup
       width={width}
@@ -89,7 +92,7 @@ const HeaderLangDropdown: React.FunctionComponent<IHeaderItem> = ({ languages, a
             icon={icon}
             size={'lg'}
           />
-        )} <Translate id={`header.languages.${active_language_code}`} /> </div>
+        )} {lang_nav_title} </div>
         </div>
       )}
       renderContent={() => <div className="bg-white rounded-lg shadow-lg p-6">{links.map( (item, idx) => DropdownItem(item, idx, setActiveLanguage) )}</div>}
