@@ -82,7 +82,7 @@ export class Header extends React.Component<IHeader, IHeaderState> {
     const { unpinned, showBanner }         = this.state;
     const headerItems                      = (header && header.items) || [];
     const title                            = (header && header.title) || null;
-    const show_languages                   = header.show_languages;
+    const show_languages                   = (header && header.show_languages) || false;
     // console.log('header.show_languages:', show_languages)
     let banner;
     if (showBanner && banners && banners.length) {
