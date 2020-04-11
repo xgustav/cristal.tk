@@ -61,8 +61,8 @@ footer:
           title: footer.team
         - href: /roadmap/
           title: footer.roadmap
-        - href: /contact-us/
-          title: footer.contact_us
+        # - href: /contact-us/
+        #   title: footer.contact_us
     - title: footer.supporters
       links:
         - href:  https://www.biovilla.org/
@@ -99,6 +99,11 @@ footer:
       icon:
         - fab
         - github
+    - href: 'https://t.me/cristalnetwork'
+      icon:
+        - fab
+        - telegram
+        
 meta:
   description: meta.description
   favicon: /favicons/favicon.ico

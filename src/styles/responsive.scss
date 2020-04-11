@@ -262,6 +262,9 @@
 
 @media only screen and (max-width: 575px)
 {
+	.home_container{
+		top:130px!important;
+	}
 	h2
 	{
 		font-size: 30px;
@@ -276,7 +279,11 @@
 	}
 	.home_title
 	{
-		font-size: 36px;
+		font-size: 30px!important;
+	}
+	.home_text2, .home_text2 > p
+	{
+		line-height: 1.0!important;
 	}
 	.domain_search_input,
 	.domain_search_dropdown,

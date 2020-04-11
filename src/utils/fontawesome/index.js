@@ -25,6 +25,7 @@ import { faLanguage } from '@fortawesome/free-solid-svg-icons/faLanguage'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin'
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
+import { faTelegram } from '@fortawesome/free-brands-svg-icons/faTelegram'
 
 export const init = () => {
   library.add(faLanguage)
@@ -52,4 +53,5 @@ export const init = () => {
   library.add(faTwitter)
   library.add(faLinkedin)
   library.add(faGithub)
+  library.add(faTelegram)
 }
