@@ -3,7 +3,7 @@ tag: 'roadmap'
 component: 'Roadmap'
 subtitle: 
 title: lists.development_roadmap
-currentMilestone: 0
+currentMilestone: 1
 actionBar:
   enabled: false
 pageName: Roadmap
